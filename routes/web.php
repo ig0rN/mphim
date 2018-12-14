@@ -52,4 +52,7 @@ Route::namespace('Admin')
         Route::get('/home', function(){
             return view('admin.pages.home');
         })->name('admin.home');
+        
+        // Logout
+        Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 });

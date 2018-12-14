@@ -15,11 +15,11 @@
 	</li>
 	<li>
 		<a href="{{ route('admin.team') }}">Team</a>
-	</li> --}}
-	{{-- <li>
+	</li>
+	<li>
 		<a href="{{ route('admin.services') }}">Services</a>
-	</li> --}}
-	{{-- <li>
+	</li>
+	<li>
 		<a href="{{ route('admin.solutions') }}">Solutions</a>
 	</li>
 	<li>
@@ -31,17 +31,17 @@
 	<li>
 		<a href="{{ route('admin.newsletter') }}">Newsletters</a>
 	</li>
-</ul>
+</ul> --}}
 <ul id="buttons">
-	<li>
+	{{-- <li>
 		<i class="fas fa-key"></i>
 		<a href="{{ route('admin.changePass') }}">Change Password</a>
-	</li>
+	</li> --}}
 	<li>
 		<i class="fas fa-sign-out-alt"></i>
 		<a href="{{ route('logout') }}">Logout</a>
 	</li>
-</ul> --}}
+</ul>
 @endsection
 
 {{-- @section('scripts')
