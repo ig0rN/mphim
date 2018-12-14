@@ -27,8 +27,8 @@ Route::namespace('Admin\Auth')
     Route::post('login', 'LoginController@login');
 
     // Registration Routes...
-    Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
-    Route::post('register', 'RegisterController@register');
+    // Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
+    // Route::post('register', 'RegisterController@register');
 
     // Password Reset Routes...
     Route::get('password/reset', 'ForgotPasswordController@showLinkRequestForm')->name('password.request');
