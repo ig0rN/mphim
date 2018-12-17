@@ -27,7 +27,7 @@
 		<!-- Push-footer end -->
 		<!-- back-to-top start -->
 		<a href="javascript:void(0)" id="back-to-top" title="Back to top">
-			<img src="img/top.png" alt="img/top.png" />
+			<img src="{{ asset('img/top.png') }}" alt="img/top.png" />
 		</a>
 		<!-- back-to-top end -->
 	</div>
