@@ -93,24 +93,22 @@ svg {
 	.nav {
 		ul {
 			margin: 0;
-			padding: 0;
+			padding: 0 5px;
 			display: block;
 			width: 100%;
-			background-color: $bluedianne;
 			font-size: 0;
+			background-color: $bluedianne;
 
 			li {
 				list-style: none;
 				display: inline-block;
-				transition: $transition;
 				position: relative;
-
-				&.active {
-					background-color: $seabuckthorn;
-				}
+				padding: 10px 5px;
 
 				&:hover {
-					background-color: $seabuckthorn-hover;
+					a {
+						background-color: $seabuckthorn-hover;
+					}
 
 					.dropdown {
 						opacity: 1;
@@ -121,12 +119,17 @@ svg {
 				}
 
 				a {
-					padding: 15px 20px;
+					padding: 10px 15px 8px;
 					color: $white;
-					font-size: 15px;
+					font-size: 16px;
 					display: block;
 					cursor: pointer;
 					font-weight: 500;
+					border-radius: 6px;
+
+					&.active {
+						background-color: $seabuckthorn;
+					}
 
 					&.mphim {
 						text-transform: uppercase;
@@ -134,6 +137,7 @@ svg {
 				}
 
 				.dropdown {
+					padding: 0;
 					text-align: left;
 					position: absolute;
 					top: 100%;
@@ -146,33 +150,40 @@ svg {
 					-webkit-transform: translate3d(0, 30px, 0);
 					border-bottom: 4px solid $seabuckthorn;
 					background-color: #f2f2f2;
-					
+
 					h5 {
 						margin: 0;
 						padding: 10px;
 						text-transform: uppercase;
-						color: $bluedianne;
+						color: $white;
 						border-bottom: 2px solid $bluedianne;
+						background-color: $bluedianne;
 					}
 
 					li {
 						display: block;
 						border-bottom: 1px solid $bluedianne;
-						
+						padding: 0;
+						background-color: transparent;
+
 						&:last-child {
 							border-bottom: 1px solid transparent;
 						}
 
 						a {
-							padding: 15px;
+							padding: 15px 15px 13px;
 							display: block;
 							color: $bluedianne;
+							border-radius: none;
+							background-color: transparent;
 						}
 
 						&:hover {
 							background-color: $bluedianne;
+
 							a {
 								color: $white;
+								background-color: $bluedianne;
 							}
 						}
 					}

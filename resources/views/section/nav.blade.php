@@ -5,8 +5,8 @@
         </div>
         <div class="nav">
             <ul>
-                <li class="active">
-                    <a>Home</a>
+                <li>
+                    <a class="active">Home</a>
                 </li>
                 <li>
                     <a class="mphim">Mphim+</a>
