@@ -66,9 +66,20 @@
 				</div>
 			</div>
 		</div>
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" />
-        </div>
+		<div id="logo-gif">
+			<div class="row no-gutters align-items-center">
+				<div class="col-md-2">
+					<div class="logo">
+						<img src="{{ asset('img/logo.png') }}" />
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="gif">
+
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="nav">
             <ul>
                 <li>

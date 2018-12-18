@@ -214,12 +214,10 @@ svg {
 		}
 	}
 
-	.logo {
+	#logo-gif {
 		border-top: 3px solid $seabuckthorn;
 
-		img {
-			width: 15%;
-		}
+		.logo {}
 	}
 
 	.nav {
