@@ -97,11 +97,11 @@ svg {
 			display: block;
 			width: 100%;
 			background-color: $bluedianne;
+			font-size: 0;
 
 			li {
 				list-style: none;
 				display: inline-block;
-				margin-right: -4px;
 				transition: $transition;
 				position: relative;
 
@@ -111,11 +111,12 @@ svg {
 
 				&:hover {
 					background-color: $seabuckthorn-hover;
-					
+
 					.dropdown {
 						opacity: 1;
 						visibility: visible;
 						transform: translate3d(0, 0, 0);
+						-webkit-transform: translate3d(0, 0, 0);
 					}
 				}
 
@@ -126,21 +127,53 @@ svg {
 					display: block;
 					cursor: pointer;
 					font-weight: 500;
+
+					&.mphim {
+						text-transform: uppercase;
+					}
 				}
 
 				.dropdown {
-					text-align: le4;
+					text-align: left;
 					position: absolute;
 					top: 100%;
 					left: 0;
+					width: 200px;
 					transition: all .5s ease;
 					opacity: 0;
 					visibility: hidden;
 					transform: translate3d(0, 30px, 0);
+					-webkit-transform: translate3d(0, 30px, 0);
+					border-bottom: 4px solid $seabuckthorn;
+					background-color: #f2f2f2;
+					
+					h5 {
+						margin: 0;
+						padding: 10px;
+						text-transform: uppercase;
+						color: $bluedianne;
+						border-bottom: 2px solid $bluedianne;
+					}
 
 					li {
+						display: block;
+						border-bottom: 1px solid $bluedianne;
+						
+						&:last-child {
+							border-bottom: 1px solid transparent;
+						}
+
 						a {
+							padding: 15px;
 							display: block;
+							color: $bluedianne;
+						}
+
+						&:hover {
+							background-color: $bluedianne;
+							a {
+								color: $white;
+							}
 						}
 					}
 				}
