@@ -6,31 +6,31 @@
 					<ul>
 						<li>
 							<a href="javascript:void(0)">
-								It
+								{{ config()->get('app.locale') }}
 							</a>
 							<ul class="dropdown">
 								<li>
-									<a href="javascript:void(0)" class="active">
+									<a href="{{ disableHrefIfActive('it') }}" class="{{ giveActiveClass('it') }}">
 										It
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)">
+									<a href="{{ disableHrefIfActive('en') }}" class="{{ giveActiveClass('en') }}">
 										En
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)">
+									<a href="{{ disableHrefIfActive('de') }}" class="{{ giveActiveClass('de') }}">
 										De
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)">
+									<a href="{{ disableHrefIfActive('fr') }}" class="{{ giveActiveClass('fr') }}">
 										Fr
 									</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)">
+									<a href="{{ disableHrefIfActive('rs') }}" class="{{ giveActiveClass('rs') }}">
 										Rs
 									</a>
 								</li>
@@ -98,7 +98,7 @@
             <ul>
                 <li>
                     <a class="active">
-						Home
+						{{ __('translate.home') }}
 					</a>
                 </li>
                 <li>
@@ -215,7 +215,7 @@
                 </li>
 				<li>
                     <a>
-						Contact
+						{{ __('translate.contact') }}
 					</a>
                 </li>
             </ul>

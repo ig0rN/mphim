@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('master');
 });
 
+Route::get('/change-lang/{lang}', function($lang) {
+
+    session()->put('locale', $lang);
+    return redirect()->back();
+
+})->name('change-lang');
+
 Route::get('/admin', function(){
     return redirect()->route('login');
 });
