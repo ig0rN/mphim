@@ -74,8 +74,22 @@
 					</div>
 				</div>
 				<div class="col-md-10">
-					<div class="gif">
-
+					<div id="slideshow">
+						<div class="slider">
+							<img src="img/slider/1.jpg" class="slider-img" alt="img/slider/1.jpg" />
+						</div>
+						<div class="slider">
+							<img src="img/slider/2.jpg" class="slider-img" alt="img/slider/2.jpg" />
+						</div>
+						<div class="slider">
+							<img src="img/slider/3.jpg" class="slider-img" alt="img/slider/3.jpg" />
+						</div>
+						<div class="slider">
+							<img src="img/slider/4.jpg" class="slider-img" alt="img/slider/4.jpg" />
+						</div>
+						<div class="slider">
+							<img src="img/slider/5.jpg" class="slider-img" alt="img/slider/5.jpg" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -83,79 +97,204 @@
         <div class="nav">
             <ul>
                 <li>
-                    <a class="active">Home</a>
+                    <a class="active">
+						Home
+					</a>
                 </li>
                 <li>
-                    <a class="mphim">Mphim+</a>
+                    <a class="mphim">
+						Mphim+
+						<i class="fas fa-angle-down"></i>
+					</a>
 					<ul class="dropdown">
                         <li>
-                            <a>What is</a>
+                            <a>
+								What is
+							</a>
 						</li>
 						<li>
-                            <a>What does it do</a>
+                            <a>
+								What does it do
+							</a>
 						</li>
 						<li>
-                            <a>Why to have it</a>
+                            <a>
+								Why to have it
+							</a>
 						</li>
 						<li>
-                            <a>Roadmap</a>
+                            <a>
+								Roadmap
+							</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a>Customers</a>
+                    <a>
+						Customers
+						<i class="fas fa-angle-down"></i>
+					</a>
 					<ul class="dropdown">
-						<h5 class="text-center">Who can use it</h5>
+						<h5 class="text-center">
+							Who can use it
+						</h5>
                         <li>
-                            <a>Companies</a>
+                            <a>
+								Companies
+							</a>
 						</li>
 						<li>
-                            <a>Professionals</a>
+                            <a>
+								Professionals
+							</a>
 						</li>
 						<li>
-                            <a>Trade associations</a>
+                            <a>
+								Trade associations
+							</a>
 						</li>
 						<li>
-                            <a>Public institutions</a>
+                            <a>
+								Public institutions
+							</a>
 						</li>
 						<li>
-                            <a>Schools</a>
+                            <a>
+								Schools
+							</a>
 						</li>
 						<li>
-                            <a>University</a>
+                            <a>
+								University
+							</a>
 						</li>
                     </ul>
                 </li>
                 <li>
-                    <a>Versions</a>
+                    <a>
+						Versions
+					</a>
                 </li>
 				<li>
-                    <a>Commercial</a>
+                    <a>
+						Commercial
+					</a>
                 </li>
                 <li>
-                    <a>Reference</a>
+                    <a>
+						Reference
+					</a>
                 </li>
 				<li>
-                    <a>Accademy</a>
+                    <a>
+						Accademy
+						<i class="fas fa-angle-down"></i>
+					</a>
 					<ul class="dropdown">
                         <li>
-                            <a>Training4Company</a>
+                            <a>
+								Training4Company
+							</a>
 						</li>
 						<li>
-                            <a>Training4Agent</a>
+                            <a>
+								Training4Agent
+							</a>
 						</li>
 						<li>
-                            <a>Training4Advisor</a>
+                            <a>
+								Training4Advisor
+							</a>
 						</li>
 						<li>
-                            <a>Training4Manager</a>
+                            <a>
+								Training4Manager
+							</a>
 						</li>
                     </ul>
                 </li>
 				<li>
-                    <a>Contact</a>
+                    <a>
+						Contact
+					</a>
                 </li>
             </ul>
         </div>
+		<div id="discover">
+			<div class="row">
+				<div class="col-md-2 offset-10">
+					<div class="discover">
+						<div class="item">
+							<ion-icon name="barcode"></ion-icon>
+							<p>
+								Learn From The<br />
+								Experts
+							</p>
+						</div>
+						<div class="item">
+							<ion-icon name="bookmarks"></ion-icon>
+							<p>
+								Book Libraty &amp;<br />
+								Store
+							</p>
+						</div>
+						<div class="item">
+							<ion-icon name="logo-buffer"></ion-icon>
+							<p>
+								Learn Anything<br />
+								Online
+							</p>
+						</div>
+						<div class="item">
+							<i class="far fa-lightbulb"></i>
+							<p>
+								Best Industry<br />
+								Leaders
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="accademy">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="training">
+						<div class="overlay primary">
+							<h6>
+								Training4Company
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="training">
+						<div class="overlay danger">
+							<h6>
+								Training4Company
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="training">
+						<div class="overlay warning">
+							<h6>
+								Training4Company
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="training">
+						<div class="overlay info">
+							<h6>
+								Training4Company
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </header>
 </div>

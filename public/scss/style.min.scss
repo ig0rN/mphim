@@ -7,6 +7,7 @@ sans-serif;
 $white: #FFFFFF;
 $concrete: #F2F2F2;
 $bluedianne: #1B3D48;
+$bigstone: #152F37;
 $seabuckthorn: #F5A425;
 $gamboge: #DB8B0A;
 
@@ -116,6 +117,7 @@ svg {
 					font-weight: bold;
 					letter-spacing: 1px;
 					background-color: $bluedianne;
+					position: relative;
 				}
 
 				.dropdown {
@@ -216,8 +218,25 @@ svg {
 
 	#logo-gif {
 		border-top: 3px solid $seabuckthorn;
+		padding: 10px 0;
 
-		.logo {}
+		#slideshow {
+			height: 40vh;
+			position: relative;
+
+			.slider {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+				.slider-img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
 	}
 
 	.nav {
@@ -246,6 +265,10 @@ svg {
 						transform: translate3d(0, 0, 0);
 						-webkit-transform: translate3d(0, 0, 0);
 					}
+
+					svg {
+						transform: rotate(-180deg);
+					}
 				}
 
 				a {
@@ -263,6 +286,11 @@ svg {
 
 					&.mphim {
 						text-transform: uppercase;
+					}
+
+					svg {
+						margin-left: 3px;
+						transition: $transition;
 					}
 				}
 
@@ -320,6 +348,74 @@ svg {
 							background-color: transparent;
 						}
 					}
+				}
+			}
+		}
+	}
+
+	#discover {
+		margin: 30px 0;
+
+		.discover {
+			background-color: $bluedianne;
+
+			.item {
+				text-align: center;
+				padding: 20px 15px;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $bigstone;
+
+					ion-icon,
+					svg {
+						transform: scale(1.2, 1.2);
+						-ms-transform: scale(1.2, 1.2);
+						-webkit-transform: scale(1.2, 1.2);
+					}
+				}
+
+				ion-icon,
+				svg {
+					color: $white;
+					font-size: 50px;
+					transition: $transition;
+					margin-bottom: 15px;
+				}
+
+				p {
+					color: $white;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	#accademy {
+		margin-bottom: 30px;
+
+		.training {
+			box-shadow: 3px 3px 2px #ddd;
+			height: 200px;
+			position: relative;
+			background-color: $concrete;
+
+			&:hover {
+				.overlay {
+					bottom: 100%;
+				}
+			}
+
+			.overlay {
+				text-align: center;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				transition: $transition;
+
+				h6 {
+					margin: 0;
 				}
 			}
 		}
@@ -394,7 +490,69 @@ svg {
     Footer start
 ----------------------------*/
 
-footer {}
+footer {
+	background-color: $bluedianne;
+	border-top: 3px solid $seabuckthorn;
+
+	#footer-nav {
+		padding: 30px 0;
+
+		.heading {
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			position: relative;
+			transition: $transition;
+
+			&:hover {
+				color: $seabuckthorn;
+			}
+
+			&::before {
+				content: ' ';
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 40px;
+				height: 2px;
+				background-color: $seabuckthorn;
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 10px 0 20px;
+
+			li {
+				list-style: none;
+				margin-bottom: 3px;
+
+				a {
+					text-transform: none;
+					color: $white;
+					transition: $transition;
+
+					&:hover {
+						color: $seabuckthorn
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid $bigstone;
+		padding: 15px 0;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 1px;
+
+		a {
+			color: $white;
+		}
+	}
+}
 
 /*----------------------------
     Footer end
