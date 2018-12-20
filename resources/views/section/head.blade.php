@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="{{ asset('css/hamburgers.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/animated.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/style.min.css') }}" />
 	<!-- CSS and Bootstrap 4 links end -->

@@ -1,16 +1,16 @@
 <div class="container">
     <div id="footer-nav">
-        <div class="row">
-            <div class="col-md-2">
+        <ul class="d-flex">
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Home
                 </a>
-            </div>
-            <div class="col-md-2">
+            </li>
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Mphim+
                 </a>
-                <ul>
+                <ul class="dropdown">
                     <li>
                         <a href="javascript:void(0)">
                             What is
@@ -32,12 +32,12 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-md-2">
+            </li>
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Customers
                 </a>
-                <ul>
+                <ul class="dropdown">
                     <li>
                         <a href="javascript:void(0)">
                             Companies
@@ -69,27 +69,27 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-md-2">
+            </li>
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Versions
                 </a>
-            </div>
-            <div class="col-md-2">
+            </li>
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Commercial
                 </a>
-            </div>
-            <div class="col-md-2">
+            </li>
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Reference
                 </a>
-            </div>
-            <div class="col-md-2">
+            </li>
+            <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
                     Accademy
                 </a>
-                <ul>
+                <ul class="dropdown">
                     <li>
                         <a href="javascript:void(0)">
                             Training4Company
@@ -111,15 +111,17 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-md-2">
-                <a href="javascript:void(0)" class="heading">Contact</a>
-            </div>
-        </div>
+            </li>
+            <li class="flex-fill">
+                <a href="javascript:void(0)" class="heading">
+					Contact
+				</a>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="copyright">
-    <div class="container">
-        © Copyright 2018 <a href="http://www.webtory.rs/" target="_blank"><b>Webtory</b></a>. {{ __('translate.rights-reserved') }}
-    </div>
+	<div class="container">
+		© Copyright 2018 <a href="http://www.webtory.rs/" target="_blank"><b>Webtory</b></a>. {{ __('translate.rights-reserved') }}
+	</div>
 </div>

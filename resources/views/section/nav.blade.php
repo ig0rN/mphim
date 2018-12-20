@@ -66,29 +66,26 @@
 				</div>
 			</div>
 		</div>
-		<div id="logo-gif">
+		<div id="logo-slider">
 			<div class="row no-gutters align-items-center">
 				<div class="col-md-2">
 					<div class="logo">
-						<img src="{{ asset('img/logo.png') }}" />
+						<img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
 					</div>
 				</div>
 				<div class="col-md-10">
-					<div id="slideshow">
-						<div class="slider">
-							<img src="img/slider/1.jpg" class="slider-img" alt="img/slider/1.jpg" />
+					<div class="owl-carousel">
+						<div>
+							<img src="{{ asset('img/slider/1.jpg') }}" alt="img/slider/1.jpg" />
 						</div>
-						<div class="slider">
-							<img src="img/slider/2.jpg" class="slider-img" alt="img/slider/2.jpg" />
+						<div>
+							<img src="{{ asset('img/slider/2.jpg') }}" alt="img/slider/2.jpg" />
 						</div>
-						<div class="slider">
-							<img src="img/slider/3.jpg" class="slider-img" alt="img/slider/3.jpg" />
+						<div>
+							<img src="{{ asset('img/slider/3.jpg') }}" alt="img/slider/3.jpg" />
 						</div>
-						<div class="slider">
-							<img src="img/slider/4.jpg" class="slider-img" alt="img/slider/4.jpg" />
-						</div>
-						<div class="slider">
-							<img src="img/slider/5.jpg" class="slider-img" alt="img/slider/5.jpg" />
+						<div>
+							<img src="{{ asset('img/slider/4.jpg') }}" alt="img/slider/4.jpg" />
 						</div>
 					</div>
 				</div>
@@ -234,7 +231,7 @@
 						<div class="item">
 							<ion-icon name="bookmarks"></ion-icon>
 							<p>
-								Book Libraty &amp;<br />
+								Book Library &amp;<br />
 								Store
 							</p>
 						</div>
@@ -260,37 +257,73 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="training">
-						<div class="overlay primary">
+						<div class="image">
+							<img src="{{ asset('img/training/company.jpg') }}" alt="img/training/company.jpg" />
+						</div>
+						<div class="overlay bg-primary">
 							<h6>
 								Training4Company
 							</h6>
+							<p>
+								Do you want to find out more about "Training4Company"?
+							</p>
+							<button class="btn btn-training">
+								Access the training
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="training">
-						<div class="overlay danger">
+						<div class="image">
+							<img src="{{ asset('img/training/agent.jpg') }}" alt="img/training/agent.jpg" />
+						</div>
+						<div class="overlay bg-danger">
 							<h6>
-								Training4Company
+								Training4Agent
 							</h6>
+							<p>
+								Do you want to find out more about "Training4Agent"?
+							</p>
+							<button class="btn btn-training">
+								Access the training
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="training">
-						<div class="overlay warning">
+						<div class="image">
+							<img src="{{ asset('img/training/advisor.jpg') }}" alt="img/training/advisor.jpg" />
+						</div>
+						<div class="overlay bg-warning">
 							<h6>
-								Training4Company
+								Training4Advisor
 							</h6>
+							<p>
+								Do you want to find out more about "Training4Advisor"?
+							</p>
+							<button class="btn btn-training">
+								Access the training
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="training">
-						<div class="overlay info">
+						<div class="image">
+							<img src="{{ asset('img/training/manager.jpg') }}" alt="img/training/manager.jpg" />
+						</div>
+						<div class="overlay bg-info">
 							<h6>
-								Training4Company
+								Training4Manager
 							</h6>
+							<p>
+								Do you want to find out more about "Training4Manager"?
+							</p>
+							<button class="btn btn-training">
+								Access the training
+							</button>
 						</div>
 					</div>
 				</div>
