@@ -2,44 +2,6 @@
     <header id="header">
 		<div class="row no-gutters align-items-center">
 			<div class="col-md-6">
-				<div class="language">
-					<ul>
-						<li>
-							<a href="javascript:void(0)">
-								{{ config()->get('app.locale') }}
-							</a>
-							<ul class="dropdown">
-								<li>
-									<a href="{{ disableHrefIfActive('it') }}" class="{{ giveActiveClass('it') }}">
-										It
-									</a>
-								</li>
-								<li>
-									<a href="{{ disableHrefIfActive('en') }}" class="{{ giveActiveClass('en') }}">
-										En
-									</a>
-								</li>
-								<li>
-									<a href="{{ disableHrefIfActive('de') }}" class="{{ giveActiveClass('de') }}">
-										De
-									</a>
-								</li>
-								<li>
-									<a href="{{ disableHrefIfActive('fr') }}" class="{{ giveActiveClass('fr') }}">
-										Fr
-									</a>
-								</li>
-								<li>
-									<a href="{{ disableHrefIfActive('rs') }}" class="{{ giveActiveClass('rs') }}">
-										Rs
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-6">
 				<div class="social">
 					<ul>
 						<li>
@@ -63,6 +25,70 @@
 							</a>
 						</li>
 					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 text-right">
+				<div class="username-password">
+					<div class="row align-items-center">
+						<div class="col-md-5 pr-0">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<ion-icon name="person"></ion-icon>
+									</span>
+								</div>
+								<input type="email" class="form-control" placeholder="Username" aria-label="Username">
+							</div>
+						</div>
+						<div class="col-md-5 pr-0">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<ion-icon name="lock"></ion-icon>
+									</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Password" aria-label="Password">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="language">
+								<ul>
+									<li>
+										<a href="javascript:void(0)">
+											{{ config()->get('app.locale') }}
+										</a>
+										<ul class="dropdown">
+											<li>
+												<a href="{{ disableHrefIfActive('it') }}" class="{{ giveActiveClass('it') }}">
+													It
+												</a>
+											</li>
+											<li>
+												<a href="{{ disableHrefIfActive('en') }}" class="{{ giveActiveClass('en') }}">
+													En
+												</a>
+											</li>
+											<li>
+												<a href="{{ disableHrefIfActive('de') }}" class="{{ giveActiveClass('de') }}">
+													De
+												</a>
+											</li>
+											<li>
+												<a href="{{ disableHrefIfActive('fr') }}" class="{{ giveActiveClass('fr') }}">
+													Fr
+												</a>
+											</li>
+											<li>
+												<a href="{{ disableHrefIfActive('rs') }}" class="{{ giveActiveClass('rs') }}">
+													Rs
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -217,9 +243,13 @@
                 </li>
             </ul>
         </div>
-		<div id="discover">
+    </header>
+</div>
+<div id="content">
+	<div id="discover">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-2 offset-10">
+				<div class="col-md-2 offset-md-10">
 					<div class="discover">
 						<div class="item">
 							<ion-icon name="barcode"></ion-icon>
@@ -253,7 +283,92 @@
 				</div>
 			</div>
 		</div>
-		<div id="accademy">
+	</div>
+	<div id="about" class="pb-4">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 pl-0">
+					<div class="student-image">
+						<img src="{{ asset('img/about/student-1.jpg') }}" alt="img/about/student-1.jpg" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h1 class="pt-4">About Mphim+</h1>
+					<div id="counter">
+						<div class="d-flex">
+							<div class="flex-fill">
+								<div class="item">
+									<span class="counter-value" data-count="76">
+										0
+									</span>
+									<span class="value">
+										m+
+									</span>
+								</div>
+								<h6>
+									Students Learning
+								</h6>
+							</div>
+							<div class="flex-fill">
+								<div class="item">
+									<span class="counter-value" data-count="80">
+										0
+									</span>
+									<span class="value">
+										k+
+									</span>
+								</div>
+								<h6>
+									Active Courses
+								</h6>
+							</div>
+							<div class="flex-fill">
+								<div class="item">
+									<span class="counter-value" data-count="990">
+										0
+									</span>
+									<span class="value">
+										+
+									</span>
+								</div>
+								<h6>
+									Instructors online
+								</h6>
+							</div>
+						</div>
+					</div>
+					<p class="pt-4">
+						Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
+					</p>
+					<button class="btn btn-learn">
+						Learn more
+						<i class="fas fa-angle-right"></i>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 text-right">
+					<h2 class="pt-4">
+						Create a course for free in minutes with teachable
+					</h2>
+					<p class="pt-4">
+						Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
+					</p>
+					<button class="btn btn-learn">
+						Learn more
+						<i class="fas fa-angle-right"></i>
+					</button>
+				</div>
+				<div class="col-md-6 pr-0">
+					<div class="student-image-second">
+						<img src="{{ asset('img/about/student-2.jpg') }}" alt="img/about/student-2.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="accademy">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
 					<div class="training">
@@ -329,5 +444,5 @@
 				</div>
 			</div>
 		</div>
-    </header>
+	</div>
 </div>

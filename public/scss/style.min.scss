@@ -12,6 +12,7 @@ $swamp: #001621;
 $seabuckthorn: #F5A425;
 $treepoppy: #F8931F;
 $gamboge: #DB8B0A;
+$shalimar: #FAFFBD;
 
 $transition: all .3s ease;
 
@@ -50,7 +51,7 @@ input,
 textarea {
 	&:focus {
 		border-color: #ced4da !important;
-		//		background-color: $yellow-input !important;
+		background-color: $shalimar !important;
 	}
 }
 
@@ -69,23 +70,70 @@ svg {
 	cursor: pointer;
 }
 
-/*----------------------------
-    App start
-----------------------------*/
+/* App */
 
 #app {
 	min-height: 100%;
 }
 
-/*----------------------------
-    App end
-----------------------------*/
-
-/*----------------------------
-    Header start
-----------------------------*/
+/* Header */
 
 #header {
+
+	.social {
+		ul {
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					display: block;
+					padding: 8px;
+					color: $white;
+					transition: $transition;
+					border-radius: 50%;
+					background-color: $swamp;
+
+					&:hover {
+						color: $treepoppy;
+					}
+
+					svg {
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.username-password {
+		.input-group {
+			input {
+				border-radius: 0;
+
+				&::placeholder {
+					font-size: 14px;
+				}
+			}
+
+			.input-group-text {
+				border-radius: 0;
+				color: $swamp;
+				font-size: 20px;
+			}
+		}
+	}
+
 	.language {
 		ul {
 			margin: 0;
@@ -107,12 +155,13 @@ svg {
 						visibility: visible;
 						transform: translate3d(0, 0, 0);
 						-webkit-transform: translate3d(0, 0, 0);
+						z-index: 2;
 					}
 				}
 
 				a {
 					display: block;
-					padding: 10px 15px 8px;
+					padding: 8px 12px 6px;
 					margin: 5px 0;
 					text-transform: uppercase;
 					color: $white;
@@ -138,7 +187,6 @@ svg {
 					border-top: 3px solid $treepoppy;
 					border-bottom: 3px solid $treepoppy;
 					background-color: $concrete;
-					z-index: 1;
 					-webkit-box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.75);
 					-moz-box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.75);
 					box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.75);
@@ -182,54 +230,17 @@ svg {
 		}
 	}
 
-	.social {
-		ul {
-			margin: 0;
-			padding: 0;
-			font-size: 0;
-			text-align: right;
-
-			li {
-				list-style: none;
-				display: inline-block;
-				margin: 5px;
-
-				&:last-child {
-					margin-right: 0;
-				}
-
-				a {
-					display: block;
-					padding: 8px;
-					color: $white;
-					transition: $transition;
-					border-radius: 50%;
-					background-color: $swamp;
-
-					&:hover {
-						color: $treepoppy;
-					}
-
-					svg {
-						width: 20px;
-						height: 20px;
-					}
-				}
-			}
-		}
-	}
-
 	#logo-slider {
 		border-top: 3px solid $treepoppy;
 		padding: 10px 0;
 
 		.owl-item {
 			height: 25vh;
-			min-height: 200px;
+			min-height: 300px;
 
 			div {
 				height: 100%;
-				
+
 				img {
 					height: 100%;
 				}
@@ -300,6 +311,7 @@ svg {
 					top: 100%;
 					left: 0;
 					width: 200px;
+					z-index: 1;
 					transition: all .5s ease;
 					opacity: 0;
 					visibility: hidden;
@@ -354,179 +366,198 @@ svg {
 			}
 		}
 	}
+}
 
-	#discover {
-		margin: 30px 0;
+/* Discover */
 
-		.discover {
-			background-color: $swamp;
+#discover {
+	margin: 30px 0;
 
-			.item {
-				text-align: center;
-				padding: 20px 15px;
-				cursor: pointer;
+	.discover {
+		background-color: $swamp;
 
-				&:hover {
-					background-color: $bigstone;
+		.item {
+			text-align: center;
+			padding: 20px 15px;
+			cursor: pointer;
 
-					ion-icon,
-					svg {
-						transform: scale(1.2, 1.2);
-						-ms-transform: scale(1.2, 1.2);
-						-webkit-transform: scale(1.2, 1.2);
-					}
-				}
+			&:hover {
+				background-color: $bigstone;
 
 				ion-icon,
 				svg {
-					color: $white;
-					font-size: 50px;
-					transition: $transition;
-					margin-bottom: 15px;
+					transform: scale(1.2, 1.2);
+					-ms-transform: scale(1.2, 1.2);
+					-webkit-transform: scale(1.2, 1.2);
 				}
+			}
 
-				p {
-					color: $white;
-					margin-bottom: 0;
-				}
+			ion-icon,
+			svg {
+				color: $white;
+				font-size: 50px;
+				transition: $transition;
+				margin-bottom: 15px;
+			}
+
+			p {
+				color: $white;
+				margin-bottom: 0;
 			}
 		}
 	}
+}
 
-	#accademy {
-		margin-bottom: 30px;
+/* About */
 
-		.training {
-			box-shadow: 3px 3px 2px #ddd;
-			height: 180px;
+#about {
+	.student-image {
+		position: relative;
+
+		&::before {
+			content: " ";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			;
+			border-width: 0 0 150px 150px;
+			border-style: solid;
+			border-color: transparent transparent $treepoppy transparent;
+		}
+
+		img {
+			height: 400px;
+		}
+	}
+
+	#counter {
+		text-align: center;
+
+		.item {
+			font-size: 50px;
+			color: $bluedianne;
+			font-weight: bold;
+			letter-spacing: 1px;
+
+			.value {
+				margin-left: -10px;
+			}
+		}
+
+		h6 {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+	}
+
+	.btn-learn {
+		background-color: transparent;
+		border: 1px solid $bluedianne;
+		color: $bluedianne;
+		border-radius: 30px;
+		padding: 12px 12px 10px;
+		position: relative;
+		min-width: 180px;
+		transition: $transition;
+		text-transform: uppercase;
+		font-size: 14px;
+		
+		&:hover {
+			background-color: $bluedianne;
+			color: $white;
+		}
+		
+		svg {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translate(0, -50%);
+			font-size: 18px;
+		}
+	}
+	
+	h2 {
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+
+	.student-image-second {
+		img {
 			position: relative;
-			background-color: $concrete;
-			overflow: hidden;
-			text-align: center;
+			top: -20px;
+		}
+	}
+}
 
-			&:hover {
-				.overlay {
-					top: 0;
-				}
-			}
+/* Accademy */
 
-			.image {
-				position: absolute;
-				top: 0;
-				right: 0;
-				left: 0;
-				height: 74%;
+#accademy {
+	margin-bottom: 30px;
 
-				img {
-					height: 100%;
-				}
-			}
+	.training {
+		box-shadow: 3px 3px 2px #ddd;
+		height: 180px;
+		position: relative;
+		background-color: $concrete;
+		overflow: hidden;
+		text-align: center;
 
+		&:hover {
 			.overlay {
-				position: absolute;
-				top: 74%;
-				right: 0;
-				left: 0;
+				top: 0;
+			}
+		}
+
+		.image {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 74%;
+
+			img {
 				height: 100%;
+			}
+		}
+
+		.overlay {
+			position: absolute;
+			top: 74%;
+			right: 0;
+			left: 0;
+			height: 100%;
+			transition: $transition;
+			padding: 15px;
+
+			h6 {
+				margin-bottom: 25px;
+				color: $white;
+			}
+
+			p {
+				font-size: 14px;
+				color: $white;
+				margin-bottom: 15px;
+			}
+
+			.btn-training {
+				background-color: $bigstone;
 				transition: $transition;
-				padding: 15px;
+				border: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 13px;
+				letter-spacing: 1px;
 
-				h6 {
-					margin-bottom: 25px;
-					color: $white;
-				}
-
-				p {
-					font-size: 14px;
-					color: $white;
-					margin-bottom: 15px;
-				}
-
-				.btn-training {
-					background-color: $bigstone;
-					transition: $transition;
-					border: none;
-					color: $white;
-					text-transform: uppercase;
-					font-size: 13px;
-					letter-spacing: 1px;
-
-					&:hover {
-						background-color: $swamp;
-					}
+				&:hover {
+					background-color: $swamp;
 				}
 			}
 		}
 	}
 }
 
-/*----------------------------
-    Header end
-----------------------------*/
-
-/*----------------------------
-    Home start
-----------------------------*/
-
-#home {}
-
-/*----------------------------
-    Home end
-----------------------------*/
-
-/*----------------------------
-    Content start
-----------------------------*/
-
-#content {}
-
-/*----------------------------
-	Content end
-----------------------------*/
-
-/*----------------------------
-    About Us start
-----------------------------*/
-
-#about-us {}
-
-/*----------------------------
-    About Us end
-----------------------------*/
-
-/*----------------------------
-    Services start
-----------------------------*/
-
-#services {}
-
-/*----------------------------
-    Services end
-----------------------------*/
-
-/*----------------------------
-    Partners start
-----------------------------*/
-
-#partners {}
-
-/*----------------------------
-    Partners end
-----------------------------*/
-
-/*----------------------------
-    Contact start
-----------------------------*/
-
-#contact {}
-
-/*----------------------------
-    Contact end
-----------------------------*/
-
-/*----------------------------
-    Footer start
-----------------------------*/
+/* Footer */
 
 footer {
 	background-color: $bigstone;
@@ -551,6 +582,10 @@ footer {
 
 					&:hover {
 						color: $treepoppy;
+
+						&::before {
+							width: 100%;
+						}
 					}
 
 					&::before {
@@ -561,6 +596,7 @@ footer {
 						width: 40px;
 						height: 2px;
 						background-color: $treepoppy;
+						transition: $transition;
 					}
 				}
 
@@ -602,13 +638,7 @@ footer {
 	}
 }
 
-/*----------------------------
-    Footer end
-----------------------------*/
-
-/*----------------------------
-    Back-to-top start
-----------------------------*/
+/* Back-to-top */
 
 #back-to-top {
 	position: fixed;
@@ -651,88 +681,36 @@ footer {
 	}
 }
 
-/*----------------------------
-    Back-to-top end
-----------------------------*/
-
 /* Media queries */
 
-/*----------------------------
-	@media only screen and (max-width: 319px) start
-----------------------------*/
+/* @media only screen and (max-width: 319px) */
 
 @media only screen and (max-width: 319px) {}
 
-/*----------------------------
-	@media only screen and (max-width: 319px) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 320px) and (max-width: 767px) start
-----------------------------*/
+/* @media only screen and (min-width: 320px) and (max-width: 767px) */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {}
 
-/*----------------------------
-	@media only screen and (min-width: 320px) and (max-width: 767px) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
-----------------------------*/
+/* @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {}
 
-/*----------------------------
-	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 768px) and (max-width: 1023px) start
-----------------------------*/
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
-/*----------------------------
-	@media only screen and (min-width: 768px) and (max-width: 1023px) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) start
-----------------------------*/
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {}
 
-/*----------------------------
-	@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1365px) start
-----------------------------*/
+/* @media only screen and (min-width: 1024px) and (max-width: 1365px) */
 
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {}
 
-/*----------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1365px) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) start
-----------------------------*/
+/* @media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) */
 
 @media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {}
 
-/*----------------------------
-	@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) end
-----------------------------*/
-
-/*----------------------------
-	@media only screen and (min-width: 1366px) start
-----------------------------*/
+/* @media only screen and (min-width: 1366px) */
 
 @media only screen and (min-width: 1366px) {}
-
-/*----------------------------
-	@media only screen and (min-width: 1366px) end
-----------------------------*/
