@@ -87,7 +87,7 @@
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Accademy
+                    Academy
                 </a>
                 <ul class="dropdown">
                     <li>
