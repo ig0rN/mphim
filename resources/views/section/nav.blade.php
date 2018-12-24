@@ -120,40 +120,40 @@
         <div class="nav">
             <ul>
                 <li>
-					<a href="{{ route('home') }}" class="active">
+					<a href="{{ route('home') }}" class="{{ activeClassBasedOnRoute('home') }}">
 						{{ __('translate.home') }}
 					</a>
                 </li>
                 <li>
-                    <a class="mphim">
+                    <a class="mphim {{ activeClassBasedOnRouteSegment('mphim') }}">
 						Mphim+
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
                         <li>
-                            <a href="{{ route('mphim.whatIs') }}">
+                            <a href="{{ route('mphim.whatIs') }}" class="{{ activeClassBasedOnRoute('mphim.whatIs') }}">
 								What is
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('mphim.whatDoes') }}">
+                            <a href="{{ route('mphim.whatDoes') }}" class="{{ activeClassBasedOnRoute('mphim.whatDoes') }}">
 								What does it do
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('mphim.whyTo') }}">
+                            <a href="{{ route('mphim.whyTo') }}" class="{{ activeClassBasedOnRoute('mphim.whyTo') }}">
 								Why to have it
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('mphim.roadmap') }}">
+                            <a href="{{ route('mphim.roadmap') }}" class="{{ activeClassBasedOnRoute('mphim.roadmap') }}">
 								Roadmap
 							</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a>
+                    <a class="{{ activeClassBasedOnRouteSegment('customers') }}">
 						Customers
 						<i class="fas fa-angle-down"></i>
 					</a>
@@ -162,82 +162,82 @@
 							Who can use it
 						</h5>
                         <li>
-                            <a href="{{ route('customers.companies') }}">
+                            <a href="{{ route('customers.companies') }}" class="{{ activeClassBasedOnRoute('customers.companies') }}">
 								Companies
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('customers.pro') }}">
+                            <a href="{{ route('customers.pro') }}" class="{{ activeClassBasedOnRoute('customers.pro') }}">
 								Professionals
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('customers.tradeAssoc') }}">
+                            <a href="{{ route('customers.tradeAssoc') }}" class="{{ activeClassBasedOnRoute('customers.tradeAssoc') }}">
 								Trade associations
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('customers.publicInsti') }}">
+                            <a href="{{ route('customers.publicInsti') }}" class="{{ activeClassBasedOnRoute('customers.publicInsti') }}">
 								Public institutions
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('customers.schools') }}">
+                            <a href="{{ route('customers.schools') }}" class="{{ activeClassBasedOnRoute('customers.schools') }}">
 								Schools
 							</a>
 						</li>
 						<li>
-                            <a href="{{ route('customers.university') }}">
+                            <a href="{{ route('customers.university') }}" class="{{ activeClassBasedOnRoute('customers.university') }}">
 								University
 							</a>
 						</li>
                     </ul>
                 </li>
                 <li>
-					<a href="{{ route('versions') }}">
+					<a href="{{ route('versions') }}" class="{{ activeClassBasedOnRoute('versions') }}">
 						Versions
 					</a>
                 </li>
 				<li>
-					<a href="{{ route('commercial') }}">
+					<a href="{{ route('commercial') }}" class="{{ activeClassBasedOnRoute('commercial') }}">
 						Commercial
 					</a>
                 </li>
                 <li>
-					<a href="{{ route('reference') }}">
+					<a href="{{ route('reference') }}" class="{{ activeClassBasedOnRoute('reference') }}">
 						Reference
 					</a>
                 </li>
 				<li>
-                    <a>
+                    <a class="{{ activeClassBasedOnRouteSegment('academy') }}">
 						Academy
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
                         <li>
-							<a href="{{ route('academy.company') }}">
+							<a href="{{ route('academy.company') }}" class="{{ activeClassBasedOnRoute('academy.company') }}">
 								Training4Company
 							</a>
 						</li>
 						<li>
-							<a href="{{ route('academy.agent') }}">
+							<a href="{{ route('academy.agent') }}" class="{{ activeClassBasedOnRoute('academy.agent') }}">
 								Training4Agent
 							</a>
 						</li>
 						<li>
-							<a href="{{ route('academy.advisior') }}">
+							<a href="{{ route('academy.advisior') }}" class="{{ activeClassBasedOnRoute('academy.advisior') }}">
 								Training4Advisor
 							</a>
 						</li>
 						<li>
-							<a href="{{ route('academy.manager') }}">
+							<a href="{{ route('academy.manager') }}" class="{{ activeClassBasedOnRoute('academy.manager') }}">
 								Training4Manager
 							</a>
 						</li>
                     </ul>
                 </li>
 				<li>
-					<a href="{{ route('contact') }}">
+					<a href="{{ route('contact') }}" class="{{ activeClassBasedOnRoute('contact') }}">
 						{{ __('translate.contact') }}
 					</a>
                 </li>

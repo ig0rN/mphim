@@ -1,20 +1,22 @@
 @extends('master')
 
+@section('title', 'What is')
+
 @section('content')
 <nav id="breadcrumb" aria-label="breadcrumb">
-  <ol class="breadcrumb my-4">
-	  <li class="breadcrumb-item">
-		  <a href="{{ route('home') }}">
-			  Home
-		  </a>
-	  </li>
-	  <li class="breadcrumb-item active text-uppercase" aria-current="page">
-		  Mphim+
-	  </li>
-	  <li class="breadcrumb-item active" aria-current="page">
-		  What is
-	  </li>
-  </ol>
+	<ol class="breadcrumb my-4">
+		<li class="breadcrumb-item">
+			<a href="{{ route('home') }}">
+				Home
+			</a>
+		</li>
+		<li class="breadcrumb-item active text-uppercase" aria-current="page">
+			Mphim+
+		</li>
+		<li class="breadcrumb-item active" aria-current="page">
+			What is
+		</li>
+	</ol>
 </nav>
 <div class="row">
 	<div class="col-md-8">

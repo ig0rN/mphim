@@ -1,5 +1,7 @@
 @extends('master')
 
+@section('title', 'Home')
+
 @section('content')
 <div id="discover">
     <div class="container">
@@ -137,9 +139,9 @@
                         <p>
                             Do you want to find out more about "Training4Company"?
                         </p>
-                        <button class="btn btn-training">
+                        <a href="{{ route('academy.company') }}" class="btn btn-training">
                             Access the training
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -155,9 +157,9 @@
                         <p>
                             Do you want to find out more about "Training4Agent"?
                         </p>
-                        <button class="btn btn-training">
+                        <a href="{{ route('academy.agent') }}" class="btn btn-training">
                             Access the training
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -173,9 +175,9 @@
                         <p>
                             Do you want to find out more about "Training4Advisor"?
                         </p>
-                        <button class="btn btn-training">
+                        <a href="{{ route('academy.advisior') }}" class="btn btn-training">
                             Access the training
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -191,9 +193,9 @@
                         <p>
                             Do you want to find out more about "Training4Manager"?
                         </p>
-                        <button class="btn btn-training">
+                        <a href="{{ route('academy.manager') }}" class="btn btn-training">
                             Access the training
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
