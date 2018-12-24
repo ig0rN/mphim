@@ -209,15 +209,15 @@ svg {
 							border-bottom: 1px solid $swamp;
 							background-color: transparent;
 
+							&:hover {
+								background-color: $swamp;
+								color: $white;
+							}
+
 							&.active {
 								background-color: $treepoppy;
 								color: $white;
 								border-bottom: 1px solid $treepoppy;
-							}
-
-							&:hover:not(.active) {
-								background-color: $swamp;
-								color: $white;
 							}
 						}
 					}
@@ -330,24 +330,26 @@ svg {
 
 					li {
 						display: block;
-						border-bottom: 1px solid $swamp;
 						padding: 0;
 						background-color: transparent;
 
 						&:hover {
-
 							a {
 								color: $white;
 								background-color: $swamp;
 							}
 
 							&:last-child {
-								border-bottom: 1px solid $swamp;
+								a {
+									border-bottom: 1px solid $swamp;
+								}
 							}
 						}
 
 						&:last-child {
-							border-bottom: 1px solid transparent;
+							a {
+								border-bottom: 1px solid transparent;
+							}
 						}
 
 						a {
@@ -356,6 +358,13 @@ svg {
 							color: $swamp;
 							border-radius: 0;
 							background-color: transparent;
+							border-bottom: 1px solid $swamp;
+
+							&.active {
+								background-color: $treepoppy;
+								border-bottom: 1px solid $treepoppy;
+								color: $white;
+							}
 						}
 					}
 				}
@@ -445,7 +454,7 @@ svg {
 		}
 
 		img {
-			height: 400px;
+			height: 500px;
 		}
 	}
 
@@ -655,7 +664,7 @@ footer {
 		a {
 			color: $white;
 			transition: $transition;
-			
+
 			&:hover {
 				color: #e6e6e6;
 				text-decoration: underline !important;
