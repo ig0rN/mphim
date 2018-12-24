@@ -6,7 +6,7 @@
 <div id="discover">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 offset-md-10 p-0">
+            <div class="col-md-2 offset-md-10">
                 <div class="discover">
                     <div class="item">
                         <ion-icon name="barcode"></ion-icon>
