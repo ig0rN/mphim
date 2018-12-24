@@ -210,7 +210,7 @@
                 </li>
 				<li>
                     <a>
-						Accademy
+						Academy
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
