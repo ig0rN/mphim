@@ -16,13 +16,11 @@
             @include('section.nav')
 		<!-- Header end -->
 
-		<!-- Home start -->
-		<div id="home">
-		</div>
-		<!-- Home end -->
-
 		<!-- Content start -->
 		<div id="content">
+			<div class="container">
+				@yield('content')
+			</div>
 		</div>
 		<!-- Content end -->
 
