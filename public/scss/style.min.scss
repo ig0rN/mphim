@@ -209,15 +209,15 @@ svg {
 							border-bottom: 1px solid $swamp;
 							background-color: transparent;
 
+							&:hover {
+								background-color: $swamp;
+								color: $white;
+							}
+
 							&.active {
 								background-color: $treepoppy;
 								color: $white;
 								border-bottom: 1px solid $treepoppy;
-							}
-
-							&:hover:not(.active) {
-								background-color: $swamp;
-								color: $white;
 							}
 						}
 					}
@@ -334,7 +334,6 @@ svg {
 						background-color: transparent;
 
 						&:hover {
-
 							a {
 								color: $white;
 								background-color: $swamp;
