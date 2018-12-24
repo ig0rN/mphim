@@ -43,7 +43,8 @@
 	</footer>
 	<!-- Footer end -->
 	<!-- JavaScript links start -->
-        @include('section.scripts')
+		@include('section.scripts')
+		@yield('scripts')
 	<!-- JavaScript links end -->
 </body>
 
