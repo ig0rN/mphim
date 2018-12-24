@@ -607,6 +607,7 @@ footer {
 					letter-spacing: 1px;
 					position: relative;
 					transition: $transition;
+					text-shadow: 2px 2px $swamp;
 
 					&:hover {
 						color: $treepoppy;

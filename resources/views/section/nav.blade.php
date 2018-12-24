@@ -1,7 +1,7 @@
 <div class="container">
     <header id="header">
 		<div class="row no-gutters align-items-center">
-			<div class="col-md-6">
+			<div class="col-md-2">
 				<div class="social">
 					<ul>
 						<li>
@@ -27,10 +27,10 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-6 text-right">
+			<div class="col-md-10 text-right">
 				<div class="username-password">
 					<div class="row align-items-center">
-						<div class="col-md-5 pr-0">
+						<div class="col-md-3 pr-0 offset-5">
 							<div class="input-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text">
@@ -40,7 +40,7 @@
 								<input type="email" class="form-control" placeholder="Username" aria-label="Username">
 							</div>
 						</div>
-						<div class="col-md-5 pr-0">
+						<div class="col-md-3 pr-0">
 							<div class="input-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text">
@@ -50,7 +50,7 @@
 								<input type="text" class="form-control" placeholder="Password" aria-label="Password">
 							</div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-1">
 							<div class="language">
 								<ul>
 									<li>
