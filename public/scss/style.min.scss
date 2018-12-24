@@ -36,10 +36,6 @@ body {
 
 a {
 	text-decoration: none !important;
-
-	&:hover {
-		color: white;
-	}
 }
 
 :focus {
@@ -583,7 +579,7 @@ svg {
 /* Footer */
 
 footer {
-	background-color: $bigstone;
+	background-color: $bluedianne;
 	border-top: 3px solid $treepoppy;
 
 	#footer-nav {
@@ -649,6 +645,7 @@ footer {
 
 	.copyright {
 		border-top: 1px solid $swamp;
+		background-color: $bigstone;
 		padding: 15px 0;
 		color: $white;
 		text-transform: uppercase;
@@ -657,6 +654,12 @@ footer {
 
 		a {
 			color: $white;
+			transition: $transition;
+			
+			&:hover {
+				color: #e6e6e6;
+				text-decoration: underline !important;
+			}
 		}
 	}
 }
