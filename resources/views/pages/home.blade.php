@@ -3,43 +3,61 @@
 @section('title', 'Home')
 
 @section('content')
-<div id="discover">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 offset-md-10">
-                <div class="discover">
-                    <div class="item">
-                        <ion-icon name="barcode"></ion-icon>
-                        <p>
-                            Learn From The<br />
-                            Experts
-                        </p>
-                    </div>
-                    <div class="item">
-                        <ion-icon name="bookmarks"></ion-icon>
-                        <p>
-                            Book Library &amp;<br />
-                            Store
-                        </p>
-                    </div>
-                    <div class="item">
-                        <ion-icon name="logo-buffer"></ion-icon>
-                        <p>
-                            Learn Anything<br />
-                            Online
-                        </p>
-                    </div>
-                    <div class="item">
-                        <i class="far fa-lightbulb"></i>
-                        <p>
-                            Best Industry<br />
-                            Leaders
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+	<div class="row py-5">
+		<div class="col-md-10">
+			<div id="mphim">
+				<h2 class="mb-4">
+					Mphim+: A method in a software
+				</h2>
+				<div class="item py-2">
+					<p>
+						<strong>mphim+</strong> is a software that allows a company to record and implement its sales policies, favoring the market positioning of its products and services through the optimization the marketing mix elements (product, price, distribution and promotion).
+					</p>
+				</div>
+				<div class="item py-2">
+					<p>
+						<strong>mphim+</strong> is preparatory to different promotion tools, like trade shows, salesmen and e-commerce sites and assures their co-existence, maximizing results in terms of sales. 
+					</p>
+				</div>
+				<div class="item py-2">
+					<p>
+						<strong>mphim+</strong> is based on the 3ds+ marketing and export-marketing management, and is studied in high schools and universities. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div id="discover">
+				<div class="discover">
+					<div class="item">
+						<ion-icon name="barcode"></ion-icon>
+						<p>
+							What is
+						</p>
+					</div>
+					<div class="item">
+						<ion-icon name="bookmarks"></ion-icon>
+						<p>
+							What does it do
+						</p>
+					</div>
+					<div class="item">
+						<ion-icon name="logo-buffer"></ion-icon>
+						<p>
+							Why to have it
+						</p>
+					</div>
+					<div class="item">
+						<i class="far fa-lightbulb"></i>
+						<p>
+							Roadmap
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <div id="about" class="pb-4">
     <div class="container-fluid">

@@ -26,11 +26,9 @@
 		<div class="push-footer"></div>
 		<!-- Push-footer end -->
 		<!-- back-to-top start -->
-<!--
 		<a href="javascript:void(0)" id="back-to-top" title="Back to top">
-			<img src="{{ asset('img/top.png') }}" alt="img/top.png" />
+			<ion-icon name="arrow-up" size="large"></ion-icon>
 		</a>
--->
 		<!-- back-to-top end -->
 	</div>
 	<!-- App end -->

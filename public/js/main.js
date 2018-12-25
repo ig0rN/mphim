@@ -83,3 +83,9 @@ $(document).ready(function () {
 		}
 	});
 });
+
+$(document).ready(function(){
+	var logo = $(".logo-header img").height();
+	console.log(logo);
+	$(".owl-item").css("height", logo);
+});

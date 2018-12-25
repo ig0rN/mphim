@@ -1,7 +1,7 @@
 <div class="container">
     <header id="header">
 		<div class="row no-gutters align-items-center">
-			<div class="col-md-2">
+			<div class="col-md-4">
 				<div class="social">
 					<ul>
 						<li>
@@ -27,66 +27,52 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-10 text-right">
-				<div class="username-password">
-					<div class="row align-items-center">
-						<div class="col-md-3 pr-0 offset-5">
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<ion-icon name="person"></ion-icon>
-									</span>
-								</div>
-								<input type="email" class="form-control" placeholder="Username" aria-label="Username">
-							</div>
+			<div class="col-md-4 offset-4 text-right">
+				<div class="row no-gutters align-items-center">
+					<div class="col-md-10">
+						<div class="login">
+							<img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
+							<a href="javascript:void(0)" class="btn btn-login" target="_blank">
+								Login
+							</a>
 						</div>
-						<div class="col-md-3 pr-0">
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text">
-										<ion-icon name="lock"></ion-icon>
-									</span>
-								</div>
-								<input type="text" class="form-control" placeholder="Password" aria-label="Password">
-							</div>
-						</div>
-						<div class="col-md-1">
-							<div class="language">
-								<ul>
-									<li>
-										<a href="javascript:void(0)">
-											{{ config()->get('app.locale') }}
-										</a>
-										<ul class="dropdown">
-											<li>
-												<a href="{{ disableHrefIfActive('it') }}" class="{{ giveActiveClass('it') }}">
-													It
-												</a>
-											</li>
-											<li>
-												<a href="{{ disableHrefIfActive('en') }}" class="{{ giveActiveClass('en') }}">
-													En
-												</a>
-											</li>
-											<li>
-												<a href="{{ disableHrefIfActive('de') }}" class="{{ giveActiveClass('de') }}">
-													De
-												</a>
-											</li>
-											<li>
-												<a href="{{ disableHrefIfActive('fr') }}" class="{{ giveActiveClass('fr') }}">
-													Fr
-												</a>
-											</li>
-											<li>
-												<a href="{{ disableHrefIfActive('rs') }}" class="{{ giveActiveClass('rs') }}">
-													Rs
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
+					</div>
+					<div class="col-md-2">
+						<div class="language">
+							<ul>
+								<li>
+									<a href="javascript:void(0)">
+										{{ config()->get('app.locale') }}
+									</a>
+									<ul class="dropdown">
+										<li>
+											<a href="{{ disableHrefIfActive('it') }}" class="{{ giveActiveClass('it') }}">
+												It
+											</a>
+										</li>
+										<li>
+											<a href="{{ disableHrefIfActive('en') }}" class="{{ giveActiveClass('en') }}">
+												En
+											</a>
+										</li>
+										<li>
+											<a href="{{ disableHrefIfActive('de') }}" class="{{ giveActiveClass('de') }}">
+												De
+											</a>
+										</li>
+										<li>
+											<a href="{{ disableHrefIfActive('fr') }}" class="{{ giveActiveClass('fr') }}">
+												Fr
+											</a>
+										</li>
+										<li>
+											<a href="{{ disableHrefIfActive('rs') }}" class="{{ giveActiveClass('rs') }}">
+												Rs
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -95,7 +81,7 @@
 		<div id="logo-slider">
 			<div class="row no-gutters align-items-center">
 				<div class="col-md-2">
-					<div class="logo">
+					<div class="logo-header">
 						<img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
 					</div>
 				</div>
