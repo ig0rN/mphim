@@ -222,34 +222,74 @@
         </div>
     </div>
 </div>
-<div id="customers" class="pt-5">
+<div id="customers" class="py-5">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
-				<h6>
+			<div class="col-md-4 text-center pb-4">
+				<h6 class="text-uppercase mb-3">
 					Companies
 				</h6>
-				<div class="item">
+				<div class="item text-center mb-3">
 					<img src="{{ asset('img/home/customers/companies.png')}}" alt="img/home/customers/companies.png" />
 				</div>
 				<p>
-				
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 				</p>
 			</div>
-			<div class="col-md-3">
-			
+			<div class="col-md-4 text-center pb-4">
+				<h6 class="text-uppercase mb-3">
+					Professionals
+				</h6>
+				<div class="item text-center mb-3">
+					<img src="{{ asset('img/home/customers/professionals.png')}}" alt="img/home/customers/professionals.png" />
+				</div>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
 			</div>
-			<div class="col-md-3">
-			
+			<div class="col-md-4 text-center pb-4">
+				<h6 class="text-uppercase mb-3">
+					Trade associations
+				</h6>
+				<div class="item text-center mb-3">
+					<img src="{{ asset('img/home/customers/trade.png')}}" alt="img/home/customers/trade.png" />
+				</div>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
 			</div>
-			<div class="col-md-3">
-			
+			<div class="col-md-4 text-center pb-4">
+				<h6 class="text-uppercase mb-3">
+					Public institutions
+				</h6>
+				<div class="item text-center mb-3">
+					<img src="{{ asset('img/home/customers/public.png')}}" alt="img/home/customers/public.png" />
+				</div>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
 			</div>
-			<div class="col-md-3">
-			
+			<div class="col-md-4 text-center pb-4">
+				<h6 class="text-uppercase mb-3">
+					School
+				</h6>
+				<div class="item text-center mb-3">
+					<img src="{{ asset('img/home/customers/school.png')}}" alt="img/home/customers/school.png" />
+				</div>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
 			</div>
-			<div class="col-md-3">
-			
+			<div class="col-md-4 text-center pb-4">
+				<h6 class="text-uppercase mb-3">
+					University
+				</h6>
+				<div class="item text-center mb-3">
+					<img src="{{ asset('img/home/customers/university.png')}}" alt="img/home/customers/university.png" />
+				</div>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
 			</div>
 		</div>
 	</div>

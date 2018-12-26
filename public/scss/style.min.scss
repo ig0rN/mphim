@@ -398,7 +398,7 @@ svg {
 		background-color: rgba(0, 0, 0, .5);
 		z-index: -1;
 	}
-	
+
 	h2 {
 		color: $white;
 	}
@@ -445,49 +445,68 @@ svg {
 	}
 }
 
-/* Content */
+/* Academy */
 
-#content {
-	#breadcrumb {
-		display: inline-block;
+#academy {
+	.training {
+		box-shadow: 3px 3px 2px #ddd;
+		height: 180px;
+		position: relative;
+		background-color: $concrete;
+		overflow: hidden;
+		text-align: center;
 
-		ol {
-			padding: 12px 16px 10px;
-
-			li {
-				a {
-					color: $bluedianne;
-					transition: $transition;
-
-					&:hover {
-						color: $swamp;
-					}
-				}
+		&:hover {
+			.overlay {
+				top: 0;
 			}
 		}
-	}
 
-	.heading {
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		position: relative;
-		transition: $transition;
-
-		&::before {
-			content: ' ';
+		.image {
 			position: absolute;
-			bottom: -5px;
+			top: 0;
+			right: 0;
 			left: 0;
-			width: 50px;
-			height: 2px;
-			background-color: $treepoppy;
-			transition: $transition;
-		}
-	}
+			height: 74%;
 
-	.image {
-		img {
-			height: 200px;
+			img {
+				height: 100%;
+			}
+		}
+
+		.overlay {
+			position: absolute;
+			top: 74%;
+			right: 0;
+			left: 0;
+			height: 100%;
+			transition: $transition;
+			padding: 15px;
+
+			h6 {
+				margin-bottom: 25px;
+				color: $white;
+			}
+
+			p {
+				font-size: 14px;
+				color: $white;
+				margin-bottom: 15px;
+			}
+
+			.btn-training {
+				background-color: $bigstone;
+				transition: $transition;
+				border: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 13px;
+				letter-spacing: 1px;
+
+				&:hover {
+					background-color: $swamp;
+				}
+			}
 		}
 	}
 }
@@ -573,68 +592,64 @@ svg {
 	}
 }
 
-/* Academy */
+/* Customers */
 
-#academy {
-	.training {
-		box-shadow: 3px 3px 2px #ddd;
-		height: 180px;
-		position: relative;
-		background-color: $concrete;
-		overflow: hidden;
-		text-align: center;
-
-		&:hover {
-			.overlay {
-				top: 0;
-			}
+#customers {
+	.item {
+		img {
+			width: 30%;
+			margin: 0 auto;
 		}
+	}
 
-		.image {
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			height: 74%;
+	p {
+		font-size: 14px;
+	}
+}
 
-			img {
-				height: 100%;
-			}
-		}
+/* Content */
 
-		.overlay {
-			position: absolute;
-			top: 74%;
-			right: 0;
-			left: 0;
-			height: 100%;
-			transition: $transition;
-			padding: 15px;
+#content {
+	#breadcrumb {
+		display: inline-block;
 
-			h6 {
-				margin-bottom: 25px;
-				color: $white;
-			}
+		ol {
+			padding: 12px 16px 10px;
 
-			p {
-				font-size: 14px;
-				color: $white;
-				margin-bottom: 15px;
-			}
+			li {
+				a {
+					color: $bluedianne;
+					transition: $transition;
 
-			.btn-training {
-				background-color: $bigstone;
-				transition: $transition;
-				border: none;
-				color: $white;
-				text-transform: uppercase;
-				font-size: 13px;
-				letter-spacing: 1px;
-
-				&:hover {
-					background-color: $swamp;
+					&:hover {
+						color: $swamp;
+					}
 				}
 			}
+		}
+	}
+
+	.heading {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		position: relative;
+		transition: $transition;
+
+		&::before {
+			content: ' ';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 50px;
+			height: 2px;
+			background-color: $treepoppy;
+			transition: $transition;
+		}
+	}
+
+	.image {
+		img {
+			height: 200px;
 		}
 	}
 }
