@@ -1,26 +1,26 @@
-<div class="container">
-    <header id="header">
+<header id="header">
+	<div class="container">
 		<div class="row no-gutters align-items-center">
 			<div class="col-md-4">
 				<div class="social">
 					<ul>
 						<li>
-							<a href="javascript:void(0)" title="Facebook">
+							<a href="javascript:void(0)" title="Facebook" target="_blank">
 								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:void(0)" title="Instagram">
+							<a href="javascript:void(0)" title="Instagram" target="_blank">
 								<i class="fab fa-instagram"></i>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:void(0)" title="YouTube">
+							<a href="https://www.youtube.com/channel/UC-PQxG_nVx94k52tkVVz4yA" title="YouTube" target="_blank">
 								<i class="fab fa-youtube"></i>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:void(0)" title="Google+">
+							<a href="https://plus.google.com/u/0/102086562772088987394?hl=sr" title="Google+" target="_blank">
 								<i class="fab fa-google-plus-g"></i>
 							</a>
 						</li>
@@ -229,5 +229,5 @@
                 </li>
             </ul>
         </div>
-    </header>
-</div>
+	</div>
+</header>
