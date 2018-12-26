@@ -35,7 +35,7 @@
                             <a href="{{ route('mphim.whatIs')}}">
                                 <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
                                 <p>
-                                    What is
+                                    {{ __('translate.what-is') }}
                                 </p>
                             </a>
 						</div>
@@ -43,7 +43,7 @@
                             <a href="{{ route('mphim.whatDoes')}}">
                                 <img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png" />
                                 <p>
-                                    What does it do
+                                    {{ __('translate.what-does-it-do') }}
                                 </p>
                             </a>
 						</div>
@@ -51,7 +51,7 @@
                             <a href="{{ route('mphim.whyTo')}}">
                                 <img src="{{ asset('img/home/mphim/why-to.png') }}" alt="img/home/mphim/why-to.png" />
                                 <p>
-                                    Why to have it
+                                    {{ __('translate.why-to-have') }}
                                 </p>
                             </a>
 						</div>
@@ -59,7 +59,7 @@
                             <a href="{{ route('mphim.roadmap')}}">
                                 <img src="{{ asset('img/home/mphim/roadmap.png') }}" alt="img/home/mphim/roadmap.png" />
                                 <p>
-                                    Roadmap
+                                    {{ __('translate.roadmap') }}
                                 </p>
                             </a>
 						</div>
@@ -79,13 +79,13 @@
                     </div>
                     <div class="overlay bg-primary">
                         <h6>
-                            Training4Company
+                            {{ __('translate.training4company') }}
                         </h6>
                         <p>
-                            Do you want to find out more about "Training4Company"?
+                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{ __('translate.training4company') }}"?
                         </p>
                         <a href="{{ route('academy.company') }}" class="btn btn-training">
-                            Access the training
+                            {{ __('translate.access-the-training') }}
                         </a>
                     </div>
                 </div>
@@ -97,13 +97,13 @@
                     </div>
                     <div class="overlay bg-danger">
                         <h6>
-                            Training4Agent
+                            {{ __('translate.training4agent') }}
                         </h6>
                         <p>
-                            Do you want to find out more about "Training4Agent"?
+                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{ __('translate.training4agent') }}"?
                         </p>
                         <a href="{{ route('academy.agent') }}" class="btn btn-training">
-                            Access the training
+                            {{ __('translate.access-the-training') }}
                         </a>
                     </div>
                 </div>
@@ -115,13 +115,13 @@
                     </div>
                     <div class="overlay bg-warning">
                         <h6>
-                            Training4Advisor
+                            {{ __('translate.training4advisior') }}
                         </h6>
                         <p>
-                            Do you want to find out more about "Training4Advisor"?
+                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{ __('translate.training4advisior') }}"?
                         </p>
                         <a href="{{ route('academy.advisior') }}" class="btn btn-training">
-                            Access the training
+                            {{ __('translate.access-the-training') }}
                         </a>
                     </div>
                 </div>
@@ -133,13 +133,13 @@
                     </div>
                     <div class="overlay bg-info">
                         <h6>
-                            Training4Manager
+                            {{ __('translate.training4manager') }}
                         </h6>
                         <p>
-                            Do you want to find out more about "Training4Manager"?
+                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{ __('translate.training4manager') }}"?
                         </p>
                         <a href="{{ route('academy.manager') }}" class="btn btn-training">
-                            Access the training
+                            {{ __('translate.access-the-training') }}
                         </a>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
 		<div class="row">
 			<div class="col-md-4 text-center pb-4">
 				<h6 class="text-uppercase mb-3">
-					Companies
+                    {{ __('translate.companies') }}
 				</h6>
 				<div class="item text-center mb-3">
                     <a href="{{ route('customers.companies')}}">
@@ -248,7 +248,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<h6 class="text-uppercase mb-3">
-					Professionals
+                    {{ __('translate.professionals') }}
 				</h6>
 				<div class="item text-center mb-3">
                     <a href="{{ route('customers.pro')}}">
@@ -261,7 +261,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<h6 class="text-uppercase mb-3">
-					Trade associations
+                    {{ __('translate.trade-associations') }}
 				</h6>
 				<div class="item text-center mb-3">
                     <a href="{{ route('customers.tradeAssoc')}}">
@@ -274,7 +274,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<h6 class="text-uppercase mb-3">
-					Public institutions
+                    {{ __('translate.public-institutions') }}
 				</h6>
 				<div class="item text-center mb-3">
                     <a href="{{ route('customers.publicInsti')}}">
@@ -287,7 +287,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<h6 class="text-uppercase mb-3">
-					School
+                    {{ __('translate.schools') }}
 				</h6>
 				<div class="item text-center mb-3">
                     <a href="{{ route('customers.schools')}}">
@@ -300,7 +300,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<h6 class="text-uppercase mb-3">
-					University
+                    {{ __('translate.university') }}
 				</h6>
 				<div class="item text-center mb-3">
                     <a href="{{ route('customers.university')}}">

@@ -118,106 +118,106 @@
 					<ul class="dropdown">
                         <li>
                             <a href="{{ route('mphim.whatIs') }}" class="{{ activeClassBasedOnRoute('mphim.whatIs') }}">
-								What is
+								{{ __('translate.what-is') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('mphim.whatDoes') }}" class="{{ activeClassBasedOnRoute('mphim.whatDoes') }}">
-								What does it do
+								{{ __('translate.what-does-it-do') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('mphim.whyTo') }}" class="{{ activeClassBasedOnRoute('mphim.whyTo') }}">
-								Why to have it
+								{{ __('translate.why-to-have') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('mphim.roadmap') }}" class="{{ activeClassBasedOnRoute('mphim.roadmap') }}">
-								Roadmap
+								{{ __('translate.roadmap') }}
 							</a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <a class="{{ activeClassBasedOnRouteSegment('customers') }}">
-						Customers
+						{{ __('translate.customers') }}
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
 						<h5 class="text-center">
-							Who can use it
+							{{ __('translate.who-can-use-it') }}
 						</h5>
                         <li>
                             <a href="{{ route('customers.companies') }}" class="{{ activeClassBasedOnRoute('customers.companies') }}">
-								Companies
+								{{ __('translate.companies') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('customers.pro') }}" class="{{ activeClassBasedOnRoute('customers.pro') }}">
-								Professionals
+								{{ __('translate.professionals') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('customers.tradeAssoc') }}" class="{{ activeClassBasedOnRoute('customers.tradeAssoc') }}">
-								Trade associations
+								{{ __('translate.trade-associations') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('customers.publicInsti') }}" class="{{ activeClassBasedOnRoute('customers.publicInsti') }}">
-								Public institutions
+								{{ __('translate.public-institutions') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('customers.schools') }}" class="{{ activeClassBasedOnRoute('customers.schools') }}">
-								Schools
+								{{ __('translate.schools') }}
 							</a>
 						</li>
 						<li>
                             <a href="{{ route('customers.university') }}" class="{{ activeClassBasedOnRoute('customers.university') }}">
-								University
+								{{ __('translate.university') }}
 							</a>
 						</li>
                     </ul>
                 </li>
                 <li>
 					<a href="{{ route('versions') }}" class="{{ activeClassBasedOnRoute('versions') }}">
-						Versions
+						{{ __('translate.versions') }}
 					</a>
                 </li>
 				<li>
 					<a href="{{ route('commercial') }}" class="{{ activeClassBasedOnRoute('commercial') }}">
-						Commercial
+						{{ __('translate.commercial') }}
 					</a>
                 </li>
                 <li>
 					<a href="{{ route('reference') }}" class="{{ activeClassBasedOnRoute('reference') }}">
-						Reference
+						{{ __('translate.reference') }}
 					</a>
                 </li>
 				<li>
                     <a class="{{ activeClassBasedOnRouteSegment('academy') }}">
-						Academy
+						{{ __('translate.academy') }}
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
                         <li>
 							<a href="{{ route('academy.company') }}" class="{{ activeClassBasedOnRoute('academy.company') }}">
-								Training4Company
+								{{ __('translate.training4company') }}
 							</a>
 						</li>
 						<li>
 							<a href="{{ route('academy.agent') }}" class="{{ activeClassBasedOnRoute('academy.agent') }}">
-								Training4Agent
+								{{ __('translate.training4agent') }}
 							</a>
 						</li>
 						<li>
 							<a href="{{ route('academy.advisior') }}" class="{{ activeClassBasedOnRoute('academy.advisior') }}">
-								Training4Advisor
+								{{ __('translate.training4advisior') }}
 							</a>
 						</li>
 						<li>
 							<a href="{{ route('academy.manager') }}" class="{{ activeClassBasedOnRoute('academy.manager') }}">
-								Training4Manager
+								{{ __('translate.training4manager') }}
 							</a>
 						</li>
                     </ul>

@@ -8,14 +8,14 @@
 		<ol class="breadcrumb my-4">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
-					Home
+					{{ __('translate.home') }}
 				</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">
-				Academy
+				{{ __('translate.academy') }}
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">
-				Training4Manager
+				{{ __('translate.training4manager') }}
 			</li>
 		</ol>
 	</nav>
