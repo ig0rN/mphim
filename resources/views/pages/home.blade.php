@@ -33,7 +33,7 @@
 					<div class="discover">
 						<div class="item">
                             <a href="{{ route('mphim.whatIs')}}">
-                                <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
+                                <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png "/>
                                 <p>
                                     {{ __('translate.what-is') }}
                                 </p>
@@ -41,7 +41,7 @@
 						</div>
 						<div class="item">
                             <a href="{{ route('mphim.whatDoes')}}">
-                                <img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png" />
+								<img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png "/>
                                 <p>
                                     {{ __('translate.what-does-it-do') }}
                                 </p>
@@ -71,6 +71,9 @@
 </div>
 <div id="academy" class="pt-5">
     <div class="container">
+		<h2 class="home-heading text-center mb-4">
+			Academy
+		</h2>
         <div class="row">
             <div class="col-md-3">
                 <div class="training">
@@ -149,6 +152,9 @@
 </div>
 <div id="about" class="pt-5">
     <div class="container-fluid">
+		<h1 class="home-heading text-center mb-4">
+			Info
+		</h1>
         <div class="row">
             <div class="col-md-6 pl-0">
                 <div class="student-image">
@@ -232,84 +238,87 @@
 </div>
 <div id="customers" class="py-5">
 	<div class="container">
+		<h1 class="home-heading text-center mb-4">
+			Customers
+		</h1>
 		<div class="row">
 			<div class="col-md-4 text-center pb-4">
-				<h6 class="text-uppercase mb-3">
-                    {{ __('translate.companies') }}
-				</h6>
-				<div class="item text-center mb-3">
+				<div class="item text-center">
                     <a href="{{ route('customers.companies')}}">
-                        <img src="{{ asset('img/home/customers/companies.png')}}" alt="img/home/customers/companies.png" />
+						<h6 class="text-uppercase mb-3">
+							{{ __('translate.companies') }}
+						</h6>
+                        <img src="{{ asset('img/home/customers/companies.png')}}" alt="img/home/customers/companies.png" class="mb-3" />
+						<p class="m-0">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
                     </a>
 				</div>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
 			</div>
 			<div class="col-md-4 text-center pb-4">
-				<h6 class="text-uppercase mb-3">
-                    {{ __('translate.professionals') }}
-				</h6>
-				<div class="item text-center mb-3">
+				<div class="item text-center">
                     <a href="{{ route('customers.pro')}}">
-                        <img src="{{ asset('img/home/customers/professionals.png')}}" alt="img/home/customers/professionals.png" />
+						<h6 class="text-uppercase mb-3">
+							{{ __('translate.professionals') }}
+						</h6>
+                        <img src="{{ asset('img/home/customers/professionals.png')}}" alt="img/home/customers/professionals.png" class="mb-3" />
+						<p class="m-0">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
                     </a>
 				</div>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
 			</div>
 			<div class="col-md-4 text-center pb-4">
-				<h6 class="text-uppercase mb-3">
-                    {{ __('translate.trade-associations') }}
-				</h6>
-				<div class="item text-center mb-3">
+				<div class="item text-center">
                     <a href="{{ route('customers.tradeAssoc')}}">
-                        <img src="{{ asset('img/home/customers/trade.png')}}" alt="img/home/customers/trade.png" />
+						<h6 class="text-uppercase mb-3">
+							{{ __('translate.trade-associations') }}
+						</h6>
+                        <img src="{{ asset('img/home/customers/trade.png')}}" alt="img/home/customers/trade.png" class="mb-3" />
+						<p class="m-0">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
                     </a>
 				</div>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
 			</div>
-			<div class="col-md-4 text-center pb-4">
-				<h6 class="text-uppercase mb-3">
-                    {{ __('translate.public-institutions') }}
-				</h6>
-				<div class="item text-center mb-3">
+			<div class="col-md-4 text-center">
+				<div class="item text-center">
                     <a href="{{ route('customers.publicInsti')}}">
-                        <img src="{{ asset('img/home/customers/public.png')}}" alt="img/home/customers/public.png" />
+						<h6 class="text-uppercase mb-3">
+							{{ __('translate.public-institutions') }}
+						</h6>
+                        <img src="{{ asset('img/home/customers/public.png')}}" alt="img/home/customers/public.png" class="mb-3" />
+						<p class="m-0">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
                     </a>
 				</div>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
 			</div>
-			<div class="col-md-4 text-center pb-4">
-				<h6 class="text-uppercase mb-3">
-                    {{ __('translate.schools') }}
-				</h6>
-				<div class="item text-center mb-3">
+			<div class="col-md-4 text-center">
+				<div class="item text-center">
                     <a href="{{ route('customers.schools')}}">
-                        <img src="{{ asset('img/home/customers/school.png')}}" alt="img/home/customers/school.png" />
+						<h6 class="text-uppercase mb-3">
+							{{ __('translate.schools') }}
+						</h6>
+                        <img src="{{ asset('img/home/customers/school.png')}}" alt="img/home/customers/school.png" class="mb-3" />
+						<p class="m-0">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
                     </a>
 				</div>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
 			</div>
-			<div class="col-md-4 text-center pb-4">
-				<h6 class="text-uppercase mb-3">
-                    {{ __('translate.university') }}
-				</h6>
-				<div class="item text-center mb-3">
+			<div class="col-md-4 text-center">
+				<div class="item text-center">
                     <a href="{{ route('customers.university')}}">
-                        <img src="{{ asset('img/home/customers/university.png')}}" alt="img/home/customers/university.png" />
+						<h6 class="text-uppercase mb-3">
+							{{ __('translate.university') }}
+						</h6>
+                        <img src="{{ asset('img/home/customers/university.png')}}" alt="img/home/customers/university.png" class="mb-3" />
+						<p class="m-0">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
                     </a>
 				</div>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
 			</div>
 		</div>
 	</div>

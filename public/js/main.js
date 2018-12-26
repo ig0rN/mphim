@@ -5,6 +5,12 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+	setTimeout(function () {
+		$("#loader").hide();
+	}, 2500);
+});
+
+$(document).ready(function () {
 	if ($("#back-to-top").length) {
 		var scrollTrigger = 500, // px
 			backToTop = function () {
@@ -84,7 +90,7 @@ $(document).ready(function () {
 	});
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
 	var logo = $(".logo-header img").height();
 	console.log(logo);
 	$(".owl-item").css("height", logo);

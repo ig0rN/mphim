@@ -13,6 +13,8 @@ $seabuckthorn: #F5A425;
 $treepoppy: #F8931F;
 $gamboge: #DB8B0A;
 $shalimar: #FAFFBD;
+$gradient: linear-gradient(to top right, $bluedianne 0%, $swamp 100%);
+$gradient-second: linear-gradient(to bottom right, $bluedianne 0%, $swamp 100%);
 
 $transition: all .3s ease;
 
@@ -417,29 +419,33 @@ svg {
 
 		.item {
 			text-align: center;
-			padding: 20px 15px;
 			cursor: pointer;
 
 			&:hover {
 				background-color: $bigstone;
 
 				img {
-					transform: scale(1.1, 1.1);
-					-ms-transform: scale(1.1, 1.1);
-					-webkit-transform: scale(1.1, 1.1);
+					transform: scale(1.3, 1.3);
+					-ms-transform: scale(1.3, 1.3);
+					-webkit-transform: scale(1.3, 1.3);
 				}
 			}
 
-			img {
-				color: $white;
-				width: 80px;
-				transition: $transition;
-				margin-bottom: 15px;
-			}
+			a {
+				display: block;
+				padding: 20px 15px 10px;
 
-			p {
-				color: $white;
-				margin-bottom: 0;
+				img {
+					color: $white;
+					width: 50%;
+					transition: $transition;
+					margin-bottom: 20px;
+				}
+
+				p {
+					color: $white;
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -554,41 +560,63 @@ svg {
 	}
 
 	.btn-learn {
-		background-color: transparent;
-		border: 1px solid $bluedianne;
-		color: $bluedianne;
+		background-image: $gradient;
+		color: $white;
+		padding: 15px 10px;
+		border: none;
 		border-radius: 30px;
-		padding: 12px 12px 10px;
 		position: relative;
 		min-width: 180px;
-		transition: $transition;
+		-webkit-transition: all .55s cubic-bezier(.19, 1, .22, 1);
+		transition: all .55s cubic-bezier(.19, 1, .22, 1);
 		text-transform: uppercase;
 		font-size: 14px;
+		overflow: hidden;
 
 		&:hover {
-			background-color: $bluedianne;
+			background-image: $gradient-second;
 			color: $white;
+
+			&::after {
+				left: 120%;
+				webkit-transition: left 1.5s cubic-bezier(.19, 1, .22, 1);
+				transition: left 1.5s cubic-bezier(.19, 1, .22, 1);
+			}
 		}
 
-		svg {
+		&::after {
+			content: " ";
 			position: absolute;
-			top: 50%;
-			right: 20px;
-			transform: translate(0, -50%);
-			font-size: 18px;
+			top: -50px;
+			left: -180px;
+			width: 100px;
+			height: 150px;
+			-webkit-transform: rotate(35deg);
+			transform: rotate(35deg);
+			background: -webkit-gradient(linear, left bottom, right top, from(transparent), to($white));
+			background: linear-gradient(to top right, transparent, $white);
+			opacity: .1;
 		}
 	}
 
-	h2 {
-		font-size: 36px;
-		text-transform: uppercase;
+	svg {
+		position: absolute;
+		top: 50%;
+		right: 25px;
+		transform: translate(0, -50%);
+		font-size: 18px;
 	}
+}
 
-	.student-image-second {
-		img {
-			position: relative;
-			top: -20px;
-		}
+h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.student-image-second {
+	img {
+		position: relative;
+		top: -20px;
 	}
 }
 
@@ -596,14 +624,34 @@ svg {
 
 #customers {
 	.item {
-		img {
-			width: 30%;
-			margin: 0 auto;
-		}
-	}
+		border-radius: 8px;
+		background-color: rgba($bluedianne, .9);
+		transition: $transition;
+		height: 100%;
 
-	p {
-		font-size: 14px;
+		&:hover {
+			background-color: rgba($bluedianne, 1);
+		}
+
+		a {
+			padding: 15px 30px;
+			display: block;
+			color: $white;
+
+			h6 {
+				color: $white;
+				letter-spacing: 1px;
+			}
+
+			img {
+				width: 30%;
+				margin: 0 auto;
+			}
+
+			p {
+				font-size: 12px;
+			}
+		}
 	}
 }
 
@@ -740,6 +788,20 @@ footer {
 			}
 		}
 	}
+}
+
+/* Loader */
+
+#loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100vw;
+	height: 100vh;
+	background: $white url('../img/loader.gif') center no-repeat;
+	background-size: 10%;
+	z-index: 9999;
 }
 
 /* Back-to-top */
