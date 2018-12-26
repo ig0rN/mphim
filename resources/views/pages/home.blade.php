@@ -115,12 +115,12 @@
                     </div>
                     <div class="overlay bg-warning">
                         <h6>
-                            {{ __('translate.training4advisior') }}
+                            {{ __('translate.training4advisor') }}
                         </h6>
                         <p>
-                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{ __('translate.training4advisior') }}"?
+                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{ __('translate.training4advisor') }}"?
                         </p>
-                        <a href="{{ route('academy.advisior') }}" class="btn btn-training">
+                        <a href="{{ route('academy.advisor') }}" class="btn btn-training">
                             {{ __('translate.access-the-training') }}
                         </a>
                     </div>

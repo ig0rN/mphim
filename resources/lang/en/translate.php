@@ -21,7 +21,7 @@ return [
     'academy' => 'Academy',
     'training4company' => 'Training4Company',
     'training4agent' => 'Training4Agent',
-    'training4advisior' => 'Training4Advisior',
+    'training4advisor' => 'Training4Advisor',
     'training4manager' => 'Training4Manager',
     'contact' => 'Contact',
 

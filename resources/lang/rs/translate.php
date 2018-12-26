@@ -21,7 +21,7 @@ return [
     'academy' => 'Akademija',
     'training4company' => 'Trening za kompanije',
     'training4agent' => 'Trening za agente',
-    'training4advisior' => 'Trening za savetnike',
+    'training4advisor' => 'Trening za savetnike',
     'training4manager' => 'Trening za menadzere',
     'contact' => 'Kontakt',
 

@@ -15,7 +15,7 @@
 				{{ __('translate.academy') }}
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">
-				{{ __('translate.training4advisior') }}
+				{{ __('translate.training4advisor') }}
 			</li>
 		</ol>
 	</nav>

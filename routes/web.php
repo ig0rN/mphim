@@ -79,9 +79,9 @@ Route::get('/academy/training-4-agent', function () {
     return view('pages.academy.agent');
 })->name('academy.agent');
 
-Route::get('/academy/training-4-advisior', function () {
-    return view('pages.academy.advisior');
-})->name('academy.advisior');
+Route::get('/academy/training-4-advisor', function () {
+    return view('pages.academy.advisor');
+})->name('academy.advisor');
 
 Route::get('/academy/training-4-manager', function () {
     return view('pages.academy.manager');

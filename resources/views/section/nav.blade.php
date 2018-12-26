@@ -211,8 +211,8 @@
 							</a>
 						</li>
 						<li>
-							<a href="{{ route('academy.advisior') }}" class="{{ activeClassBasedOnRoute('academy.advisior') }}">
-								{{ __('translate.training4advisior') }}
+							<a href="{{ route('academy.advisor') }}" class="{{ activeClassBasedOnRoute('academy.advisor') }}">
+								{{ __('translate.training4advisor') }}
 							</a>
 						</li>
 						<li>
