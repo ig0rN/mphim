@@ -32,28 +32,36 @@
 				<div id="discover">
 					<div class="discover">
 						<div class="item">
-							<img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
-							<p>
-								What is
-							</p>
+                            <a href="{{ route('mphim.whatIs')}}">
+                                <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
+                                <p>
+                                    What is
+                                </p>
+                            </a>
 						</div>
 						<div class="item">
-							<img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png" />
-							<p>
-								What does it do
-							</p>
+                            <a href="{{ route('mphim.whatDoes')}}">
+                                <img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png" />
+                                <p>
+                                    What does it do
+                                </p>
+                            </a>
 						</div>
 						<div class="item">
-							<img src="{{ asset('img/home/mphim/why-to.png') }}" alt="img/home/mphim/why-to.png" />
-							<p>
-								Why to have it
-							</p>
+                            <a href="{{ route('mphim.whyTo')}}">
+                                <img src="{{ asset('img/home/mphim/why-to.png') }}" alt="img/home/mphim/why-to.png" />
+                                <p>
+                                    Why to have it
+                                </p>
+                            </a>
 						</div>
 						<div class="item">
-							<img src="{{ asset('img/home/mphim/roadmap.png') }}" alt="img/home/mphim/roadmap.png" />
-							<p>
-								Roadmap
-							</p>
+                            <a href="{{ route('mphim.roadmap')}}">
+                                <img src="{{ asset('img/home/mphim/roadmap.png') }}" alt="img/home/mphim/roadmap.png" />
+                                <p>
+                                    Roadmap
+                                </p>
+                            </a>
 						</div>
 					</div>
 				</div>
@@ -230,7 +238,9 @@
 					Companies
 				</h6>
 				<div class="item text-center mb-3">
-					<img src="{{ asset('img/home/customers/companies.png')}}" alt="img/home/customers/companies.png" />
+                    <a href="{{ route('customers.companies')}}">
+                        <img src="{{ asset('img/home/customers/companies.png')}}" alt="img/home/customers/companies.png" />
+                    </a>
 				</div>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -241,7 +251,9 @@
 					Professionals
 				</h6>
 				<div class="item text-center mb-3">
-					<img src="{{ asset('img/home/customers/professionals.png')}}" alt="img/home/customers/professionals.png" />
+                    <a href="{{ route('customers.pro')}}">
+                        <img src="{{ asset('img/home/customers/professionals.png')}}" alt="img/home/customers/professionals.png" />
+                    </a>
 				</div>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -252,7 +264,9 @@
 					Trade associations
 				</h6>
 				<div class="item text-center mb-3">
-					<img src="{{ asset('img/home/customers/trade.png')}}" alt="img/home/customers/trade.png" />
+                    <a href="{{ route('customers.tradeAssoc')}}">
+                        <img src="{{ asset('img/home/customers/trade.png')}}" alt="img/home/customers/trade.png" />
+                    </a>
 				</div>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -263,7 +277,9 @@
 					Public institutions
 				</h6>
 				<div class="item text-center mb-3">
-					<img src="{{ asset('img/home/customers/public.png')}}" alt="img/home/customers/public.png" />
+                    <a href="{{ route('customers.publicInsti')}}">
+                        <img src="{{ asset('img/home/customers/public.png')}}" alt="img/home/customers/public.png" />
+                    </a>
 				</div>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -274,7 +290,9 @@
 					School
 				</h6>
 				<div class="item text-center mb-3">
-					<img src="{{ asset('img/home/customers/school.png')}}" alt="img/home/customers/school.png" />
+                    <a href="{{ route('customers.schools')}}">
+                        <img src="{{ asset('img/home/customers/school.png')}}" alt="img/home/customers/school.png" />
+                    </a>
 				</div>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -285,7 +303,9 @@
 					University
 				</h6>
 				<div class="item text-center mb-3">
-					<img src="{{ asset('img/home/customers/university.png')}}" alt="img/home/customers/university.png" />
+                    <a href="{{ route('customers.university')}}">
+                        <img src="{{ asset('img/home/customers/university.png')}}" alt="img/home/customers/university.png" />
+                    </a>
 				</div>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
