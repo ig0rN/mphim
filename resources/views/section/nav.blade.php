@@ -143,7 +143,7 @@
 						{{ __('translate.customers') }}
 						<i class="fas fa-angle-down"></i>
 					</a>
-					<ul class="dropdown">
+					<ul class="dropdown customers">
 						<h5 class="text-center">
 							{{ __('translate.who-can-use-it') }}
 						</h5>

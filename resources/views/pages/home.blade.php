@@ -33,7 +33,7 @@
 					<div class="discover">
 						<div class="item">
                             <a href="{{ route('mphim.whatIs')}}">
-                                <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png "/>
+                                <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
                                 <p>
                                     {{ __('translate.what-is') }}
                                 </p>
