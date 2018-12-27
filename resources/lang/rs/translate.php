@@ -2,18 +2,18 @@
 
 return [
 
-    'home' => 'Pocetna',
-    'what-is' => 'Sta je',
-    'what-does-it-do' => 'Sta radi',
-    'why-to-have' => 'Zasto imati',
+    'home' => 'Početna',
+    'what-is' => 'Šta je',
+    'what-does-it-do' => 'Šta radi',
+    'why-to-have' => 'Zašto imati',
     'roadmap' => 'Roadmap',
     'customers' => 'Klijenti',
-    'who-can-use-it' => 'Ko moze koristiti',
+    'who-can-use-it' => 'Ko može koristiti',
     'companies' => 'Kompanije',
     'professionals' => 'Profesionalci',
-    'trade-associations' => 'Strukovna udruzenja',
+    'trade-associations' => 'Strukovna udruženja',
     'public-institutions' => 'Javne institucije',
-    'schools' => 'Skole',
+    'schools' => 'Škole',
     'university' => 'Univerziteti',
     'versions' => 'Verzije',
     'commercial' => 'Reklama',
@@ -25,7 +25,7 @@ return [
     'training4manager' => 'Trening za menadzere',
     'contact' => 'Kontakt',
 
-    'do-you-want-to-find-out-more-about' => 'Da li zelite da saznate vise o',
+    'do-you-want-to-find-out-more-about' => 'Da li želite da saznate više o',
     'access-the-training' => 'Pristupite treningu',
 
     'name' => 'Ime',

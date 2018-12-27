@@ -16,6 +16,10 @@ Route::get('/', function () {
 })->name('home');
 
 // mphim
+Route::get('/mphim', function(){
+    return view('pages.mphim.index');
+})->name('mphim');
+
 Route::get('/mphim/what-is', function () {
     return view('pages.mphim.whatIs');
 })->name('mphim.whatIs');
@@ -33,6 +37,10 @@ Route::get('/mphim/roadmap', function () {
 })->name('mphim.roadmap');
 
 // customers
+Route::get('/customers', function () {
+    return view('pages.customers.index');
+})->name('customers');
+
 Route::get('/customers/companies', function () {
     return view('pages.customers.companies');
 })->name('customers.companies');
@@ -71,6 +79,10 @@ Route::get('/reference', function () {
 })->name('reference');
 
 // academy
+Route::get('/academy', function(){
+    return view('pages.academy.index');
+})->name('academy');
+
 Route::get('/academy/training-4-company', function () {
     return view('pages.academy.company');
 })->name('academy.company');

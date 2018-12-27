@@ -111,13 +111,13 @@
 					</a>
                 </li>
                 <li>
-                    <a class="mphim {{ activeClassBasedOnRouteSegment('mphim') }}">
+                    <a href="{{ route('mphim') }}" class="mphim {{ activeClassBasedOnRoute('mphim') }}">
 						Mphim+
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
                         <li>
-                            <a href="{{ route('mphim.whatIs') }}" class="{{ activeClassBasedOnRoute('mphim.whatIs') }}">
+                            <a href="{{ route('mphim.whatIs') }}" class="{{ activeClassBasedOnRouteSegment('mphim') }}">
 								{{ __('translate.what-is') }}
 							</a>
 						</li>
@@ -139,7 +139,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="{{ activeClassBasedOnRouteSegment('customers') }}">
+                    <a href="{{ route('customers') }}" class="{{ activeClassBasedOnRouteSegment('customers') }}">
 						{{ __('translate.customers') }}
 						<i class="fas fa-angle-down"></i>
 					</a>
@@ -195,7 +195,7 @@
 					</a>
                 </li>
 				<li>
-                    <a class="{{ activeClassBasedOnRouteSegment('academy') }}">
+                    <a href="{{ route('academy') }}" class="{{ activeClassBasedOnRouteSegment('academy') }}">
 						{{ __('translate.academy') }}
 						<i class="fas fa-angle-down"></i>
 					</a>
