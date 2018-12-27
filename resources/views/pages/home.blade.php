@@ -71,9 +71,9 @@
 </div>
 <div id="academy" class="pt-5">
     <div class="container">
-		<h2 class="home-heading text-center mb-4">
+		<h1 class="home-heading text-center mb-4">
 			Academy
-		</h2>
+		</h1>
         <div class="row">
             <div class="col-md-3">
                 <div class="training">
@@ -153,7 +153,7 @@
 <div id="about" class="pt-5">
     <div class="container-fluid">
 		<h1 class="home-heading text-center mb-4">
-			Info
+			About
 		</h1>
         <div class="row">
             <div class="col-md-6 pl-0">

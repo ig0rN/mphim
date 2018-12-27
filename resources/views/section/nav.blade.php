@@ -32,7 +32,7 @@
 					<div class="col-md-10">
 						<div class="login">
 							<img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
-							<a href="javascript:void(0)" class="btn btn-login" target="_blank">
+							<a href="https://app.mphimplus.com/signin" class="btn btn-login" target="_blank">
 								Login
 							</a>
 						</div>
