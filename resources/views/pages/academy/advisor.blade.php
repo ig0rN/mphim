@@ -11,8 +11,10 @@
 					{{ __('translate.home') }}
 				</a>
 			</li>
-			<li class="breadcrumb-item active" aria-current="page">
-				{{ __('translate.academy') }}
+			<li class="breadcrumb-item" aria-current="page">
+				<a href="{{ route('academy') }}">
+					{{ __('translate.academy') }}
+				</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">
 				{{ __('translate.training4advisor') }}
