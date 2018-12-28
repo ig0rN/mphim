@@ -6,8 +6,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	setTimeout(function () {
+		$("body").css("overflow", "auto");
 		$("#loader").hide();
-	}, 2500);
+	}, 3000);
 });
 
 $(document).ready(function () {
@@ -64,6 +65,5 @@ owl.owlCarousel({
 
 $(document).ready(function () {
 	var logo = $(".logo-header img").height();
-	console.log(logo);
 	$(".owl-item").css("height", logo);
 });
