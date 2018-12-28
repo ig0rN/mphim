@@ -71,9 +71,9 @@
 </div>
 <div id="academy" class="pt-5">
     <div class="container">
-		<h1 class="home-heading text-center mb-4">
+		<p class="home-heading text-center">
 			Academy
-		</h1>
+		</p>
         <div class="row">
             <div class="col-md-3">
                 <div class="training">
@@ -152,9 +152,9 @@
 </div>
 <div id="about" class="pt-5">
     <div class="container-fluid">
-		<h1 class="home-heading text-center mb-4">
+		<p class="home-heading text-center">
 			About
-		</h1>
+		</p>
         <div class="row">
             <div class="col-md-6 pl-0">
                 <div class="student-image">
@@ -242,9 +242,9 @@
 </div>
 <div id="customers" class="py-5">
 	<div class="container">
-		<h1 class="home-heading text-center mb-4">
+		<p class="home-heading text-center">
 			Customers
-		</h1>
+		</p>
 		<div class="row">
 			<div class="col-md-4 text-center pb-4">
 				<div class="item text-center">

@@ -5,15 +5,15 @@
     @include('section.head')
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".dropdown" data-offset="0">
 	<!-- Loader start -->
-	<div id="loader"></div>
+<!--	<div id="loader"></div>-->
 	<!-- Loader end -->
 	<!-- App start -->
 	<div id="app">
 
 		<!-- Header start -->
-            @include('section.nav')
+		@include('section.nav')
 		<!-- Header end -->
 
 		<!-- Content start -->
@@ -39,8 +39,8 @@
 	</footer>
 	<!-- Footer end -->
 	<!-- JavaScript links start -->
-		@include('section.scripts')
-		@yield('scripts')
+	@include('section.scripts')
+	@yield('scripts')
 	<!-- JavaScript links end -->
 </body>
 

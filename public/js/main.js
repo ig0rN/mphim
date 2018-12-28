@@ -6,7 +6,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	setTimeout(function () {
-		$("body").css("overflow", "auto");
 		$("#loader").hide();
 	}, 3000);
 });
@@ -66,4 +65,38 @@ owl.owlCarousel({
 $(document).ready(function () {
 	var logo = $(".logo-header img").height();
 	$(".owl-item").css("height", logo);
+});
+
+$(document).ready(function () {
+	$("body").scrollspy({
+		target: ".nav"
+	});
+});
+
+var navFixed = function () {
+	var heightTop = $("#heightTop").outerHeight();
+	var navHeight = $(".nav").outerHeight();
+	console.log(heightTop);
+	if ($(document).scrollTop() >= heightTop) {
+		$(".nav").addClass("fixed-top");
+		$(".nav > .container").removeClass("p-0");
+		$("#content").css("margin-top", navHeight);
+	} else {
+		$(".nav").removeClass("fixed-top");
+		$(".nav > .container").addClass("p-0");
+		$("#content").css("margin-top", "0");
+	}
+};
+
+$(document).ready(function () {
+	$(document).bind("scroll", navFixed);
+});
+
+$(document).ready(function () {
+	$(".nav .nav-link").click(function () {
+		var href = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(href).offset().top - 70
+		}, 1000);
+	});
 });
