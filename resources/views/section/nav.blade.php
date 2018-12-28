@@ -111,13 +111,13 @@
 					</a>
                 </li>
                 <li>
-                    <a href="{{ route('mphim') }}" class="mphim {{ activeClassBasedOnRoute('mphim') }}">
+                    <a href="{{ route('mphim') }}" class="mphim {{ activeClassBasedOnRouteSegment('mphim') }}">
 						Mphim+
 						<i class="fas fa-angle-down"></i>
 					</a>
 					<ul class="dropdown">
                         <li>
-                            <a href="{{ route('mphim.whatIs') }}" class="{{ activeClassBasedOnRouteSegment('mphim') }}">
+                            <a href="{{ route('mphim.whatIs') }}" class="{{ activeClassBasedOnRoute('mphim.whatIs') }}">
 								{{ __('translate.what-is') }}
 							</a>
 						</li>
