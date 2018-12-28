@@ -79,8 +79,8 @@
 			</div>
 		</div>
 		<div id="logo-slider">
-			<div class="row no-gutters align-items-center">
-				<div class="col-md-2">
+			<div class="row align-items-center">
+				<div class="col-md-2 pr-0">
 					<div class="logo-header">
 						<img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
 					</div>

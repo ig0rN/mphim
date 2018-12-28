@@ -6,7 +6,7 @@
 <div id="mphim-bar" class="pt-5">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-md-10 pr-0">
 				<div id="mphim">
 					<h2 class="mb-4">
 						Mphim+: A method in a software
@@ -162,71 +162,75 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <h1 class="pt-4">About Mphim+</h1>
-                <div id="counter">
-                    <div class="d-flex">
-                        <div class="flex-fill">
-                            <div class="item">
-                                <span class="counter-value" data-count="76">
-                                    0
-                                </span>
-                                <span class="value">
-                                    m+
-                                </span>
-                            </div>
-                            <h6>
-                                Students Learning
-                            </h6>
-                        </div>
-                        <div class="flex-fill">
-                            <div class="item">
-                                <span class="counter-value" data-count="80">
-                                    0
-                                </span>
-                                <span class="value">
-                                    k+
-                                </span>
-                            </div>
-                            <h6>
-                                Active Courses
-                            </h6>
-                        </div>
-                        <div class="flex-fill">
-                            <div class="item">
-                                <span class="counter-value" data-count="990">
-                                    0
-                                </span>
-                                <span class="value">
-                                    +
-                                </span>
-                            </div>
-                            <h6>
-                                Instructors online
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <p class="pt-4">
-                    Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
-                </p>
-                <button class="btn btn-learn">
-                    Learn more
-                    <i class="fas fa-angle-right"></i>
-                </button>
+				<div class="col-md-10">
+					<h1 class="pt-4">About Mphim+</h1>
+					<div id="counter">
+						<div class="d-flex">
+							<div class="flex-fill">
+								<div class="item">
+									<span class="counter-value" data-count="76">
+										0
+									</span>
+									<span class="value">
+										m+
+									</span>
+								</div>
+								<h6>
+									Students Learning
+								</h6>
+							</div>
+							<div class="flex-fill">
+								<div class="item">
+									<span class="counter-value" data-count="80">
+										0
+									</span>
+									<span class="value">
+										k+
+									</span>
+								</div>
+								<h6>
+									Active Courses
+								</h6>
+							</div>
+							<div class="flex-fill">
+								<div class="item">
+									<span class="counter-value" data-count="990">
+										0
+									</span>
+									<span class="value">
+										+
+									</span>
+								</div>
+								<h6>
+									Instructors online
+								</h6>
+							</div>
+						</div>
+					</div>
+					<p class="pt-4">
+						Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
+					</p>
+					<button class="btn btn-learn">
+						Learn more
+						<i class="fas fa-angle-right"></i>
+					</button>
+				</div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 text-right">
-                <h2 class="pt-4">
-                    Create a course for free in minutes with teachable
-                </h2>
-                <p class="pt-4">
-                    Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
-                </p>
-                <button class="btn btn-learn">
-                    Learn more
-                    <i class="fas fa-angle-right"></i>
-                </button>
+				<div class="col-md-10 offset-2">
+					<h2 class="pt-4">
+						Create a course for free in minutes with teachable
+					</h2>
+					<p class="pt-4">
+						Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
+					</p>
+					<button class="btn btn-learn">
+						Learn more
+						<i class="fas fa-angle-right"></i>
+					</button>
+				</div>
             </div>
             <div class="col-md-6 pr-0">
                 <div class="student-image-second">
