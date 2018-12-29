@@ -51,7 +51,7 @@ $(document).ready(function () {
 	});
 });
 
-var owl = $('.owl-carousel');
+var owl = $(".owl-carousel");
 owl.owlCarousel({
 	items: 1,
 	loop: true,
@@ -59,7 +59,7 @@ owl.owlCarousel({
 	autoplay: true,
 	autoplayTimeout: 5000,
 	autoplayHoverPause: true,
-	animateOut: 'fadeOut',
+	animateOut: "fadeOut",
 });
 
 $(document).ready(function () {
@@ -67,24 +67,21 @@ $(document).ready(function () {
 	$(".owl-item").css("height", logo);
 });
 
-$(document).ready(function () {
-	$("body").scrollspy({
-		target: ".nav"
-	});
-});
+$("body").scrollspy({
+	target: ".nav"
+})
 
 var navFixed = function () {
 	var heightTop = $("#heightTop").outerHeight();
-	var navHeight = $(".nav").outerHeight();
-	console.log(heightTop);
+	var navHeight = $("#nav").outerHeight();
 	if ($(document).scrollTop() >= heightTop) {
-		$(".nav").addClass("fixed-top");
-		$(".nav > .container").removeClass("p-0");
-		$("body").css("margin-top", navHeight);
+		$("#nav").addClass("fixed-top");
+		$("#nav > .container").removeClass("p-0");
+		$("#app").css("margin-top", navHeight);
 	} else {
-		$(".nav").removeClass("fixed-top");
-		$(".nav > .container").addClass("p-0");
-		$("body").css("margin-top", "0");
+		$("#nav").removeClass("fixed-top");
+		$("#nav > .container").addClass("p-0");
+		$("#app").css("margin-top", "0");
 	}
 };
 
@@ -94,9 +91,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	$(".nav .nav-link").click(function () {
-		var href = $(this).attr('href');
-		$('html, body').animate({
-			scrollTop: $(href).offset().top - 70
+		var href = $(this).attr("href");
+		$("html, body").animate({
+			scrollTop: $(href).offset().top
 		}, 1000);
 	});
 });

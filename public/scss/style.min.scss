@@ -249,7 +249,7 @@ svg {
 		}
 	}
 
-	.nav {
+	#nav {
 		ul {
 			margin: 0;
 			padding: 0 5px;
@@ -684,7 +684,7 @@ h2 {
 			}
 		}
 	}
-	
+
 	.home-heading {
 		letter-spacing: 2px;
 		font-size: 40px;
@@ -714,6 +714,10 @@ h2 {
 		img {
 			height: 200px;
 		}
+	}
+
+	.item {
+		padding-top: 60px;
 	}
 }
 

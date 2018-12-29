@@ -16,7 +16,7 @@
 			</li>
 		</ol>
 	</nav>
-	<div id="what-is" class="pt-5">
+	<div id="what-is" class="item">
 		<h3 class="heading">
 			What is
 		</h3>
@@ -24,7 +24,7 @@
 			mphim + is a business intelligence software that allows you to maximize all company resources, driving them to higher sales and profitability targets. In a competitive and constantly changing market, it is the ability to control all the details to mark the boundary between growth and downsizing. mphim + is also a web application software that allows you to exceed the limits of installation, ensuring usability at any time, in any place and from any device (PC, tablet, smartphone and other mobile systems), through a simple connection to the internet.
 		</p>
 	</div>
-	<div id="what-does" class="pt-5">
+	<div id="what-does" class="item">
 		<h3 class="heading">
 			What does it do
 		</h3>
@@ -58,15 +58,16 @@
 			</li>
 		</ul>
 	</div>
-	<div id="why-to" class="pt-5">
+	<div id="why-to" class="item">
 		<h3 class="heading">
 			Why to have it
 		</h3>
 	</div>
-	<div id="roadmap" class="pt-5">
+	<div id="roadmap" class="item">
 		<h3 class="heading">
 			Roadmap
 		</h3>
 		<img src="{{ asset('img/roadmap/roadmap.jpg') }}" alt="img/roadmap/roadmap.jpg" />
 	</div>
+</div>
 @endsection

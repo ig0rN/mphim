@@ -105,7 +105,7 @@
 				</div>
 			</div>
 		</div>
-        <div class="nav">
+        <div id="nav">
 			<div class="container p-0">
 				<ul>
 					<li>
@@ -118,23 +118,23 @@
 							Mphim+
 							<i class="fas fa-angle-down"></i>
 						</a>
-						<ul class="dropdown">
-							<li>
+						<ul class="nav dropdown">
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('mphim', '#what-is') }}" class="nav-link">
 									{{ __('translate.what-is') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('mphim', '#what-does') }}" class="nav-link">
 									{{ __('translate.what-does-it-do') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('mphim', '#why-to') }}" class="nav-link">
 									{{ __('translate.why-to-have') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('mphim', '#roadmap') }}" class="nav-link">
 									{{ __('translate.roadmap') }}
 								</a>
@@ -146,36 +146,36 @@
 							{{ __('translate.customers') }}
 							<i class="fas fa-angle-down"></i>
 						</a>
-						<ul class="dropdown customers">
+						<ul class="nav dropdown customers">
 							<h5 class="text-center">
 								{{ __('translate.who-can-use-it') }}
 							</h5>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('customers', '#companies') }}" class="nav-link">
 									{{ __('translate.companies') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('customers', '#professionals') }}" class="nav-link">
 									{{ __('translate.professionals') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('customers', '#trade') }}" class="nav-link">
 									{{ __('translate.trade-associations') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('customers', '#public') }}" class="nav-link">
 									{{ __('translate.public-institutions') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('customers', '#schools') }}" class="nav-link">
 									{{ __('translate.schools') }}
 								</a>
 							</li>
-							<li>
+							<li class="nav-item">
 								<a href="{{ routeOrAnchor('customers', '#university') }}" class="nav-link">
 									{{ __('translate.university') }}
 								</a>

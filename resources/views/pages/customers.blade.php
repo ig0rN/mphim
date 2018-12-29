@@ -16,7 +16,7 @@
 			</li>
 		</ol>
 	</nav>
-	<div id="companies" class="pb-5">
+	<div id="companies" class="item">
 		<h3 class="heading">
 			Companies
 		</h3>
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="professionals" class="pb-5">
+	<div id="professionals" class="item">
 		<h3 class="heading">
 			Professionals
 		</h3>
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="trade" class="pb-5">
+	<div id="trade" class="item">
 		<h3 class="heading">
 			Trade associations
 		</h3>
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="public" class="pb-5">
+	<div id="public" class="item">
 		<h3 class="heading">
 			Public institutions
 		</h3>
@@ -84,7 +84,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="schools" class="pb-5">
+	<div id="schools" class="item">
 		<h3 class="heading">
 			Schools
 		</h3>
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="university" class="pb-5">
+	<div id="university" class="item">
 		<h3 class="heading">
 			University
 		</h3>
