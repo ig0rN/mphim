@@ -5,9 +5,9 @@
     @include('section.head')
 </head>
 
-<body data-spy="scroll" data-target=".dropdown" data-offset="0">
+<body data-spy="scroll" data-target=".dropdown" data-offset="100">
 	<!-- Loader start -->
-<!--	<div id="loader"></div>-->
+	<div id="loader"></div>
 	<!-- Loader end -->
 	<!-- App start -->
 	<div id="app">

@@ -80,11 +80,11 @@ var navFixed = function () {
 	if ($(document).scrollTop() >= heightTop) {
 		$(".nav").addClass("fixed-top");
 		$(".nav > .container").removeClass("p-0");
-		$("#content").css("margin-top", navHeight);
+		$("body").css("margin-top", navHeight);
 	} else {
 		$(".nav").removeClass("fixed-top");
 		$(".nav > .container").addClass("p-0");
-		$("#content").css("margin-top", "0");
+		$("body").css("margin-top", "0");
 	}
 };
 
