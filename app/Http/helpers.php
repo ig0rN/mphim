@@ -19,3 +19,8 @@ function activeClassBasedOnRouteSegment(string $segment)
 {
     return Request::segment(1) == $segment ? 'active' : '';
 }
+
+function routeOrAnchor(string $route, string $anchor)
+{
+    return request()->route()->getName() == $route ? $anchor : route($route) . $anchor;
+}

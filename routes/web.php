@@ -17,53 +17,13 @@ Route::get('/', function () {
 
 // mphim
 Route::get('/mphim', function(){
-    return view('pages.mphim.index');
+    return view('pages.mphim');
 })->name('mphim');
-
-Route::get('/mphim/what-is', function () {
-    return view('pages.mphim.whatIs');
-})->name('mphim.whatIs');
-
-Route::get('/mphim/what-does', function () {
-    return view('pages.mphim.whatDoes');
-})->name('mphim.whatDoes');
-
-Route::get('/mphim/why-to-have-it', function () {
-    return view('pages.mphim.whyTo');
-})->name('mphim.whyTo');
-
-Route::get('/mphim/roadmap', function () {
-    return view('pages.mphim.roadmap');
-})->name('mphim.roadmap');
 
 // customers
 Route::get('/customers', function () {
-    return view('pages.customers.index');
+    return view('pages.customers');
 })->name('customers');
-
-Route::get('/customers/companies', function () {
-    return view('pages.customers.companies');
-})->name('customers.companies');
-
-Route::get('/customers/professionals', function () {
-    return view('pages.customers.professionals');
-})->name('customers.pro');
-
-Route::get('/customers/trade-associations', function () {
-    return view('pages.customers.tradeAssoc');
-})->name('customers.tradeAssoc');
-
-Route::get('/customers/public-institutions', function () {
-    return view('pages.customers.publicInsti');
-})->name('customers.publicInsti');
-
-Route::get('/customers/schools', function () {
-    return view('pages.customers.schools');
-})->name('customers.schools');
-
-Route::get('/customers/university', function () {
-    return view('pages.customers.university');
-})->name('customers.university');
 
 // no dropdown
 Route::get('/versions', function () {

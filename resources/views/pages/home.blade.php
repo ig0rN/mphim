@@ -32,7 +32,7 @@
 				<div id="discover">
 					<div class="discover">
 						<div class="item">
-                            <a href="{{ route('mphim.whatIs')}}">
+                            <a href="{{ route('mphim') . '#what-is' }}">
                                 <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
                                 <p>
                                     {{ __('translate.what-is') }}
@@ -40,7 +40,7 @@
                             </a>
 						</div>
 						<div class="item">
-                            <a href="{{ route('mphim.whatDoes')}}">
+                            <a href="{{ route('mphim') . '#what-does' }}">
 								<img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png "/>
                                 <p>
                                     {{ __('translate.what-does-it-do') }}
@@ -48,7 +48,7 @@
                             </a>
 						</div>
 						<div class="item">
-                            <a href="{{ route('mphim.whyTo')}}">
+                            <a href="{{ route('mphim') . '#why-to' }}">
                                 <img src="{{ asset('img/home/mphim/why-to.png') }}" alt="img/home/mphim/why-to.png" />
                                 <p>
                                     {{ __('translate.why-to-have') }}
@@ -56,7 +56,7 @@
                             </a>
 						</div>
 						<div class="item">
-                            <a href="{{ route('mphim.roadmap')}}">
+                            <a href="{{ route('mphim') . '#roadmap' }}">
                                 <img src="{{ asset('img/home/mphim/roadmap.png') }}" alt="img/home/mphim/roadmap.png" />
                                 <p>
                                     {{ __('translate.roadmap') }}
@@ -248,7 +248,7 @@
 		<div class="row">
 			<div class="col-md-4 text-center pb-4">
 				<div class="item text-center">
-                    <a href="{{ route('customers.companies')}}">
+                    <a href="{{ route('customers') . '#companies' }}">
 						<h6 class="text-uppercase mb-3">
 							{{ __('translate.companies') }}
 						</h6>
@@ -261,7 +261,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<div class="item text-center">
-                    <a href="{{ route('customers.pro')}}">
+                    <a href="{{ route('customers') . '#professionals' }}">
 						<h6 class="text-uppercase mb-3">
 							{{ __('translate.professionals') }}
 						</h6>
@@ -274,7 +274,7 @@
 			</div>
 			<div class="col-md-4 text-center pb-4">
 				<div class="item text-center">
-                    <a href="{{ route('customers.tradeAssoc')}}">
+                    <a href="{{ route('customers') . '#trade' }}">
 						<h6 class="text-uppercase mb-3">
 							{{ __('translate.trade-associations') }}
 						</h6>
@@ -287,7 +287,7 @@
 			</div>
 			<div class="col-md-4 text-center">
 				<div class="item text-center">
-                    <a href="{{ route('customers.publicInsti')}}">
+                    <a href="{{ route('customers') . '#public' }}">
 						<h6 class="text-uppercase mb-3">
 							{{ __('translate.public-institutions') }}
 						</h6>
@@ -300,7 +300,7 @@
 			</div>
 			<div class="col-md-4 text-center">
 				<div class="item text-center">
-                    <a href="{{ route('customers.schools')}}">
+                    <a href="{{ route('customers') . '#school' }}">
 						<h6 class="text-uppercase mb-3">
 							{{ __('translate.schools') }}
 						</h6>
@@ -313,7 +313,7 @@
 			</div>
 			<div class="col-md-4 text-center">
 				<div class="item text-center">
-                    <a href="{{ route('customers.university')}}">
+                    <a href="{{ route('customers') . '#university' }}">
 						<h6 class="text-uppercase mb-3">
 							{{ __('translate.university') }}
 						</h6>
