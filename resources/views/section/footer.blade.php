@@ -119,6 +119,30 @@
             </li>
         </ul>
     </div>
+	<div class="social text-right">
+		<ul>
+			<li>
+				<a href="javascript:void(0)" title="Facebook" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" title="Instagram" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/channel/UC-PQxG_nVx94k52tkVVz4yA" title="YouTube" target="_blank">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/u/0/102086562772088987394?hl=sr" title="Google+" target="_blank">
+					<i class="fab fa-google-plus-g"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
 <div class="copyright">
 	<div class="container">

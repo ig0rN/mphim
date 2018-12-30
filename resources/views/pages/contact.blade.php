@@ -42,6 +42,114 @@
 		<div class="contact-form">
 			<h3 class="heading">Contact form</h3>
 		</div>
+		<div class="locations">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="item">
+						<div class="image">
+							<img src="{{ asset('img/locations/palermo.png') }}" alt="img/locations/palermo.jpg" />
+						</div>
+						<div class="info text-center">
+							<p class="state text-uppercase">
+								Italia
+							</p>
+							<p class="address">
+								Via Libertà n. 103,<br />
+								90143 Palermo
+							</p>
+							<p class="telephone">
+								<a href="+39091588140" title="Call">
+									Tel. +39 091 588 140
+								</a>
+							</p>
+							<p class="email">
+								<a href="mailto:info@mphimplus.com" title="Email">
+									info@mphimplus.com
+								</a>								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="item">
+						<div class="image">
+							<img src="{{ asset('img/locations/freienbach.png') }}" alt="img/locations/freienbach.png" />
+						</div>
+						<div class="info text-center">
+							<p class="state text-uppercase">
+								Svizzera
+							</p>
+							<p class="address">
+								Kantonsstrasse n. 81,<br />
+								CH - 8807 Freienbach
+							</p>
+							<p class="telephone">
+								<a href="+41786006023" title="Call">
+									Tel. +41 786 006 023
+								</a>
+							</p>
+							<p class="email">
+								<a href="mailto:info@mphimplus.com" title="Email">
+									info@mphimplus.com
+								</a>								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="item">
+						<div class="image">
+							<img src="{{ asset('img/locations/kragujevac.jpg') }}" alt="img/locations/kragujevac.jpg" />
+						</div>
+						<div class="info text-center">
+							<p class="state text-uppercase">
+								Serbia
+							</p>
+							<p class="address">
+								Mije Aleksica 7,<br />
+								34000 Kragujevac
+							</p>
+							<p class="telephone">
+								<a href="+38134207098" title="Call">
+									Tel. +381 34 20 70 98
+								</a>
+							</p>
+							<p class="email">
+								<a href="mailto:info@mphimplus.com" title="Email">
+									info@mphimplus.com
+								</a>								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="item">
+						<div class="image">
+							<img src="{{ asset('img/locations/kragujevac.jpg') }}" alt="img/locations/kragujevac.jpg" />
+						</div>
+						<div class="info text-center">
+							<p class="state text-uppercase">
+								Maroco
+							</p>
+							<p class="address">
+								Lorem Ipsum<br />
+								Lorem Ipsum
+							</p>
+							<p class="telephone">
+								<a href="+000000000" title="Call">
+									Tel. +000 000 000
+								</a>
+							</p>
+							<p class="email">
+								<a href="mailto:info@mphimplus.com" title="Email">
+									info@mphimplus.com
+								</a>								
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 @endsection

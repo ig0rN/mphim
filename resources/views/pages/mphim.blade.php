@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb my-4">
+		<ol class="breadcrumb mt-4 mb-0">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}
@@ -16,7 +16,7 @@
 			</li>
 		</ol>
 	</nav>
-	<div id="what-is" class="item">
+	<div id="what-is" class="item-text">
 		<h3 class="heading">
 			What is
 		</h3>
@@ -24,7 +24,7 @@
 			mphim + is a business intelligence software that allows you to maximize all company resources, driving them to higher sales and profitability targets. In a competitive and constantly changing market, it is the ability to control all the details to mark the boundary between growth and downsizing. mphim + is also a web application software that allows you to exceed the limits of installation, ensuring usability at any time, in any place and from any device (PC, tablet, smartphone and other mobile systems), through a simple connection to the internet.
 		</p>
 	</div>
-	<div id="what-does" class="item">
+	<div id="what-does" class="item-text">
 		<h3 class="heading">
 			What does it do
 		</h3>
@@ -58,12 +58,73 @@
 			</li>
 		</ul>
 	</div>
-	<div id="why-to" class="item">
+	<div id="why-to" class="item-text">
 		<h3 class="heading">
 			Why to have it
 		</h3>
+		<h4>
+			5 models in one solution
+		</h4>
+		<ol class="mphim-ol mb-4">
+			<li>
+				Business model:
+				allows optimization
+				the way in which the company develops its own
+				business and realizes value for customers, the
+				property, employees etc ...				
+			</li>
+			<li>
+				Management model:
+				conscious 
+				Choices compared to the pre-set 
+				objectives
+			</li>
+			<li>
+				Trade marketing model:
+				allows the development of marketing strategies towards retailers	
+			</li>
+			<li>
+				Marketing mix model:
+				optimization of the elements of the marketing mix or 4P (product, price, place, promotion)
+			</li>
+			<li>
+				Network management model:
+				development of the sales network
+				according to the Fibonacci sequence
+			</li>
+		</ol>
+		<h4>
+			A single solution for all business areas
+		</h4>
+		<ul class="mphim-ul">
+			<li>
+				<h5>
+					Marketing
+				</h5>
+				It is an instrument of marketing and export marketing management, of aid to the choices of operational marketing (sales channels, long / short channel, pricing, agent commissions, sales promotion, etc.).
+			</li>
+			<li>
+				<h5>
+					Strategy and general management
+				</h5>
+				It is a business intelligence tool support to the decisions of the general management
+			</li>
+			<li>
+				<h5>
+					Organization
+				</h5>
+				Optimizes the planning of organizational resources and improves the quality in managing the sales network.
+			</li>
+			<li>
+				<h5>
+					Administration,
+					Finance and Control
+				</h5>
+				Allows maximum optimization of all company resources, bringing them to greater profitability goals
+			</li>
+		</ul>
 	</div>
-	<div id="roadmap" class="item">
+	<div id="roadmap" class="item-text">
 		<h3 class="heading">
 			Roadmap
 		</h3>
