@@ -3,10 +3,10 @@
 @section('title', 'Home')
 
 @section('content')
-<div id="mphim-bar" class="pt-5">
+<div id="mphim-bar">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-10 pr-0">
+		<div class="row no-gutters">
+			<div class="col-md-10">
 				<div id="mphim">
 					<h2 class="mb-4">
 						Mphim+: A method in a software
@@ -240,7 +240,7 @@
         </div>
     </div>
 </div>
-<div id="customers" class="py-5">
+<div id="customers" class="pt-5">
 	<div class="container">
 		<p class="home-heading text-center">
 			Customers

@@ -17,7 +17,7 @@
 		<!-- Header end -->
 
 		<!-- Content start -->
-		<div id="content">
+		<div id="content" class="py-5">
 			@yield('content')
 		</div>
 		<!-- Content end -->

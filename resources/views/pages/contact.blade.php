@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb my-4">
+		<ol class="breadcrumb mb-4">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}
@@ -58,8 +58,9 @@
 								90143 Palermo
 							</p>
 							<p class="telephone">
+								Tel.
 								<a href="+39091588140" title="Call">
-									Tel. +39 091 588 140
+									+39 091 588 140
 								</a>
 							</p>
 							<p class="email">
@@ -84,8 +85,9 @@
 								CH - 8807 Freienbach
 							</p>
 							<p class="telephone">
+								Tel.
 								<a href="+41786006023" title="Call">
-									Tel. +41 786 006 023
+									+41 786 006 023
 								</a>
 							</p>
 							<p class="email">
@@ -110,8 +112,9 @@
 								34000 Kragujevac
 							</p>
 							<p class="telephone">
+								Tel.
 								<a href="+38134207098" title="Call">
-									Tel. +381 34 20 70 98
+									+381 34 20 70 98
 								</a>
 							</p>
 							<p class="email">
@@ -129,15 +132,16 @@
 						</div>
 						<div class="info text-center">
 							<p class="state text-uppercase">
-								Maroco
+								Morocco
 							</p>
 							<p class="address">
 								Lorem Ipsum<br />
 								Lorem Ipsum
 							</p>
 							<p class="telephone">
+								Tel.
 								<a href="+000000000" title="Call">
-									Tel. +000 000 000
+									+000 000 000
 								</a>
 							</p>
 							<p class="email">

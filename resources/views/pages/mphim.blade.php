@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb mt-4 mb-0">
+		<ol class="breadcrumb m-0">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}
@@ -18,7 +18,7 @@
 	</nav>
 	<div id="what-is" class="item-text">
 		<h3 class="heading">
-			What is
+			What is?
 		</h3>
 		<p>
 			mphim + is a business intelligence software that allows you to maximize all company resources, driving them to higher sales and profitability targets. In a competitive and constantly changing market, it is the ability to control all the details to mark the boundary between growth and downsizing. mphim + is also a web application software that allows you to exceed the limits of installation, ensuring usability at any time, in any place and from any device (PC, tablet, smartphone and other mobile systems), through a simple connection to the internet.
@@ -26,7 +26,7 @@
 	</div>
 	<div id="what-does" class="item-text">
 		<h3 class="heading">
-			What does it do
+			What does it do?
 		</h3>
 		<ul>
 			<li>
@@ -60,7 +60,7 @@
 	</div>
 	<div id="why-to" class="item-text">
 		<h3 class="heading">
-			Why to have it
+			Why to have it?
 		</h3>
 		<h4>
 			5 models in one solution
@@ -123,6 +123,19 @@
 				Allows maximum optimization of all company resources, bringing them to greater profitability goals
 			</li>
 		</ul>
+		<h4 class="font-weight-bold">
+			The value of awareness
+		</h4>
+		<p>
+			Companies are often unable to estimate the economic effects of an extremely low price variation: a variation of 1% of the sale price may also result in an increase of two or even three-digit profits.
+		</p>
+		<h4 class="font-weight-bold">
+			Targeted and effective decisions
+		</h4>
+		<p>
+			mphim + improves the quality of decision-making processes and therefore the competitive capacity of the company. By inserting very few company data,
+			the business intelligence software is able to instantly provide information on the profitability of the products / services (ros or ebt) based on the price chosen, the sustainability of the incentive policies provided in favor of b2b customers and the chosen promotional strategies (agents, trade fairs , e-commerce sites b2c and b2b, sales promotion such as 3x2 offers and gifts).
+		</p>
 	</div>
 	<div id="roadmap" class="item-text">
 		<h3 class="heading">

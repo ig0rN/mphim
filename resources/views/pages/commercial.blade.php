@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb my-4">
+		<ol class="breadcrumb mb-5">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}
@@ -16,8 +16,23 @@
 			</li>
 		</ol>
 	</nav>
-	<p>
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-	</p>
+	<h3 class="heading">
+		Commercial
+	</h3>
+	<div class="row align-items-start">
+		<div class="col-md-4">
+			<div class="image">
+				<img src="{{ asset('img/customers/company.jpg')}}" alt="img/customers/company.jpg" />
+			</div>
+		</div>
+		<div class="col-md-8">
+			<p>
+				Our commercial policy includes the marketing of mphim + software through distributors and dealers.
+				The retailer must guarantee the necessary assistance to the end user and, in this regard, our organization has provided ad hoc training courses in favor of its personnel.
+				The promotion of mphim + software at distributors and dealers is developed by our technical-commercial consultants who operate on the basis of the agency contract.
+				If you are interested in distributing software or collaborating as a commercial agent, send an e-mail to commerciale@mphimplus.com
+			</p>
+		</div>
+	</div>
 </div>
 @endsection

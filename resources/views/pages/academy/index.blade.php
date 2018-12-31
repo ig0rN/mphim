@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb my-4">
+		<ol class="breadcrumb mb-5">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}
@@ -16,11 +16,11 @@
 			</li>
 		</ol>
 	</nav>
-	<h3 class="heading m-0">
+	<h3 class="heading">
 		Academy
 	</h3>
-	<div id="academy" class="py-4">
-		<p>
+	<div id="academy">
+		<p class="mb-5">
 			Mphim+ academy It consists of trainers who have passed the mphim + accreditation path. They can act as teachers in mphim + training courses aimed at entrepreneurs, professionals, managers, in the context of school-work alternation projects with secondary schools and in the context of training projects with universities.
 		</p>
 		<div class="row">
