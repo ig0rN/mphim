@@ -3,7 +3,17 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	{{-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> --}}
+	<title>Mphim+ | Admin</title>
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/flag-icon.min.css') }}" />
+	<!--    <link rel="stylesheet" href="css/lightgallery.min.css" />-->
+	<link rel="stylesheet" href="{{ asset('css/hamburgers.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/animated.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/style.min.css?ver=' . str_random(5)) }}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.min.css">
 	{{-- JQuery --}}
 	<script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 
