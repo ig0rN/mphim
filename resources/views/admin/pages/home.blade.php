@@ -6,32 +6,32 @@
 <h1>Home</h1>
 <hr>
 
-{{-- <ul id="admin-home">
+<ul id="admin-home">
 	<li>
-		<a href="{{ route('admin.aboutUs') }}">About us</a>
+		<a href="{{ route('admin.home-page') }}">Home Page</a>
 	</li>
 	<li>
-		<a href="{{ route('admin.missionVision') }}">Mission - Vision</a>
+		<a href="{{ route('admin.mphim') }}">Mphim</a>
 	</li>
 	<li>
-		<a href="{{ route('admin.team') }}">Team</a>
+		<a href="{{ route('admin.customers') }}">Customers</a>
 	</li>
 	<li>
-		<a href="{{ route('admin.services') }}">Services</a>
+		<a href="{{ route('admin.versions') }}">Versions</a>
 	</li>
 	<li>
-		<a href="{{ route('admin.solutions') }}">Solutions</a>
+		<a href="{{ route('admin.commercial') }}">Commercial</a>
 	</li>
 	<li>
-		<a href="{{ route('admin.turboToken') }}">Turbo Token</a>
+		<a href="{{ route('admin.reference') }}">Reference</a>
 	</li>
-	<li>
+	{{-- <li>
 		<a href="{{ route('admin.partners') }}">Partners</a>
 	</li>
 	<li>
 		<a href="{{ route('admin.newsletter') }}">Newsletters</a>
-	</li>
-</ul> --}}
+	</li> --}}
+</ul>
 <ul id="buttons">
 	{{-- <li>
 		<i class="fas fa-key"></i>

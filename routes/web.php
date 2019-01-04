@@ -109,6 +109,32 @@ Route::namespace('Admin')
         Route::get('/home', function(){
             return view('admin.pages.home');
         })->name('admin.home');
+
+        Route::get('/home-page', 'OneRowPageController@showHome')->name('admin.home-page');
+        Route::post('/home-page/{home}', 'OneRowPageController@updateHomeText')->name('admin.home-page.update');
+        Route::post('/home-page-numbers', 'OneRowPageController@updateHomeNumbers')->name('admin.home-page.updateNum');
+
+        Route::get('/mphim', 'MphimController@index')->name('admin.mphim');
+        Route::get('/mphim-edit/{text}', 'MphimController@edit')->name('admin.mphim.edit');
+        Route::post('/mphim-update/{text}', 'MphimController@update')->name('admin.mphim.update');
+        // Route::post('/mphim-delete/{text}', 'MphimController@destroy')->name('admin.mphim.destroy');
+
+        Route::get('/customers', 'CustomerController@index')->name('admin.customers');
+        Route::get('/customers-edit/{customer}', 'CustomerController@edit')->name('admin.customers.edit');
+        Route::post('/customers-update/{customer}', 'CustomerController@update')->name('admin.customers.update');
+        // Route::post('/customer-delete/{customer}', 'CustomerController@destroy')->name('admin.customers.destroy');
+
+        // Versions
+        Route::get('/versions', 'OneRowPageController@showVersions')->name('admin.versions');
+        Route::post('/versions-update/{versions}', 'OneRowPageController@updateVersions')->name('admin.versions.update');
+
+        // Commercial
+        Route::get('/commercial', 'OneRowPageController@showCommercial')->name('admin.commercial');
+        Route::post('/commercial-update/{commercial}', 'OneRowPageController@updateCommercial')->name('admin.commercial.update');
+
+        // Reference
+        Route::get('/reference', 'OneRowPageController@showReference')->name('admin.reference');
+        Route::post('/reference-update/{reference}', 'OneRowPageController@updateReference')->name('admin.reference.update');
         
         // Logout
         Route::get('/logout', 'Auth\LoginController@logout')->name('logout');

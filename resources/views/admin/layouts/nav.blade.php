@@ -4,24 +4,24 @@
 		<a href="{{ route('admin.home') }}">Home</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'about-us' ? "class=active" : '' }} href="{{ route('admin.aboutUs') }}">About<span>us</span></a>
+		<a {{ Request::segment(2) == 'home-page' ? "class=active" : '' }} href="{{ route('admin.home-page') }}">Home<span>page</span></a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.missionVision') }}">Mission<span class="minus">-</span>Vision</a>
+		<a {{ Request::segment(2) == 'mphim' ? "class=active" : '' }} href="{{ route('admin.mphim') }}">Mphim</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'team' ? "class=active" : '' }} href="{{ route('admin.team') }}">Team</a>
+		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.customers') }}">Customers</a>
+	</li>
+	<li>
+		<a {{ Request::segment(2) == 'versions' ? "class=active" : '' }} href="{{ route('admin.versions') }}">Versions</a>
+	</li>
+	<li>
+		<a {{ Request::segment(2) == 'commercial' ? "class=active" : '' }} href="{{ route('admin.commercial') }}">Commercial</a>
+	</li>
+	<li>
+		<a {{ Request::segment(2) == 'reference' ? "class=active" : '' }} href="{{ route('admin.reference') }}">Reference</a>
 	</li>
 	{{-- <li>
-		<a {{ Request::segment(2) == 'services' ? "class=active" : '' }} href="{{ route('admin.services') }}">Services</a>
-	</li> --}}
-	<li>
-		<a {{ Request::segment(2) == 'solutions' ? "class=active" : '' }} href="{{ route('admin.solutions') }}">Solutions</a>
-	</li>
-	<li>
-		<a {{ Request::segment(2) == 'turbo-token' ? "class=active" : '' }} href="{{ route('admin.turboToken') }}">Turbo<span>token</span></a>
-	</li>
-	<li>
 		<a {{ Request::segment(2) == 'partners' ? "class=active" : '' }} href="{{ route('admin.partners') }}">Partners</a>
 	</li>
 	<li>
@@ -30,7 +30,7 @@
 	<div class="divider"></div>
 	<li>
 		<a {{ Request::segment(2) == 'change-password' ? "class=active" : '' }} href="{{ route('admin.changePass') }}">Change<span>password</span></a>
-	</li>
+	</li> --}}
 	<li>
 		<a href="{{ route('logout') }}">Logout</a>
 	</li>
