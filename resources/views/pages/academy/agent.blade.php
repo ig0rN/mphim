@@ -31,35 +31,7 @@
 			</div>
 		</div>
 		<div class="col-md-8">
-			<p>
-				The training course is a moment of orientation towards the profession of "sales and distribution technician".
-			</p>
-			<p>
-				In fact, Training4agent is aimed at sales agents interested in undertaking this new professional path which includes, in addition to the activity of promoting goods and services, the following tasks and activities:
-			</p>
-			<ul>
-				<li>
-					coordinate the sales network;
-				</li>
-				<li>
-					define prices and commercial strategies;
-				</li>
-				<li>
-					define sales budgets.
-				</li>
-			</ul>
-			<p>
-				To this end, the course aims to disseminate a practical and operational guide for the implementation of a planned marketing strategy, adaptable to any business context, regardless of the size and sector of the company.
-			</p>
-			<p>
-				The development of the elements of the marketing mix (product, price, distribution and promotion) necessary for the elaboration of the commercial policy is assured through the use of the business intelligence software MPHIM +.
-			</p>
-			<p>
-				Minimum duration 3 hours
-			</p>
-			<p class="m-0">
-				The duration and level of depth of the course can vary according to the training needs of users.
-			</p>
+			{!! $content->{'body_' . $language} !!}
 		</div>
 	</div>
 </div>

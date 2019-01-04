@@ -26,12 +26,7 @@
 			</div>
 		</div>
 		<div class="col-md-8">
-			<p>
-				Our commercial policy includes the marketing of mphim + software through distributors and dealers.
-				The retailer must guarantee the necessary assistance to the end user and, in this regard, our organization has provided ad hoc training courses in favor of its personnel.
-				The promotion of mphim + software at distributors and dealers is developed by our technical-commercial consultants who operate on the basis of the agency contract.
-				If you are interested in distributing software or collaborating as a commercial agent, send an e-mail to commerciale@mphimplus.com
-			</p>
+			{!! $content->{'body_' . $language} !!}
 		</div>
 	</div>
 </div>

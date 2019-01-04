@@ -4,7 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Database\OneRowPage;
 use App\Database\HomeNumber;
-use Illuminate\Http\Request;
+use App\Http\Requests\HomePageRequest;
+use App\Http\Requests\HomePageNumbersRequest;
+use App\Http\Requests\VersionsRequest;
+use App\Http\Requests\CommercialRequest;
+use App\Http\Requests\ReferenceRequest;
+// use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class OneRowPageController extends Controller
@@ -25,13 +30,13 @@ class OneRowPageController extends Controller
                 ]);
     }
 
-    public function updateHomeText(Request $request, OneRowPage $home)
+    public function updateHomeText(HomePageRequest $request, OneRowPage $home)
     {
         $home->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
     }
 
-    public function updateHomeNumbers(Request $request)
+    public function updateHomeNumbers(HomePageNumbersRequest $request)
     {
         $students = HomeNumber::where('type', 'students')->first();
         $students->update([
@@ -59,7 +64,7 @@ class OneRowPageController extends Controller
         return view('admin.pages.versions', compact('content'));
     }
 
-    public function updateVersions(Request $request, OneRowPage $versions)
+    public function updateVersions(VersionsRequest $request, OneRowPage $versions)
     {
         $versions->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
@@ -72,7 +77,7 @@ class OneRowPageController extends Controller
         return view('admin.pages.commercial', compact('content'));
     }
 
-    public function updateCommercial(Request $request, OneRowPage $commercial)
+    public function updateCommercial(CommercialRequest $request, OneRowPage $commercial)
     {
         $commercial->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
@@ -85,7 +90,7 @@ class OneRowPageController extends Controller
         return view('admin.pages.reference', compact('content'));
     }
 
-    public function updateReference(Request $request, OneRowPage $reference)
+    public function updateReference(ReferenceRequest $request, OneRowPage $reference)
     {
         $reference->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);

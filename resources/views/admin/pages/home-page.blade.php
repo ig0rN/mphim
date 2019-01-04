@@ -54,8 +54,6 @@
 		</div>
 	</div>
 	<input class="btn-submit" type="submit" value="Change content" />
-
-    @include('admin.errors')
 </form>
 
 <form class="admin-form" action="{{ route('admin.home-page.updateNum') }}" method="POST">
@@ -63,27 +61,27 @@
 	<div class="row">
 		<div class="col-md-6 col-lg-3">
 			<label for="header">Students Learning</label>
-			<input type="text" name="students[number]" value="{{ $students->number }}" />
+			<input type="number" min=0 name="students[number]" value="{{ $students->number }}" />
 			<label for="header">Mark</label>
 			<input type="text" name="students[mark]" value="{{ $students->mark }}" />
 		</div>
 		<div class="col-md-6 col-lg-3">
 			<label for="header">Active Courses</label>
-			<input type="text" name="courses[number]" value="{{ $courses->number }}" />
+			<input type="number" min=0 name="courses[number]" value="{{ $courses->number }}" />
 			<label for="header">Mark</label>
 			<input type="text" name="courses[mark]" value="{{ $courses->mark }}" />
 		</div>
 		<div class="col-md-6 col-lg-3">
 			<label for="header">Instructors online</label>
-			<input type="text" name="instructors[number]" value="{{ $instructors->number }}" />
+			<input type="number" min=0 name="instructors[number]" value="{{ $instructors->number }}" />
 			<label for="header">Mark</label>
 			<input type="text" name="instructors[mark]" value="{{ $instructors->mark }}" />
 		</div>
 	</div>
 	<input class="btn-submit" type="submit" value="Change content" />
-
-    @include('admin.errors')
 </form>
+
+@include('admin.errors')
 
 @endsection
 

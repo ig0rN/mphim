@@ -20,9 +20,9 @@
 		Academy
 	</h3>
 	<div id="academy">
-		<p class="mb-5">
-			Mphim+ academy It consists of trainers who have passed the mphim + accreditation path. They can act as teachers in mphim + training courses aimed at entrepreneurs, professionals, managers, in the context of school-work alternation projects with secondary schools and in the context of training projects with universities.
-		</p>
+		
+		{!! $content->{'body_' . $language} !!}
+
 		<div class="row">
 			<div class="col-md-3">
 				<div class="training">

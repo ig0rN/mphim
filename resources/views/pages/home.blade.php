@@ -9,22 +9,10 @@
 			<div class="col-md-10">
 				<div id="mphim">
 					<h2 class="mb-4">
-						Mphim+: A method in a software
+						{{ $content->{'header_' . $language} }}
 					</h2>
 					<div class="item py-2">
-						<p>
-							<strong>mphim+</strong> is a software that allows a company to record and implement its sales policies, favoring the market positioning of its products and services through the optimization the marketing mix elements (product, price, distribution and promotion).
-						</p>
-					</div>
-					<div class="item py-2">
-						<p>
-							<strong>mphim+</strong> is preparatory to different promotion tools, like trade shows, salesmen and e-commerce sites and assures their co-existence, maximizing results in terms of sales. 
-						</p>
-					</div>
-					<div class="item py-2">
-						<p>
-							<strong>mphim+</strong> is based on the 3ds+ marketing and export-marketing management, and is studied in high schools and universities. 
-						</p>
+						{!! $content->{'body_' . $language} !!}
 					</div>
 				</div>
 			</div>
@@ -169,10 +157,10 @@
 							<div class="flex-fill">
 								<div class="item">
 									<span class="counter-value" data-count="76">
-										0
+										{{ $students->number }}
 									</span>
 									<span class="value">
-										m+
+										{{ $students->mark }}
 									</span>
 								</div>
 								<h6>
@@ -182,10 +170,10 @@
 							<div class="flex-fill">
 								<div class="item">
 									<span class="counter-value" data-count="80">
-										0
+										{{ $courses->number }}
 									</span>
 									<span class="value">
-										k+
+										{{ $courses->mark }}
 									</span>
 								</div>
 								<h6>
@@ -195,10 +183,10 @@
 							<div class="flex-fill">
 								<div class="item">
 									<span class="counter-value" data-count="990">
-										0
+										{{ $instructors->number }}
 									</span>
 									<span class="value">
-										+
+										{{ $instructors->mark }}
 									</span>
 								</div>
 								<h6>

@@ -31,58 +31,7 @@
 			</div>
 		</div>
 		<div class="col-md-8">
-			<h6 class="font-weight-bold">
-				Recipients:
-			</h6>
-			<p class="text-underline">
-				<u>Graduates (preferably) in</u>:
-			</p>
-			<ul>
-				<li>
-					economy and commerce;
-				</li>
-				<li>
-					management engineering;
-				</li>
-				<li>
-					agriculture;
-				</li>
-				<li>
-					law;
-				</li>
-				<li>
-					and equivalent.
-				</li>
-			</ul>
-			<p class="text-underline">
-				<u>Professionals in the economic-business sector</u>:
-			</p>
-			<ul>
-				<li>
-					management consultants;
-				</li>
-				<li>
-					accountants;
-				</li>
-				<li>
-					lawyers in the commercial law area;
-				</li>
-				<li>
-					agronomists;
-				</li>
-				<li>
-					management control consultants;
-				</li>
-				<li>
-					marketing consultants;
-				</li>
-				<li>
-					consultants in the field of corporate finance;
-				</li>
-				<li>
-					quality consultants.
-				</li>
-			</ul>
+			{!! $content->{'body_' . $language} !!}
 			<p>
 				<strong>The training course</strong> allows the professional to have the necessary technical tool to operate proactively in or in support of functional, divisional and general directions, reaching levels of orientation that can be joined to the following professional profiles (1):
 			</p>

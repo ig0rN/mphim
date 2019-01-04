@@ -10,7 +10,7 @@
 		<a {{ Request::segment(2) == 'mphim' ? "class=active" : '' }} href="{{ route('admin.mphim') }}">Mphim</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.customers') }}">Customers</a>
+		<a {{ Request::segment(2) == 'customers' ? "class=active" : '' }} href="{{ route('admin.customers') }}">Customers</a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'versions' ? "class=active" : '' }} href="{{ route('admin.versions') }}">Versions</a>
@@ -21,14 +21,11 @@
 	<li>
 		<a {{ Request::segment(2) == 'reference' ? "class=active" : '' }} href="{{ route('admin.reference') }}">Reference</a>
 	</li>
-	{{-- <li>
-		<a {{ Request::segment(2) == 'partners' ? "class=active" : '' }} href="{{ route('admin.partners') }}">Partners</a>
-	</li>
 	<li>
-		<a {{ Request::segment(2) == 'newsletter' ? "class=active" : '' }} href="{{ route('admin.newsletter') }}">Newsletters</a>
+		<a {{ Request::segment(2) == 'academy' ? "class=active" : '' }} href="{{ route('admin.academy') }}">Academy</a>
 	</li>
 	<div class="divider"></div>
-	<li>
+	{{-- <li>
 		<a {{ Request::segment(2) == 'change-password' ? "class=active" : '' }} href="{{ route('admin.changePass') }}">Change<span>password</span></a>
 	</li> --}}
 	<li>

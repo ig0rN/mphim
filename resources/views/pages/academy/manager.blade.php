@@ -31,43 +31,7 @@
 			</div>
 		</div>
 		<div class="col-md-8">
-			<h6 class="font-weight-bold">
-				Recipients:
-			</h6>
-			<p class="text-underline">
-				<u>Graduates (preferably) in</u>:
-			</p>
-			<ul>
-				<li>
-					economy and commerce;
-				</li>
-				<li>
-					management engineering;
-				</li>
-				<li>
-					agriculture;
-				</li>
-				<li>
-					law;
-				</li>
-				<li>
-					and equivalent.
-				</li>
-			</ul>
-			<p class="text-underline">
-				<u>Management of companies in one of the following fields</u>:
-			</p>
-			<ul>
-				<li>
-					general direction;
-				</li>
-				<li>
-					finance, administration and control;
-				</li>
-				<li>
-					marketing.
-				</li>
-			</ul>
+			{!! $content->{'body_' . $language} !!}
 			<p>
 				<strong>The training course</strong> allows the professional to have the necessary technical tool to occupy positions of responsibility for which managerial and economic skills and competences are required, <em>reaching levels of orientation that can be joined to the following professional profiles (1)</em>:
 			</p>

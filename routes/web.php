@@ -10,70 +10,36 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
-
-// mphim
-Route::get('/mphim', function(){
-    return view('pages.mphim');
-})->name('mphim');
-
-// customers
-Route::get('/customers', function () {
-    return view('pages.customers');
-})->name('customers');
-
-// no dropdown
-Route::get('/versions', function () {
-    return view('pages.versions');
-})->name('versions');
-
-Route::get('/commercial', function () {
-    return view('pages.commercial');
-})->name('commercial');
-
-Route::get('/reference', function () {
-    return view('pages.reference');
-})->name('reference');
-
-// academy
-Route::get('/academy', function(){
-    return view('pages.academy.index');
-})->name('academy');
-
-Route::get('/academy/training-4-company', function () {
-    return view('pages.academy.company');
-})->name('academy.company');
-
-Route::get('/academy/training-4-agent', function () {
-    return view('pages.academy.agent');
-})->name('academy.agent');
-
-Route::get('/academy/training-4-advisor', function () {
-    return view('pages.academy.advisor');
-})->name('academy.advisor');
-
-Route::get('/academy/training-4-manager', function () {
-    return view('pages.academy.manager');
-})->name('academy.manager');
-
 // contact
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
-
 Route::get('/change-lang/{lang}', function($lang) {
-
     session()->put('locale', $lang);
     return redirect()->back();
-
 })->name('change-lang');
 
 Route::get('/admin', function(){
     return redirect()->route('login');
+});
+
+Route::namespace('Front')
+    ->group(function(){
+
+    Route::get('/', 'SimplePageController@showHome')->name('home');
+    Route::get('/mphim', 'SimplePageController@showMphim')->name('mphim');
+    Route::get('/customers', 'SimplePageController@showCustomers')->name('customers');
+    Route::get('/versions', 'SimplePageController@showVersions')->name('versions');
+    Route::get('/commercial', 'SimplePageController@showCommercial')->name('commercial');
+    Route::get('/reference', 'SimplePageController@showReference')->name('reference');
+
+    Route::get('/academy', 'AcademyController@showIndex')->name('academy');
+    Route::get('/academy/training-4-company', 'AcademyController@showCompany')->name('academy.company');
+    Route::get('/academy/training-4-agent', 'AcademyController@showAgent')->name('academy.agent');
+    Route::get('/academy/training-4-advisor', 'AcademyController@showAdvisor')->name('academy.advisor');
+    Route::get('/academy/training-4-manager', 'AcademyController@showManager')->name('academy.manager');
+
 });
 
 Route::namespace('Admin\Auth')
@@ -115,12 +81,12 @@ Route::namespace('Admin')
         Route::post('/home-page-numbers', 'OneRowPageController@updateHomeNumbers')->name('admin.home-page.updateNum');
 
         Route::get('/mphim', 'MphimController@index')->name('admin.mphim');
-        Route::get('/mphim-edit/{text}', 'MphimController@edit')->name('admin.mphim.edit');
+        Route::get('/mphim/edit/{text}', 'MphimController@edit')->name('admin.mphim.edit');
         Route::post('/mphim-update/{text}', 'MphimController@update')->name('admin.mphim.update');
         // Route::post('/mphim-delete/{text}', 'MphimController@destroy')->name('admin.mphim.destroy');
 
         Route::get('/customers', 'CustomerController@index')->name('admin.customers');
-        Route::get('/customers-edit/{customer}', 'CustomerController@edit')->name('admin.customers.edit');
+        Route::get('/customers/edit/{customer}', 'CustomerController@edit')->name('admin.customers.edit');
         Route::post('/customers-update/{customer}', 'CustomerController@update')->name('admin.customers.update');
         // Route::post('/customer-delete/{customer}', 'CustomerController@destroy')->name('admin.customers.destroy');
 
@@ -135,6 +101,12 @@ Route::namespace('Admin')
         // Reference
         Route::get('/reference', 'OneRowPageController@showReference')->name('admin.reference');
         Route::post('/reference-update/{reference}', 'OneRowPageController@updateReference')->name('admin.reference.update');
+
+        // Academy
+        Route::get('/academy', 'AcademyController@index')->name('admin.academy');
+        Route::get('/academy/edit/{academy}', 'AcademyController@edit')->name('admin.academy.edit');
+        Route::post('/academy-update/{academy}', 'AcademyController@update')->name('admin.academy.update');
+        // Route::post('/academy-delete/{academy}', 'academyController@destroy')->name('admin.academys.destroy');
         
         // Logout
         Route::get('/logout', 'Auth\LoginController@logout')->name('logout');

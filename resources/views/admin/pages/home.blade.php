@@ -25,12 +25,9 @@
 	<li>
 		<a href="{{ route('admin.reference') }}">Reference</a>
 	</li>
-	{{-- <li>
-		<a href="{{ route('admin.partners') }}">Partners</a>
-	</li>
 	<li>
-		<a href="{{ route('admin.newsletter') }}">Newsletters</a>
-	</li> --}}
+		<a href="{{ route('admin.academy') }}">Academy</a>
+	</li>
 </ul>
 <ul id="buttons">
 	{{-- <li>
