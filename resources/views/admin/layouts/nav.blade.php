@@ -10,6 +10,9 @@
 		<a {{ Request::segment(2) == 'mphim' ? "class=active" : '' }} href="{{ route('admin.mphim') }}">Mphim</a>
 	</li>
 	<li>
+		<a {{ Request::segment(2) == 'roadmap' ? "class=active" : '' }} href="{{ route('admin.roadmap.index') }}">RoadMap</a>
+	</li>
+	<li>
 		<a {{ Request::segment(2) == 'customers' ? "class=active" : '' }} href="{{ route('admin.customers') }}">Customers</a>
 	</li>
 	<li>
