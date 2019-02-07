@@ -9,34 +9,139 @@
             <div class="col-md-10">
                 <div id="mphim">
                     <div class="tab-content" id="mphim-tabs">
-                        <div class="tab-pane fade show active" id="default-text" role="tabpanel" aria-labelledby="default-tab">
-                            <h2 class="mb-4">
+                        <div class="tab-pane fade" id="default-text" role="tabpanel" aria-labelledby="default-tab">
+                            <h3 class="heading">
                                 {{ $content->{'header_' . $language} }}
-                            </h2>
-                            <div class="item py-2">
-                                {!! $content->{'body_' . $language} !!}
+                            </h3>
+                            <div class="text">
                             </div>
                         </div>
                         <div class="tab-pane fade" id="what-is-text" role="tabpanel" aria-labelledby="what-is-tab">
                             <h3 class="heading">
                                 What is?
                             </h3>
+                            <div class="text-div">
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="what-does-text" role="tabpanel" aria-labelledby="what-does-tab">
                             <h3 class="heading">
                                 What does it do?
                             </h3>
+                            <div class="text-div">
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="why-to-text" role="tabpanel" aria-labelledby="why-to-tab">
                             <h3 class="heading">
                                 Why to have it?
                             </h3>
+                            <div class="text-div">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release
+                                    of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                </p>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="roadmap-text" role="tabpanel" aria-labelledby="roadmap-tab">
+                        <div class="tab-pane fade show active" id="roadmap-text" role="tabpanel" aria-labelledby="roadmap-tab">
                             <h3 class="heading">
                                 Roadmap
                             </h3>
-                            <img src="{{ asset('img/roadmap/roadmap.jpg') }}" alt="img/roadmap/roadmap.jpg" />
+                            <div class="text-div">
+                                <div class="logo text-center">
+                                    <img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
+                                </div>
+                                <ul class="roadmap">
+                                    <li class="even">
+                                        <div class="container">
+                                            <div class="row no-gutters">
+                                                <div class="col-md-5 text-right">
+                                                    <div class="text">
+                                                        <div class="year-div">
+                                                            <p class="year m-0">
+                                                                2018
+                                                            </p>
+                                                        </div>
+                                                        <p>
+
+                                                            Lorem ipsum
+                                                        </p>
+                                                        <div class="arrow-right"></div>
+                                                        <p class="date m-0 text-right">
+                                                            May
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="odd">
+                                        <div class="container">
+                                            <div class="row no-gutters">
+                                                <div class="col-md-5 offset-7">
+                                                    <div class="text">
+                                                        <div class="year-div">
+                                                            <p class="year">
+                                                                2017
+                                                            </p>
+                                                        </div>
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry.
+                                                        </p>
+                                                        <div class="arrow-left"></div>
+                                                        <p class="date">
+                                                            May
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -46,8 +151,8 @@
                     <div class="discover">
                         <ul class="nav" role="tablist">
                             <li class="item">
-                                <a id="what-is-tab" data-toggle="tab" href="#what-is-text" role="tab"
-                                    aria-controls="what-is-text" aria-selected="true">
+                                <a id="what-is-tab" data-toggle="tab" href="#what-is-text" role="tab" aria-controls="what-is-text"
+                                    aria-selected="true">
                                     <img src="{{ asset('img/home/mphim/what-is.png') }}" alt="img/home/mphim/what-is.png" />
                                     <p>
                                         {{ __('translate.what-is') }}
@@ -61,8 +166,8 @@
                             </a> -->
                             </li>
                             <li class="item">
-                                <a id="what-does-tab" data-toggle="tab" href="#what-does-text" role="tab"
-                                    aria-controls="what-does-text" aria-selected="true">
+                                <a id="what-does-tab" data-toggle="tab" href="#what-does-text" role="tab" aria-controls="what-does-text"
+                                    aria-selected="true">
                                     <img src="{{ asset('img/home/mphim/what-does.png') }}" alt="img/home/mphim/what-does.png " />
                                     <p>
                                         {{ __('translate.what-does-it-do') }}
@@ -70,8 +175,8 @@
                                 </a>
                             </li>
                             <li class="item">
-                                <a id="why-to-tab" data-toggle="tab" href="#why-to-text" role="tab"
-                                    aria-controls="why-to-text" aria-selected="true">
+                                <a id="why-to-tab" data-toggle="tab" href="#why-to-text" role="tab" aria-controls="why-to-text"
+                                    aria-selected="true">
                                     <img src="{{ asset('img/home/mphim/why-to.png') }}" alt="img/home/mphim/why-to.png " />
                                     <p>
                                         {{ __('translate.why-to-have') }}
@@ -79,7 +184,7 @@
                                 </a>
                             </li>
                             <li class="item">
-                                <a id="roadmap-tab" data-toggle="tab" href="#roadmap-text" role="tab"
+                                <a class="active" id="roadmap-tab" data-toggle="tab" href="#roadmap-text" role="tab"
                                     aria-controls="roadmap-text" aria-selected="true">
                                     <img src="{{ asset('img/home/mphim/roadmap.png') }}" alt="img/home/mphim/radmap.png " />
                                     <p>
