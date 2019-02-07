@@ -140,6 +140,29 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="odd">
+                                        <div class="container">
+                                            <div class="row no-gutters">
+                                                <div class="col-md-5 offset-7">
+                                                    <div class="text">
+                                                        <div class="year-div">
+                                                            <p class="year">
+                                                                2017
+                                                            </p>
+                                                        </div>
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry.
+                                                        </p>
+                                                        <div class="arrow-left"></div>
+                                                        <p class="date">
+                                                            May
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
