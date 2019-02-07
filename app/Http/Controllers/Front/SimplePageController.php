@@ -2,23 +2,26 @@
 
 namespace App\Http\Controllers\Front;
 
-use App\Database\OneRowPage;
+use App\Database\Customer;
 use App\Database\HomeNumber;
 use App\Database\Mphim;
-use App\Database\Customer;
-use Illuminate\Http\Request;
+use App\Database\OneRowPage;
+use App\Database\Roadmap;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class SimplePageController extends Controller
 {
     public function showHome()
     {
+        $roadmap = Roadmap::orderBy('date', 'desc')->get();
         $content = OneRowPage::where('page', 'home')->first();
         $students = HomeNumber::where('type', 'students')->first();
         $courses = HomeNumber::where('type', 'courses')->first();
         $instructors = HomeNumber::where('type', 'instructors')->first();
         return view('pages.home')
                 ->with([
+                    'roadmap' => $roadmap,
                     'content' => $content,
                     'students' => $students,
                     'courses' => $courses,

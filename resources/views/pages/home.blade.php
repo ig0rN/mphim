@@ -94,75 +94,47 @@
                                     <img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
                                 </div>
                                 <ul class="roadmap">
-                                    <li class="even">
-                                        <div class="container">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-5 text-right">
-                                                    <div class="text">
-                                                        <div class="year-div">
-                                                            <p class="year m-0">
-                                                                2018
-                                                            </p>
-                                                        </div>
-                                                        <p>
+                                    @foreach($roadmap as $event)
+                                        @php 
+                                            $year = Carbon\Carbon::createFromFormat('d/m/Y', $event->date)->year;
+                                        @endphp
 
-                                                            Lorem ipsum
-                                                        </p>
-                                                        <div class="arrow-right"></div>
-                                                        <p class="date m-0 text-right">
-                                                            May
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="odd">
-                                        <div class="container">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-5 offset-7">
-                                                    <div class="text">
-                                                        <div class="year-div">
-                                                            <p class="year">
-                                                                2017
-                                                            </p>
+                                        @if($year % 2 == 0)
+                                            <li class="even">
+                                                <div class="container">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-md-5 text-right">
+                                                            <div class="text">
+                                                                <div class="year-div">
+                                                                    <p class="year m-0">{{ $year }}</p>
+                                                                </div>
+                                                                <p>{!! $event->{'body_' . $language} !!}</p>
+                                                                <div class="arrow-right"></div>
+                                                                <p class="date m-0 text-right">{{ $event->date }}</p>
+                                                            </div>
                                                         </div>
-                                                        <p>
-                                                            Lorem Ipsum is simply dummy text of the printing and
-                                                            typesetting industry.
-                                                        </p>
-                                                        <div class="arrow-left"></div>
-                                                        <p class="date">
-                                                            May
-                                                        </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="odd">
-                                        <div class="container">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-5 offset-7">
-                                                    <div class="text">
-                                                        <div class="year-div">
-                                                            <p class="year">
-                                                                2017
-                                                            </p>
+                                            </li>
+                                        @else
+                                            <li class="odd">
+                                                <div class="container">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-md-5 offset-7">
+                                                            <div class="text">
+                                                                <div class="year-div">
+                                                                    <p class="year">{{ $year }}</p>
+                                                                </div>
+                                                                <p>{!! $event->{'body_' . $language} !!}</p>
+                                                                <div class="arrow-left"></div>
+                                                                <p class="date">{{ $event->date }}</p>
+                                                            </div>
                                                         </div>
-                                                        <p>
-                                                            Lorem Ipsum is simply dummy text of the printing and
-                                                            typesetting industry.
-                                                        </p>
-                                                        <div class="arrow-left"></div>
-                                                        <p class="date">
-                                                            May
-                                                        </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </li>
+                                            </li>
+                                        @endif
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
