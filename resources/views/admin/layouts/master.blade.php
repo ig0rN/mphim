@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="{{ asset('css/animated.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/style.min.css?ver=' . str_random(5)) }}" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.min.css">
+
+	@yield('styles')
+
 	{{-- JQuery --}}
 	<script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 

@@ -85,6 +85,8 @@ Route::namespace('Admin')
         Route::post('/mphim-update/{text}', 'MphimController@update')->name('admin.mphim.update');
         // Route::post('/mphim-delete/{text}', 'MphimController@destroy')->name('admin.mphim.destroy');
 
+        Route::resource('/roadmap', 'RoadMapController', ['as' => 'admin'])->except(['show']);
+
         Route::get('/customers', 'CustomerController@index')->name('admin.customers');
         Route::get('/customers/edit/{customer}', 'CustomerController@edit')->name('admin.customers.edit');
         Route::post('/customers-update/{customer}', 'CustomerController@update')->name('admin.customers.update');
