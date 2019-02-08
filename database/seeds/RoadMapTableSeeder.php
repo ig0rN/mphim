@@ -14,7 +14,7 @@ class RoadMapTableSeeder extends Seeder
     public function run()
     {
         Roadmap::create([
-            'date' => Carbon::parse('2008-12-23'),
+            'date' => '2008-12-23',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -23,7 +23,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
         Roadmap::create([
-            'date' => Carbon::parse('2012-06-15'),
+            'date' => '2012-06-15',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -32,7 +32,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
         Roadmap::create([
-            'date' => Carbon::parse('2014-08-17'),
+            'date' => '2014-08-17',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -41,7 +41,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
         Roadmap::create([
-            'date' => Carbon::parse('2015-04-18'),
+            'date' => '2015-04-18',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -50,7 +50,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
 		Roadmap::create([
-            'date' => Carbon::parse('2016-05-13'),
+            'date' => '2016-05-13',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -59,7 +59,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
         Roadmap::create([
-            'date' => Carbon::parse('2017-01-11'),
+            'date' => '2017-01-11',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -68,7 +68,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
         Roadmap::create([
-            'date' => Carbon::parse('2018-05-11'),
+            'date' => '2018-05-11',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
@@ -77,7 +77,7 @@ class RoadMapTableSeeder extends Seeder
         ]);
 
         Roadmap::create([
-            'date' => Carbon::parse('2018-04-11'),
+            'date' => '2018-04-11',
             'body_en' => 'RoadMap Body EN',
             'body_de' => 'RoadMap Body DE',
             'body_fr' => 'RoadMap Body FR',
