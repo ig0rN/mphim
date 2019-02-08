@@ -38,7 +38,7 @@ class RoadMapController extends Controller
         $roadmap->update($request->all());
 
         return redirect()->route('admin.roadmap.index')
-                        ->with(['success' => 'You have successfully updated a roadmap event.']);;
+                        ->with(['success' => 'You have successfully updated a roadmap event.']);
     }
 
     public function destroy(Roadmap $roadmap)
