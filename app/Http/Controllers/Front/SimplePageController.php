@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Front;
 
 use App\Database\Customer;
-use App\Database\HomeNumber;
 use App\Database\Mphim;
 use App\Database\OneRowPage;
 use App\Database\Roadmap;
@@ -15,17 +14,15 @@ class SimplePageController extends Controller
     public function showHome()
     {
         $roadmap = Roadmap::orderBy('date', 'desc')->get();
-        $content = OneRowPage::where('page', 'home')->first();
-        $students = HomeNumber::where('type', 'students')->first();
-        $courses = HomeNumber::where('type', 'courses')->first();
-        $instructors = HomeNumber::where('type', 'instructors')->first();
+        $whatIs = Mphim::where('name', 'What is')->first();
+        $whatDoes = Mphim::where('name', 'What does it do')->first();
+        $whyTo = Mphim::where('name', 'Why to have it')->first();
         return view('pages.home')
                 ->with([
                     'roadmap' => $roadmap,
-                    'content' => $content,
-                    'students' => $students,
-                    'courses' => $courses,
-                    'instructors' => $instructors,
+                    'whatIs' => $whatIs,
+                    'whatDoes' => $whatDoes,
+                    'whyTo' => $whyTo,
                     'language' => app()->getLocale()
                 ]);
     }

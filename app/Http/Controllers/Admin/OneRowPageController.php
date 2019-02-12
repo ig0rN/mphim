@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Database\OneRowPage;
-use App\Database\HomeNumber;
 use App\Http\Requests\HomePageRequest;
 use App\Http\Requests\HomePageNumbersRequest;
 use App\Http\Requests\VersionsRequest;
@@ -33,27 +32,6 @@ class OneRowPageController extends Controller
     public function updateHomeText(HomePageRequest $request, OneRowPage $home)
     {
         $home->update($request->all());
-        return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
-    }
-
-    public function updateHomeNumbers(HomePageNumbersRequest $request)
-    {
-        $students = HomeNumber::where('type', 'students')->first();
-        $students->update([
-            'number' => $request->students['number'],
-            'mark' => $request->students['mark']
-        ]);
-        $courses = HomeNumber::where('type', 'courses')->first();
-        $courses->update([
-            'number' => $request->courses['number'],
-            'mark' => $request->courses['mark']
-        ]);
-        $instructors = HomeNumber::where('type', 'instructors')->first();
-        $instructors->update([
-            'number' => $request->instructors['number'],
-            'mark' => $request->instructors['mark']
-        ]);
-
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
     }
 

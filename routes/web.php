@@ -78,7 +78,6 @@ Route::namespace('Admin')
 
         Route::get('/home-page', 'OneRowPageController@showHome')->name('admin.home-page');
         Route::post('/home-page/{home}', 'OneRowPageController@updateHomeText')->name('admin.home-page.update');
-        Route::post('/home-page-numbers', 'OneRowPageController@updateHomeNumbers')->name('admin.home-page.updateNum');
 
         Route::get('/mphim', 'MphimController@index')->name('admin.mphim');
         Route::get('/mphim/edit/{text}', 'MphimController@edit')->name('admin.mphim.edit');

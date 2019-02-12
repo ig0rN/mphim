@@ -9,18 +9,14 @@
             <div class="col-md-10">
                 <div id="mphim">
                     <div class="tab-content" id="mphim-tabs">
-                        <div class="tab-pane fade" id="default-text" role="tabpanel" aria-labelledby="default-tab">
-                            <h3 class="heading">
-                                {{ $content->{'header_' . $language} }}
-                            </h3>
-                            <div class="text">
-                            </div>
-                        </div>
                         <div class="tab-pane fade" id="what-is-text" role="tabpanel" aria-labelledby="what-is-tab">
                             <h3 class="heading">
                                 What is?
                             </h3>
                             <div class="text-div">
+                                <p>
+                                    {{ $whatIs->{'body_' . $language} }}
+                                </p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="what-does-text" role="tabpanel" aria-labelledby="what-does-tab">
@@ -28,6 +24,9 @@
                                 What does it do?
                             </h3>
                             <div class="text-div">
+                                <p>
+                                    {{ $whatDoes->{'body_' . $language} }}
+                                </p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="why-to-text" role="tabpanel" aria-labelledby="why-to-tab">
@@ -36,52 +35,7 @@
                             </h3>
                             <div class="text-div">
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. It was popularised in the 1960s with the release
-                                    of
-                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book. It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book. It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book. It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book. It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book. It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    {{ $whyTo->{'body_' . $language} }}
                                 </p>
                             </div>
                         </div>
@@ -396,96 +350,6 @@
         </div>
     </div>
 </div>
-<!-- <div id="about" class="pt-5">
-    <div class="container-fluid">
-		<p class="home-heading text-center">
-			About
-		</p>
-        <div class="row">
-            <div class="col-md-6 pl-0">
-                <div class="student-image">
-                    <img src="{{ asset('img/home/about/student-1.jpg') }}" alt="img/home/about/student-1.jpg" />
-                </div>
-            </div>
-            <div class="col-md-6">
-				<div class="col-md-10">
-					<h1 class="pt-4">About Mphim+</h1>
-					<div id="counter">
-						<div class="d-flex">
-							<div class="flex-fill">
-								<div class="item">
-									<span class="counter-value" data-count="76">
-										{{ $students->number }}
-									</span>
-									<span class="value">
-										{{ $students->mark }}
-									</span>
-								</div>
-								<h6>
-									Students Learning
-								</h6>
-							</div>
-							<div class="flex-fill">
-								<div class="item">
-									<span class="counter-value" data-count="80">
-										{{ $courses->number }}
-									</span>
-									<span class="value">
-										{{ $courses->mark }}
-									</span>
-								</div>
-								<h6>
-									Active Courses
-								</h6>
-							</div>
-							<div class="flex-fill">
-								<div class="item">
-									<span class="counter-value" data-count="990">
-										{{ $instructors->number }}
-									</span>
-									<span class="value">
-										{{ $instructors->mark }}
-									</span>
-								</div>
-								<h6>
-									Instructors online
-								</h6>
-							</div>
-						</div>
-					</div>
-					<p class="pt-4">
-						Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
-					</p>
-					<button class="btn btn-learn">
-						Learn more
-						<i class="fas fa-angle-right"></i>
-					</button>
-				</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-right">
-				<div class="col-md-10 offset-2">
-					<h2 class="pt-4">
-						Create a course for free in minutes with teachable
-					</h2>
-					<p class="pt-4">
-						Students in class on time, spending longer learning and handing their homework in when it’s due – the obvious ones, but these aren’t the only ways My Study Life helps increase attainment. The dashboard gives students an overview of their day,
-					</p>
-					<button class="btn btn-learn">
-						Learn more
-						<i class="fas fa-angle-right"></i>
-					</button>
-				</div>
-            </div>
-            <div class="col-md-6 pr-0">
-                <div class="student-image-second">
-                    <img src="{{ asset('img/home/about/student-2.jpg') }}" alt="img/home/about/student-2.jpg" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 @endsection
 
 @section('scripts')
