@@ -486,6 +486,10 @@ svg {
                             &:hover {
                                 background-color: $gamboge;
 
+                                .year-div {
+                                    border-color: $gamboge;
+                                }
+
                                 .arrow-right {
                                     border-left-color: $gamboge;
                                 }
@@ -494,10 +498,6 @@ svg {
                             .year-div {
                                 border-color: $seabuckthorn;
                                 left: -45px;
-
-                                &:hover {
-                                    border-color: $gamboge;
-                                }
                             }
 
                             .date {
@@ -514,6 +514,10 @@ svg {
                             &:hover {
                                 background-color: $swamp;
 
+                                .year-div {
+                                    border-color: $swamp;
+                                }
+
                                 .arrow-left {
                                     border-right-color: $swamp;
                                 }
@@ -522,10 +526,6 @@ svg {
                             .year-div {
                                 border-color: $bluedianne;
                                 right: -45px;
-
-                                &:hover {
-                                    border-color: $swamp;
-                                }
                             }
 
                             .date {
@@ -539,6 +539,7 @@ svg {
                         display: inline-block;
                         transition: $transition;
                         position: relative;
+                        cursor: pointer;
 
                         .year-div {
                             position: absolute;
@@ -728,6 +729,12 @@ svg {
                     background-color: $swamp;
                 }
             }
+        }
+    }
+
+    .tab-content {
+        p {
+            margin: 30px 0 0;
         }
     }
 }
@@ -1049,7 +1056,6 @@ h2 {
             .info {
                 background-color: $concrete;
                 padding: 10px;
-                height: 100%;
 
                 .state {
                     letter-spacing: 1px;
@@ -1059,12 +1065,15 @@ h2 {
 
                 .address,
                 .telephone,
+                .telefax,
                 .email {
                     font-size: 14px;
                     margin-bottom: 3px;
                 }
 
-                .telephone {
+                .address,
+                .telephone,
+                .telefax {
                     a {
                         color: $black;
                         transition: $transition;
@@ -1086,6 +1095,16 @@ h2 {
                             text-decoration: underline !important;
                         }
                     }
+                }
+            }
+
+            .map {
+                padding: 0 10px 5px;
+                background-color: $concrete;
+
+                iframe {
+                    width: 100%;
+                    height: 200px;
                 }
             }
         }
