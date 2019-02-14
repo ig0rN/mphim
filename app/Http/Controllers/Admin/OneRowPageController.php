@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Database\OneRowPage;
-use App\Http\Requests\HomePageRequest;
-use App\Http\Requests\HomePageNumbersRequest;
 use App\Http\Requests\VersionsRequest;
 use App\Http\Requests\CommercialRequest;
 use App\Http\Requests\ReferenceRequest;
@@ -13,28 +11,6 @@ use App\Http\Controllers\Controller;
 
 class OneRowPageController extends Controller
 {
-    // Home Page
-    public function showHome()
-    {
-        $content = OneRowPage::where('page', 'home')->first();
-        $students = HomeNumber::where('type', 'students')->first();
-        $courses = HomeNumber::where('type', 'courses')->first();
-        $instructors = HomeNumber::where('type', 'instructors')->first();
-        return view('admin.pages.home-page')
-                ->with([
-                    'content' => $content,
-                    'students' => $students,
-                    'courses' => $courses,
-                    'instructors' => $instructors
-                ]);
-    }
-
-    public function updateHomeText(HomePageRequest $request, OneRowPage $home)
-    {
-        $home->update($request->all());
-        return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
-    }
-
     // Versions
     public function showVersions()
     {

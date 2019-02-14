@@ -9,9 +9,9 @@ class DatabaseSeeder extends Seeder
         'one_row_page',
         'mphims',
         'roadmaps',
-        'home_numbers',
         'customers',
         'academies',
+        'quotes',
     ];
 
     /**
@@ -29,7 +29,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UsersTableSeeder::class);
         $this->call(OneRowPageTableSeeder::class);
-        $this->call(HomeNumberTableSeeder::class);
         $this->call(CustomerTableSeeder::class);
         $this->call(MphimTableSeeder::class);
         $this->call(AcademyTableSeeder::class);
