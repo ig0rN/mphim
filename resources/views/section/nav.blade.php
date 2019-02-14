@@ -90,26 +90,13 @@
                     </div>
                     <div class="col-md-10">
                         <div class="owl-carousel">
-                            <div>
-                                <p>
-                                    "Lorem ipsum 1"
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    "Lorem ipsum 2"
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    "Lorem ipsum 3"
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    "Lorem ipsum 4"
-                                </p>
-                            </div>
+                            @foreach ($quotes as $quote)
+                                <div>
+                                    <p>
+                                        {{ $quote->text }}
+                                    </p>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
