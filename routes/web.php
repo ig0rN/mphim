@@ -76,8 +76,12 @@ Route::namespace('Admin')
             return view('admin.pages.home');
         })->name('admin.home');
 
-        Route::get('/home-page', 'OneRowPageController@showHome')->name('admin.home-page');
-        Route::post('/home-page/{home}', 'OneRowPageController@updateHomeText')->name('admin.home-page.update');
+        Route::get('/quotes', 'QuoteController@index')->name('admin.quotes');
+        Route::get('/quote/create', 'QuoteController@create')->name('admin.quote.create');
+        Route::post('/quote/store', 'QuoteController@store')->name('admin.quote.store');
+        Route::get('/quote/edit/{quote}', 'QuoteController@edit')->name('admin.quote.edit');
+        Route::post('/quote-update/{quote}', 'QuoteController@update')->name('admin.quote.update');
+        Route::post('/quote-delete/{quote}', 'QuoteController@destroy')->name('admin.quote.destroy');
 
         Route::get('/mphim', 'MphimController@index')->name('admin.mphim');
         Route::get('/mphim/edit/{text}', 'MphimController@edit')->name('admin.mphim.edit');

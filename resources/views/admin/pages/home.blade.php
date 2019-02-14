@@ -8,7 +8,7 @@
 
 <ul id="admin-home">
 	<li>
-		<a href="{{ route('admin.home-page') }}">Home Page</a>
+		<a href="{{ route('admin.quotes') }}">Home Page Quotes</a>
 	</li>
 	<li>
 		<a href="{{ route('admin.mphim') }}">Mphim</a>

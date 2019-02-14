@@ -4,7 +4,7 @@
 		<a href="{{ route('admin.home') }}">Home</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'home-page' ? "class=active" : '' }} href="{{ route('admin.home-page') }}">Home<span>page</span></a>
+		<a {{ Request::segment(2) == 'quotes' ? "class=active" : '' }} href="{{ route('admin.quotes') }}">Home<span>page</span><span>Quotes</span></a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'mphim' ? "class=active" : '' }} href="{{ route('admin.mphim') }}">Mphim</a>
