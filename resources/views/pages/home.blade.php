@@ -9,6 +9,16 @@
             <div class="col-md-10">
                 <div id="mphim">
                     <div class="tab-content" id="mphim-tabs">
+                        <div class="tab-pane fade show active">
+                            <h3 class="heading">
+                                Default message
+                            </h3>
+                            <div class="text-div">
+                                <p>
+                                    Default message
+                                </p>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="what-is-text" role="tabpanel" aria-labelledby="what-is-tab">
                             <h3 class="heading">
                                 What is?
@@ -39,7 +49,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="tab-pane fade show active" id="roadmap-text" role="tabpanel" aria-labelledby="roadmap-tab">
+                        <div class="tab-pane fade" id="roadmap-text" role="tabpanel" aria-labelledby="roadmap-tab">
                             <h3 class="heading">
                                 Roadmap
                             </h3>
@@ -49,45 +59,45 @@
                                 </div>
                                 <ul class="roadmap">
                                     @foreach($roadmap as $event)
-                                        @php 
-                                            $year = Carbon\Carbon::createFromFormat('d/m/Y', $event->date)->year;
-                                        @endphp
+                                    @php
+                                    $year = Carbon\Carbon::createFromFormat('d/m/Y', $event->date)->year;
+                                    @endphp
 
-                                        @if($year % 2 == 0)
-                                            <li class="even">
-                                                <div class="container">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-md-5 text-right">
-                                                            <div class="text">
-                                                                <div class="year-div">
-                                                                    <p class="year m-0">{{ $year }}</p>
-                                                                </div>
-                                                                <p>{!! $event->{'body_' . $language} !!}</p>
-                                                                <div class="arrow-right"></div>
-                                                                <p class="date m-0 text-right">{{ $event->date }}</p>
-                                                            </div>
+                                    @if($year % 2 == 0)
+                                    <li class="even">
+                                        <div class="container">
+                                            <div class="row no-gutters">
+                                                <div class="col-md-5 text-right">
+                                                    <div class="text">
+                                                        <div class="year-div">
+                                                            <p class="year m-0">{{ $year }}</p>
                                                         </div>
+                                                        <p>{!! $event->{'body_' . $language} !!}</p>
+                                                        <div class="arrow-right"></div>
+                                                        <p class="date m-0 text-right">{{ $event->date }}</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        @else
-                                            <li class="odd">
-                                                <div class="container">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-md-5 offset-7">
-                                                            <div class="text">
-                                                                <div class="year-div">
-                                                                    <p class="year">{{ $year }}</p>
-                                                                </div>
-                                                                <p>{!! $event->{'body_' . $language} !!}</p>
-                                                                <div class="arrow-left"></div>
-                                                                <p class="date">{{ $event->date }}</p>
-                                                            </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    @else
+                                    <li class="odd">
+                                        <div class="container">
+                                            <div class="row no-gutters">
+                                                <div class="col-md-5 offset-7">
+                                                    <div class="text">
+                                                        <div class="year-div">
+                                                            <p class="year">{{ $year }}</p>
                                                         </div>
+                                                        <p>{!! $event->{'body_' . $language} !!}</p>
+                                                        <div class="arrow-left"></div>
+                                                        <p class="date">{{ $event->date }}</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        @endif
+                                            </div>
+                                        </div>
+                                    </li>
+                                    @endif
                                     @endforeach
                                 </ul>
                             </div>
@@ -133,8 +143,8 @@
                                 </a>
                             </li>
                             <li class="item">
-                                <a class="active" id="roadmap-tab" data-toggle="tab" href="#roadmap-text" role="tab"
-                                    aria-controls="roadmap-text" aria-selected="true">
+                                <a id="roadmap-tab" data-toggle="tab" href="#roadmap-text" role="tab" aria-controls="roadmap-text"
+                                    aria-selected="true">
                                     <img src="{{ asset('img/home/mphim/roadmap.png') }}" alt="img/home/mphim/radmap.png " />
                                     <p>
                                         {{ __('translate.roadmap') }}
