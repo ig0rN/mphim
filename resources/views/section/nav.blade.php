@@ -131,11 +131,11 @@
                                     {{ __('translate.why-to-have') }}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="{{ routeOrAnchor('mphim', '#roadmap') }}" class="nav-link">
                                     {{ __('translate.roadmap') }}
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li>

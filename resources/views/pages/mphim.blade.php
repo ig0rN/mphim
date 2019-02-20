@@ -40,11 +40,11 @@
             {!! $whyTo->{'body_' . $language} !!}
         </p>
     </div>
-    <div id="roadmap" class="item-text">
+    <!-- <div id="roadmap" class="item-text">
         <h3 class="heading">
             Roadmap
         </h3>
         <img src="{{ asset('img/roadmap/roadmap.jpg') }}" alt="img/roadmap/roadmap.jpg" />
-    </div>
+    </div> -->
 </div>
 @endsection
