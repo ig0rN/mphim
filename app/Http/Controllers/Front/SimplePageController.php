@@ -90,4 +90,9 @@ class SimplePageController extends Controller
                     'language' => app()->getLocale()
                 ]);
     }
+
+    public function showContact()
+    {
+        return view('pages.contact');
+    }
 }

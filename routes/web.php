@@ -10,11 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// contact
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
-
 Route::get('/change-lang/{lang}', function($lang) {
     session()->put('locale', $lang);
     return redirect()->back();
@@ -33,6 +28,7 @@ Route::namespace('Front')
     Route::get('/versions', 'SimplePageController@showVersions')->name('versions');
     Route::get('/commercial', 'SimplePageController@showCommercial')->name('commercial');
     Route::get('/reference', 'SimplePageController@showReference')->name('reference');
+    Route::get('/contact', 'SimplePageController@showContact')->name('contact');
 
     Route::get('/academy', 'AcademyController@showIndex')->name('academy');
     Route::get('/academy/training-4-company', 'AcademyController@showCompany')->name('academy.company');
