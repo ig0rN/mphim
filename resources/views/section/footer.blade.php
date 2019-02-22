@@ -136,6 +136,11 @@
 					<i class="fab fa-youtube"></i>
 				</a>
 			</li>
+<li>
+    <a href="javascript:void(0)" title="LinkedIn" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</li>
 			<!-- <li>
 				<a href="https://plus.google.com/u/0/102086562772088987394?hl=sr" title="Google+" target="_blank">
 					<i class="fab fa-google-plus-g"></i>

@@ -70,15 +70,9 @@
                                 +39 091 588 140
                             </a>
                         </p>
-                        <p class="telefax">
-                            Telefax
-                            <a href="callto:+000 000000" title="Call">
-                                +000 000000
-                            </a>
-                        </p>
                         <p class="email">
                             <a href="mailto:info@mphimplus.com" title="Email">
-                                info@mphimplus.com
+                                italia@mphimplus.com
                             </a>
                         </p>
                     </div>
@@ -107,15 +101,9 @@
                                 +41 786 006 023
                             </a>
                         </p>
-                        <p class="telefax">
-                            Telefax
-                            <a href="callto:+000 000000" title="Call">
-                                +000 000000
-                            </a>
-                        </p>
                         <p class="email">
                             <a href="callto:mailto:info@mphimplus.com" title="Email">
-                                info@mphimplus.com
+                                schweiz@mphimplus.com
                             </a>
                         </p>
                     </div>
@@ -144,15 +132,9 @@
                                 +381 34 20 70 98
                             </a>
                         </p>
-                        <p class="telefax">
-                            Telefax
-                            <a href="callto:+000 000000" title="Call">
-                                +000 000000
-                            </a>
-                        </p>
                         <p class="email">
                             <a href="mailto:info@mphimplus.com" title="Email">
-                                info@mphimplus.com
+                                srbija@mphimplus.com
                             </a>
                         </p>
                     </div>
@@ -181,15 +163,9 @@
                                 +212 645263784
                             </a>
                         </p>
-                        <p class="telefax">
-                            Telefax
-                            <a href="callto:+212 53777646" title="Call">
-                                +212 53777646
-                            </a>
-                        </p>
                         <p class="email">
                             <a href="mailto:info@mphimplus.com" title="Email">
-                                info@mphimplus.com
+                                maroc@mphimplus.com
                             </a>
                         </p>
                     </div>
