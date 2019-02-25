@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <nav id="breadcrumb" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-4">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="{{ route('home') }}">
                     {{ __('translate.home') }}
@@ -47,6 +47,95 @@
         </div> -->
         <div class="contact-form">
             <h3 class="heading">Contact form</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    Name<span>*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    Telephone
+                                </label>
+                                <input type="tel" class="form-control" placeholder="Enter telephone" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    Email<span>*</span>
+                                </label>
+                                <input type="email" class="form-control" placeholder="Enter email" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    Company name
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter company name" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    Subject
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter subject" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <label>
+                                To
+                            </label>
+                            <div class="select-div text-right">
+                                <select class="form-control">
+                                    <option selected disabled>
+                                        Chose email
+                                    </option>
+                                    <option value="italia@mphimplus.com">
+                                        italia@mphimplus.com
+                                    </option>
+                                    <option value="schweiz@mphimplus.com">
+                                        schweiz@mphimplus.com
+                                    </option>
+                                    <option value="srbija@mphimplus.com">
+                                        srbija@mphimplus.com
+                                    </option>
+                                    <option value="maroc@mphimplus.com">
+                                        maroc@mphimplus.com
+                                    </option>
+                                </select>
+                                <img src="{{ asset('img/arrow.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <div class="form-group">
+                        <label>
+                            Message<span>*</span>
+                        </label>
+                        <textarea class="form-control" rows="5" placeholder="Enter your message..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <p class="m-0">
+                        <span>*</span> required
+                    </p>
+                    <button type="submit" class="btn btn-submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="locations">
             <div class="row">
@@ -87,7 +176,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Svizzera
+                            Schweiz
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
@@ -118,7 +207,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Serbia
+                            Srbija
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".serbia" role="button" aria-expanded="false" aria-controls="serbia">
@@ -149,7 +238,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Morocco
+                            Maroc
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".morocco" role="button" aria-expanded="false" aria-controls="morocco">

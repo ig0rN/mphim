@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container">
-        <div id="heightTop">
+        <div id="headerTop">
             <div class="row align-items-center">
                 <div class="col-md-4">
                     <div class="social">
@@ -93,7 +93,7 @@
                             <img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
                         </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-7 offset-1">
                         <div class="owl-carousel">
                             @foreach ($quotes as $quote)
                             <div>
