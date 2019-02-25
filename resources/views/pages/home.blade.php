@@ -25,7 +25,7 @@
                             </h3>
                             <div class="text-div">
                                 <p>
-                                    {{ $whatIs->{'body_' . $language} }}
+                                    {!! $whatIs->{'body_' . $language} !!}
                                 </p>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             </h3>
                             <div class="text-div">
                                 <p>
-                                    {{ $whatDoes->{'body_' . $language} }}
+                                    {!! $whatDoes->{'body_' . $language} !!}
                                 </p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             </h3>
                             <div class="text-div">
                                 <p>
-                                    {{ $whyTo->{'body_' . $language} }}
+                                    {!! $whyTo->{'body_' . $language} !!}
                                 </p>
                             </div>
                         </div>
