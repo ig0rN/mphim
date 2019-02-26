@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb mb-5">
+		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}

@@ -7,7 +7,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     setTimeout(function () {
         $("#loader").hide();
-    }, 3000);
+        $("body").removeClass("active");
+    }, 2500);
+});
+
+$(document).ready(function () {
+    $("select").click(function () {
+        $(".select-div").toggleClass("active");
+    });
+    $("select").blur(function () {
+        $(".select-div").removeClass("active");
+    });
 });
 
 $(document).ready(function () {
@@ -88,11 +98,11 @@ $(document).ready(function () {
     $(document).bind("scroll", navFixed);
 });
 
-// $(document).ready(function () {
-//     $(".nav .nav-link").click(function () {
-//         var href = $(this).attr("href");
-//         $("html, body").animate({
-//             scrollTop: $(href).offset().top
-//         }, 1000);
-//     });
-// });
+$(document).ready(function () {
+    $(".nav .nav-link").click(function () {
+        var href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(href).offset().top
+        }, 1000);
+    });
+});

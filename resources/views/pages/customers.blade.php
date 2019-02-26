@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb m-0">
+		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
 				<a href="{{ route('home') }}">
 					{{ __('translate.home') }}
@@ -68,7 +68,7 @@
 		<div class="row align-items-start">
 			<div class="col-md-4">
 				<div class="image">
-					<img src="{{ asset('img/customers/company.jpg')}}" alt="img/customers/company.jpg" />
+					<img src="{{ asset('img/customers/public-institutions.jpg')}}" alt="img/customers/public-institutions.jpg" />
 				</div>
 			</div>
 			<div class="col-md-8">
@@ -83,7 +83,7 @@
 		<div class="row align-items-start">
 			<div class="col-md-4">
 				<div class="image">
-					<img src="{{ asset('img/customers/company.jpg')}}" alt="img/customers/company.jpg" />
+					<img src="{{ asset('img/customers/schools.jpg')}}" alt="img/customers/schools.jpg" />
 				</div>
 			</div>
 			<div class="col-md-8">

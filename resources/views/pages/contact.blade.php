@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <nav id="breadcrumb" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-4">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="{{ route('home') }}">
                     {{ __('translate.home') }}
@@ -47,6 +47,95 @@
         </div> -->
         <div class="contact-form">
             <h3 class="heading">{{ __('translate.contact-form') }}</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    {{ __('translate.name') }}<span>*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="{{ __('translate.enter-name') }}" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    {{ __('translate.phone') }}
+                                </label>
+                                <input type="tel" class="form-control" placeholder="{{ __('translate.enter-phone') }}" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    {{ __('translate.email') }}<span>*</span>
+                                </label>
+                                <input type="email" class="form-control" placeholder="{{ __('translate.enter-email') }}" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    {{ __('translate.company-name') }}
+                                </label>
+                                <input type="text" class="form-control" placeholder="{{ __('translate.enter-company-name') }}" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <div class="form-group">
+                                <label>
+                                    {{ __('translate.subject') }}
+                                </label>
+                                <input type="text" class="form-control" placeholder="{{ __('translate.enter-subject') }}" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6">
+                            <label>
+                                {{ __('translate.to-email') }}
+                            </label>
+                            <div class="select-div text-right">
+                                <select class="form-control">
+                                    <option selected disabled>
+                                        {{ __('translate.choose-mail') }}
+                                    </option>
+                                    <option value="italia@mphimplus.com">
+                                        italia@mphimplus.com
+                                    </option>
+                                    <option value="schweiz@mphimplus.com">
+                                        schweiz@mphimplus.com
+                                    </option>
+                                    <option value="srbija@mphimplus.com">
+                                        srbija@mphimplus.com
+                                    </option>
+                                    <option value="maroc@mphimplus.com">
+                                        maroc@mphimplus.com
+                                    </option>
+                                </select>
+                                <img src="{{ asset('img/arrow.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <div class="form-group">
+                        <label>
+                            {{ __('translate.message') }}<span>*</span>
+                        </label>
+                        <textarea class="form-control" rows="5" placeholder="{{ __('translate.enter-message') }}..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <p class="m-0">
+                        <span>*</span> {{ __('translate.required') }}
+                    </p>
+                    <button type="submit" class="btn btn-submit">
+                        {{ __('translate.submit') }}
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="locations">
             <div class="row">
@@ -87,7 +176,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Switzerland
+                            Schweiz
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
@@ -149,7 +238,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Morocco
+                            Maroc
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".morocco" role="button" aria-expanded="false" aria-controls="morocco">

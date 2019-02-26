@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container">
-        <div id="heightTop">
+        <div id="headerTop">
             <div class="row align-items-center">
                 <div class="col-md-4">
                     <div class="social">
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div id="logo-slider">
-                <div class="row align-items-center">
+                <div class="row align-items-center no-gutters">
                     <div class="col-md-2 pr-0">
                         <div class="logo-header">
                             <img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
@@ -98,7 +98,13 @@
                             @foreach ($quotes as $quote)
                             <div>
                                 <p>
+                                    <span class="open-quotes">
+                                        &ldquo;
+                                    </span>
                                     {{ $quote->text }}
+                                    <span class="close-quotes">
+                                        &rdquo;
+                                    </span>
                                 </p>
                             </div>
                             @endforeach
