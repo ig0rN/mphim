@@ -1,5 +1,5 @@
 <?php
-
+// English
 return [
 
     'home' => 'Home',
@@ -24,6 +24,10 @@ return [
     'training4advisor' => 'Training4Advisor',
     'training4manager' => 'Training4Manager',
     'contact' => 'Contact',
+    'contact-form' => 'Contact form',
+
+    'default-message' => 'Default message',
+    'default-message.message' => 'Some smart default message',
 
     'do-you-want-to-find-out-more-about' => 'Do you want to find out more about',
     'access-the-training' => 'Access the training',
@@ -48,5 +52,6 @@ return [
 
     
     'rights-reserved' => 'All rights reserved',
+    'copyright' => 'Copyright',
 
 ];

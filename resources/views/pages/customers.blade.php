@@ -18,7 +18,7 @@
 	</nav>
 	<div id="companies" class="item-text">
 		<h3 class="heading">
-			Companies
+			{{ __('translate.companies') }}
 		</h3>
 		<div class="row align-items-start">
 			<div class="col-md-4">
@@ -33,7 +33,7 @@
 	</div>
 	<div id="professionals" class="item-text">
 		<h3 class="heading">
-			Professionals
+			{{ __('translate.professionals') }}
 		</h3>
 		<div class="row align-items-start">
 			<div class="col-md-4">
@@ -48,7 +48,7 @@
 	</div>
 	<div id="trade" class="item-text">
 		<h3 class="heading">
-			Trade associations
+			{{ __('translate.trade-associations') }}
 		</h3>
 		<div class="row align-items-start">
 			<div class="col-md-4">
@@ -63,7 +63,7 @@
 	</div>
 	<div id="public" class="item-text">
 		<h3 class="heading">
-			Public institutions
+			{{ __('translate.public-institutions') }}
 		</h3>
 		<div class="row align-items-start">
 			<div class="col-md-4">
@@ -78,7 +78,7 @@
 	</div>
 	<div id="schools" class="item-text">
 		<h3 class="heading">
-			Schools
+			{{ __('translate.schools') }}
 		</h3>
 		<div class="row align-items-start">
 			<div class="col-md-4">
@@ -93,7 +93,7 @@
 	</div>
 	<div id="university" class="item-text">
 		<h3 class="heading">
-			University
+			{{ __('translate.university') }}
 		</h3>
 		<div class="row align-items-start">
 			<div class="col-md-4">

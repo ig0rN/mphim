@@ -151,6 +151,6 @@
 </div>
 <div class="copyright">
 	<div class="container">
-		© Copyright 2018 <a href="http://www.webtory.rs/" target="_blank"><b>Webtory</b></a>. {{ __('translate.rights-reserved') }}
+		© {{ __('translate.copyright') }} 2019 <a href="http://www.webtory.rs/" target="_blank"><b>Webtory</b></a>. {{ __('translate.rights-reserved') }}
 	</div>
 </div>

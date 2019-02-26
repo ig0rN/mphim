@@ -46,7 +46,7 @@
             </div>
         </div> -->
         <div class="contact-form">
-            <h3 class="heading">Contact form</h3>
+            <h3 class="heading">{{ __('translate.contact-form') }}</h3>
         </div>
         <div class="locations">
             <div class="row">
@@ -87,7 +87,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Svizzera
+                            Switzerland
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
@@ -118,7 +118,7 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">
-                            Serbia
+                            Srbija
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".serbia" role="button" aria-expanded="false" aria-controls="serbia">

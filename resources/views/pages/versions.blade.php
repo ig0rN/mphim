@@ -17,7 +17,7 @@
 		</ol>
 	</nav>
 	<h3 class="heading">
-		Versions
+		{{ __('translate.versions') }}
 	</h3>
 	<div class="row align-items-start">
 		<div class="col-md-4">

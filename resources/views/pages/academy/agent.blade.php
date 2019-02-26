@@ -22,7 +22,7 @@
 		</ol>
 	</nav>
 	<h3 class="heading">
-		Training4Agent
+		{{ __('translate.training4agent') }}
 	</h3>
 	<div class="row align-items-start">
 		<div class="col-md-4">

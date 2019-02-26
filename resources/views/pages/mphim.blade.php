@@ -18,7 +18,7 @@
     </nav>
     <div id="what-is" class="item-text">
         <h3 class="heading">
-            What is?
+            {{ __('translate.what-is') }}?
         </h3>
         <p>
             {!! $whatIs->{'body_' . $language} !!}
@@ -26,7 +26,7 @@
     </div>
     <div id="what-does" class="item-text">
         <h3 class="heading">
-            What does it do?
+            {{ __('translate.what-does-it-do') }}?
         </h3>
         <p>
             {!! $whatDoes->{'body_' . $language} !!}
@@ -34,7 +34,7 @@
     </div>
     <div id="why-to" class="item-text">
         <h3 class="heading">
-            Why to have it?
+            {{ __('translate.why-to-have') }}?
         </h3>
         <p>
             {!! $whyTo->{'body_' . $language} !!}

@@ -1,37 +1,57 @@
 <?php
-
+// Italian
 return [
 
     'home' => 'Home',
-    'about-us' => 'Su<span class="divider">di</span><span class="divider">noi</span>',
+    'what-is' => 'What is',
+    'what-does-it-do' => 'What does it do',
+    'why-to-have' => 'Why to have',
     'roadmap' => 'Roadmap',
-    'team' => 'Team',
-    'services' => 'Servizi',
-    'partners' => 'Partners',
-    'read-more' => 'Leggi tutto',
-    'capital-protection' => 'Investi con la protezione sul capitale',
+    'customers' => 'Customers',
+    'who-can-use-it' => 'Who can use it',
+    'companies' => 'Companies',
+    'professionals' => 'Professionals',
+    'trade-associations' => 'Trade Associations',
+    'public-institutions' => 'Public Institutions',
+    'schools' => 'Schools',
+    'university' => 'University',
+    'versions' => 'Versions',
+    'commercial' => 'Commercial',
+    'reference' => 'Reference',
+    'academy' => 'Academy',
+    'training4company' => 'Training4Company',
+    'training4agent' => 'Training4Agent',
+    'training4advisor' => 'Training4Advisor',
+    'training4manager' => 'Training4Manager',
+    'contact' => 'Contact',
+    'contact-form' => 'Contact form',
 
+    'default-message' => 'Default message',
+    'default-message.message' => 'Some smart default message',
 
-    'contact' => 'Contatti',
-    'name' => 'Nome',
-    'adresse' => 'Indirizzo',
+    'do-you-want-to-find-out-more-about' => 'Do you want to find out more about',
+    'access-the-training' => 'Access the training',
+
+    'name' => 'Name',
+    'adresse' => 'Adresse',
     'email' => 'E-Mail',
-    'phone' => 'Telefono',
+    'phone' => 'Phone',
 
     
-    'your-name' => 'Nome',
+    'your-name' => 'Name',
     'your-email' => 'E-Mail',
-    'subject' => 'Oggetto',
-    'your-message' => 'Messaggio',
-    'submit' => 'Invia',
+    'subject' => 'Subject',
+    'your-message' => 'Message',
+    'submit' => 'Submit',
 
 
-    'enter-email' => 'Inserisci E-Mail',
-    'subscribe' => 'Abbonati',
-    'subscribed-to-newsletters' => 'Ti sei iscritto alle newsletter',
-    'email-in-system' => 'Il tuo indirizzo email è già nel sistema',
+    'enter-email' => 'Enter E-Mail',
+    'subscribe' => 'Subscribe',
+    'subscribed-to-newsletters' => 'You subscribed to newsletters',
+    'email-in-system' => 'Your e-mail adress is already in newsletter system',
 
     
-    'rights-reserved' => 'Tutti i diritti riservati',
+    'rights-reserved' => 'All rights reserved',
+    'copyright' => 'Copyright',
 
 ];

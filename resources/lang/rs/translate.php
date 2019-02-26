@@ -1,5 +1,5 @@
 <?php
-
+// Serbian
 return [
 
     'home' => 'Početna',
@@ -24,6 +24,10 @@ return [
     'training4advisor' => 'Trening za savetnike',
     'training4manager' => 'Trening za menadzere',
     'contact' => 'Kontakt',
+    'contact-form' => 'Kontakt forma',
+
+    'default-message' => 'Predefinisana poruka',
+    'default-message.message' => 'Tekst predefinisane poruke',
 
     'do-you-want-to-find-out-more-about' => 'Da li želite da saznate više o',
     'access-the-training' => 'Pristupite treningu',
@@ -34,19 +38,20 @@ return [
     'phone' => 'Telefon',
 
     
-    'your-name' => 'Nome',
-    'your-email' => 'E-Mail',
-    'subject' => 'Oggetto',
-    'your-message' => 'Messaggio',
-    'submit' => 'Invia',
+    'your-name' => 'Ime',
+    'your-email' => 'E-mail adresa',
+    'subject' => 'Naslov poruke',
+    'your-message' => 'Vasa poruka',
+    'submit' => 'Posalji',
 
 
-    'enter-email' => 'Inserisci E-Mail',
-    'subscribe' => 'Abbonati',
-    'subscribed-to-newsletters' => 'Ti sei iscritto alle newsletter',
-    'email-in-system' => 'Il tuo indirizzo email è già nel sistema',
+    'enter-email' => 'Unesite e-mail adresu',
+    'subscribe' => 'Pretplati se',
+    'subscribed-to-newsletters' => 'Uspesno ste se pretplatili na postu',
+    'email-in-system' => 'Vasa e-mail adresa je vec u sistemu',
 
     
     'rights-reserved' => 'Sva prava rezervisana',
-
+    'copyright' => 'Copyright',
+	
 ];

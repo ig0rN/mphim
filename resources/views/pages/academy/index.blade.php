@@ -17,7 +17,7 @@
         </ol>
     </nav>
     <h3 class="heading">
-        Academy
+        {{ __('translate.academy') }}
     </h3>
     <div id="academy">
 
@@ -39,7 +39,7 @@
                             __('translate.training4company') }}"?
                         </p>
                         <a class="btn btn-training">
-                            training4company
+                            {{ __('translate.training4company') }}
                         </a>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                             }}"?
                         </p>
                         <a class="btn btn-training">
-                            training4agent
+                            {{ __('translate.training4agent') }}
                         </a>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                             __('translate.training4advisor') }}"?
                         </p>
                         <a class="btn btn-training">
-                            training4advisor
+                            {{ __('translate.training4advisor') }}
                         </a>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             __('translate.training4manager') }}"?
                         </p>
                         <a class="btn btn-training">
-                            training4manager
+                            {{ __('translate.training4manager') }}
                         </a>
                     </div>
                 </div>
@@ -108,22 +108,22 @@
         <div class="tab-content pt-5">
             <div class="tab-pane fade active show" id="training4company" role="tabpanel" aria-labelledby="training4company-tab">
                 <a href="{{ route('academy.company') }}" class="btn btn-training">
-                    training4company
+                    {{ __('translate.training4company') }}
                 </a>
             </div>
             <div class="tab-pane fade" id="training4agent" role="tabpanel" aria-labelledby="training4agent-tab">
                 <a href="{{ route('academy.agent') }}" class="btn btn-training">
-                    training4agent
+                    {{ __('translate.training4agent') }}
                 </a>
             </div>
             <div class="tab-pane fade" id="training4advisor" role="tabpanel" aria-labelledby="training4advisor-tab">
                 <a href="{{ route('academy.advisor') }}" class="btn btn-training">
-                    training4advisor
+                    {{ __('translate.training4advisor') }}
                 </a>
             </div>
             <div class="tab-pane fade" id="training4manager" role="tabpanel" aria-labelledby="training4manager-tab">
                 <a href="{{ route('academy.manager') }}" class="btn btn-training">
-                    training4manager
+                    {{ __('translate.training4manager') }}
                 </a>
             </div>
         </div>

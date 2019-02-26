@@ -1,37 +1,57 @@
 <?php
-
+// France
 return [
 
     'home' => 'Home',
-    'about-us' => 'À<span class="divider">propos</span><span class="divider">de</span><span class="divider">nous</span>',
+    'what-is' => 'What is',
+    'what-does-it-do' => 'What does it do',
+    'why-to-have' => 'Why to have',
     'roadmap' => 'Roadmap',
-    'team' => 'Team',
-    'services' => 'Services',
-    'partners' => 'Partenaires',
-    'read-more' => 'Lire plus',
-    'capital-protection' => 'Investissez avec protection du capital',
-
-
+    'customers' => 'Customers',
+    'who-can-use-it' => 'Who can use it',
+    'companies' => 'Companies',
+    'professionals' => 'Professionals',
+    'trade-associations' => 'Trade Associations',
+    'public-institutions' => 'Public Institutions',
+    'schools' => 'Schools',
+    'university' => 'University',
+    'versions' => 'Versions',
+    'commercial' => 'Commercial',
+    'reference' => 'Reference',
+    'academy' => 'Academy',
+    'training4company' => 'Training4Company',
+    'training4agent' => 'Training4Agent',
+    'training4advisor' => 'Training4Advisor',
+    'training4manager' => 'Training4Manager',
     'contact' => 'Contact',
-    'name' => 'Nom',
+    'contact-form' => 'Contact form',
+
+    'default-message' => 'Default message',
+    'default-message.message' => 'Some smart default message',
+
+    'do-you-want-to-find-out-more-about' => 'Do you want to find out more about',
+    'access-the-training' => 'Access the training',
+
+    'name' => 'Name',
     'adresse' => 'Adresse',
     'email' => 'E-Mail',
-    'phone' => 'Téléphone',
+    'phone' => 'Phone',
 
     
-    'your-name' => 'Nom',
+    'your-name' => 'Name',
     'your-email' => 'E-Mail',
-    'subject' => 'Sujet',
+    'subject' => 'Subject',
     'your-message' => 'Message',
-    'submit' => 'Envoyer',
+    'submit' => 'Submit',
 
 
-    'enter-email' => 'Entrez E-Mail',
-    'subscribe' => 'Abonner',
-    'subscribed-to-newsletters' => 'Vous êtes abonné à la newsletter',
-    'email-in-system' => 'Votre adresse email est déjà dans le système',
+    'enter-email' => 'Enter E-Mail',
+    'subscribe' => 'Subscribe',
+    'subscribed-to-newsletters' => 'You subscribed to newsletters',
+    'email-in-system' => 'Your e-mail adress is already in newsletter system',
 
     
-    'rights-reserved' => 'Tous droits réservés',
+    'rights-reserved' => 'All rights reserved',
+    'copyright' => 'Copyright',
 
 ];

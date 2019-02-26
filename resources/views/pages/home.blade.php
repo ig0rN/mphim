@@ -11,17 +11,17 @@
                     <div class="tab-content" id="mphim-tabs">
                         <div class="tab-pane fade show active">
                             <h3 class="heading">
-                                Default message
+                                {{ __('translate.default-message') }}
                             </h3>
                             <div class="text-div">
                                 <p>
-                                    Default message
+                                    {{ __('translate.default-message.message') }}
                                 </p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="what-is-text" role="tabpanel" aria-labelledby="what-is-tab">
                             <h3 class="heading">
-                                What is?
+                                {{ __('translate.what-is') }}?
                             </h3>
                             <div class="text-div">
                                 <p>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="tab-pane fade" id="what-does-text" role="tabpanel" aria-labelledby="what-does-tab">
                             <h3 class="heading">
-                                What does it do?
+                                {{ __('translate.what-does-it-do') }}?
                             </h3>
                             <div class="text-div">
                                 <p>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="tab-pane fade" id="why-to-text" role="tabpanel" aria-labelledby="why-to-tab">
                             <h3 class="heading">
-                                Why to have it?
+                                {{ __('translate.why-to-have') }}?
                             </h3>
                             <div class="text-div">
                                 <p>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="tab-pane fade" id="roadmap-text" role="tabpanel" aria-labelledby="roadmap-tab">
                             <h3 class="heading">
-                                Roadmap
+                                {{ __('translate.roadmap') }}
                             </h3>
                             <div class="text-div">
                                 <div class="logo text-center">
@@ -161,7 +161,7 @@
 <div id="customers" class="pt-5">
     <div class="container">
         <p class="home-heading text-center">
-            Customers
+            {{ __('translate.customers') }}
         </p>
         <div class="row">
             <div class="col-md-4 text-center pb-4">
@@ -277,7 +277,7 @@
 <div id="academy" class="pt-5">
     <div class="container">
         <p class="home-heading text-center">
-            Academy
+            {{ __('translate.academy') }}
         </p>
         <div class="row">
             <div class="col-md-3">

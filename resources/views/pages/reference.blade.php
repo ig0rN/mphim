@@ -17,7 +17,7 @@
 		</ol>
 	</nav>
 	<h3 class="heading">
-		Reference
+		{{ __('translate.reference') }}
 	</h3>
 	<div class="row align-items-start pb-5">
 		<div class="col-md-4">
