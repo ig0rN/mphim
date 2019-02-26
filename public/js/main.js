@@ -7,7 +7,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     setTimeout(function () {
         $("#loader").hide();
-    }, 3000);
+        $("body").removeClass("active");
+    }, 2500);
 });
 
 $(document).ready(function () {

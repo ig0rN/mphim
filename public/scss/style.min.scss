@@ -29,6 +29,12 @@ body {
     position: relative;
 }
 
+body {
+    &.active {
+        overflow: hidden;
+    }
+}
+
 *,
 *:after,
 *:before {
@@ -241,17 +247,28 @@ svg {
         .owl-item {
             div {
                 height: 100%;
+                position: absolute;
+                left: 5%;
+                right: 15%;
 
                 p {
-                    margin-bottom: 0;
                     position: absolute;
                     top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                    left: 0;
+                    right: 0;
+                    transform: translate(0, -50%);
+                    margin-bottom: 0;
                     font-weight: bold;
                     font-style: italic;
-                    font-size: 45px;
+                    font-size: 40px;
                     letter-spacing: 3px;
+                    text-align: center;
+
+                    .open-quotes,
+                    .close-quotes {
+                        font-size: 60px;
+                        line-height: 50px;
+                    }
                 }
             }
         }
@@ -1350,11 +1367,11 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: $white url("../img/loader.gif") center no-repeat;
     background-size: 10%;
-    z-index: 9999;
+    z-index: 5;
 }
 
 /* Back-to-top */

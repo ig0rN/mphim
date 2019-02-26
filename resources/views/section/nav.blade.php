@@ -87,18 +87,24 @@
                 </div>
             </div>
             <div id="logo-slider">
-                <div class="row align-items-center">
+                <div class="row align-items-center no-gutters">
                     <div class="col-md-2 pr-0">
                         <div class="logo-header">
                             <img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
                         </div>
                     </div>
-                    <div class="col-md-7 offset-1">
+                    <div class="col-md-10">
                         <div class="owl-carousel">
                             @foreach ($quotes as $quote)
                             <div>
                                 <p>
+                                    <span class="open-quotes">
+                                        &ldquo;
+                                    </span>
                                     {{ $quote->text }}
+                                    <span class="close-quotes">
+                                        &rdquo;
+                                    </span>
                                 </p>
                             </div>
                             @endforeach
