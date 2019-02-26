@@ -33,17 +33,22 @@ return [
     'access-the-training' => 'Pristupite treningu',
 
     'name' => 'Ime',
-    'adresse' => 'Adresa',
-    'email' => 'E-Mail',
     'phone' => 'Telefon',
-
-    
-    'your-name' => 'Ime',
-    'your-email' => 'E-mail adresa',
-    'subject' => 'Naslov poruke',
-    'your-message' => 'Vasa poruka',
+    'email' => 'E-Mail',
+    'company-name' => 'Ime firme',
+    'subject' => 'Naslov',
+    'to-email' => 'Na mejl',
+    'choose-mail' => 'Izaberi e-mail',
+    'message' => 'Poruka',
     'submit' => 'Posalji',
 
+    'enter-name' => 'Unesi ime',
+    'enter-phone' => 'Unesi telefon',
+    'enter-email' => 'Unesi e-mail',
+    'enter-company-name' => 'Unesi ime firme',
+    'enter-subject' => 'Unesi naslov',
+    'enter-message' => 'Unesi poruku',
+    'required' => 'zahtevano',
 
     'enter-email' => 'Unesite e-mail adresu',
     'subscribe' => 'Pretplati se',

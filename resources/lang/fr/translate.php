@@ -33,17 +33,22 @@ return [
     'access-the-training' => 'Access the training',
 
     'name' => 'Name',
-    'adresse' => 'Adresse',
+    'phone' => 'Telephone',
     'email' => 'E-Mail',
-    'phone' => 'Phone',
-
-    
-    'your-name' => 'Name',
-    'your-email' => 'E-Mail',
+    'company-name' => 'Company name',
     'subject' => 'Subject',
-    'your-message' => 'Message',
+    'to-email' => 'To',
+    'choose-mail' => 'Choose E-Mail',
+    'message' => 'Message',
     'submit' => 'Submit',
 
+    'enter-name' => 'Enter name',
+    'enter-phone' => 'Enter telephone',
+    'enter-email' => 'Enter e-mail',
+    'enter-company-name' => 'Enter company name',
+    'enter-subject' => 'Enter subject',
+    'enter-message' => 'Enter message',
+    'required' => 'required',
 
     'enter-email' => 'Enter E-Mail',
     'subscribe' => 'Subscribe',
