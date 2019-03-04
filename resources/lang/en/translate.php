@@ -3,9 +3,9 @@
 return [
 
     'home' => 'Home',
-    'what-is' => 'What is',
+    'what-is' => 'What is it',
     'what-does-it-do' => 'What does it do',
-    'why-to-have' => 'Why to have',
+    'why-to-have' => 'Why to have it',
     'roadmap' => 'Roadmap',
     'customers' => 'Customers',
     'who-can-use-it' => 'Who can use it',
@@ -26,10 +26,10 @@ return [
     'contact' => 'Contact',
     'contact-form' => 'Contact form',
 
-    'default-message' => 'Default message',
-    'default-message.message' => 'Some smart default message',
+    'default-message' => 'Welcome to MPHIM+',
+    'default-message.message' => 'Decide consciously!',
 
-    'do-you-want-to-find-out-more-about' => 'Do you want to find out more about',
+    'do-you-want-to-find-out-more-about' => 'Read more',
     'access-the-training' => 'Access the training',
 
     'name' => 'Name',
@@ -52,7 +52,7 @@ return [
 
     'enter-email' => 'Enter E-Mail',
     'subscribe' => 'Subscribe',
-    'subscribed-to-newsletters' => 'You subscribed to newsletters',
+    'subscribed-to-newsletters' => 'You are subscribed to newsletters',
     'email-in-system' => 'Your e-mail adress is already in newsletter system',
 
     
