@@ -1427,6 +1427,16 @@ footer {
     padding: 15px;
     overflow: auto;
 
+    .btn-edit {
+        a {
+            color: $white;
+        }
+    }
+
+    .form-delete {
+        display: inline-block;
+    }
+
     #top-bar {
         position: fixed;
         top: 0;
@@ -1584,8 +1594,6 @@ footer {
     }
 
     .btn-danger {
-        margin-bottom: 20px;
-
         &.newsletter {
             margin-bottom: 0;
         }

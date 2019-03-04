@@ -26,11 +26,11 @@
                     <td>{{ $event->date }}</td>
                     <td>{!! $event->{'body_' . app()->getLocale()} !!}</td>
                     <td>
-                        <button class="btn btn-primary mb-1"><a href="{{ route('admin.roadmap.edit', ['id' => $event->id]) }}">Edit</a></button>
-                        <form action="{{ route('admin.roadmap.destroy', ['id' => $event->id]) }}" method="POST">
+                        <button class="btn btn-primary btn-edit"><a href="{{ route('admin.roadmap.edit', ['id' => $event->id]) }}">Edit</a></button>
+                        <form action="{{ route('admin.roadmap.destroy', ['id' => $event->id]) }}" class="form-delete" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger mt-1" type="submit" onclick="return confirm('Are you sure?')">Delete</button>
+                            <button class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')">Delete</button>
                         </form>
                     </td>
                 </tr>
