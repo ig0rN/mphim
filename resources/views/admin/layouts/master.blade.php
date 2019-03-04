@@ -43,7 +43,7 @@
 		@yield('main')
 	</div>
 	
-	<script type="text/javascript" src="{{ asset('js/admin.js') }}"></script>
+	{{-- <script type="text/javascript" src="{{ asset('js/admin.js') }}"></script> --}}
 	<script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
 	@yield('scripts')
 </body>
