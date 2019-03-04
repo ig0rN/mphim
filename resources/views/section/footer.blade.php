@@ -3,7 +3,7 @@
         <ul class="d-flex">
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Home
+                    @lang('translate.home')
                 </a>
             </li>
             <li class="flex-fill">
@@ -13,108 +13,108 @@
                 <ul class="dropdown">
                     <li>
                         <a href="javascript:void(0)">
-                            What is
+                            @lang('translate.what-is')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            What does it do
+                            @lang('translate.what-does-it-do')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Why to have it
+                            @lang('translate.why-to-have')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Roadmap
+                            @lang('translate.roadmap')
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Customers
+                    @lang('translate.customers')
                 </a>
                 <ul class="dropdown">
                     <li>
                         <a href="javascript:void(0)">
-                            Companies
+                            @lang('translate.companies')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Professionals
+                            @lang('translate.professionals')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Trade associations
+                            @lang('translate.trade-associations')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Public institutions
+                            @lang('translate.public-institutions')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Schools
+                            @lang('translate.schools')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            University
+                            @lang('translate.university')
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Versions
+                    @lang('translate.versions')
                 </a>
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Commercial
+                    @lang('translate.commercial')
                 </a>
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Reference
+                    @lang('translate.reference')
                 </a>
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Academy
+                    @lang('translate.academy')
                 </a>
                 <ul class="dropdown">
                     <li>
                         <a href="javascript:void(0)">
-                            Training4Company
+                            @lang('translate.training4company')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Training4Agent
+                            @lang('translate.training4agent')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Training4Advisor
+                            @lang('translate.training4advisor')
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            Training4Manager
+                            @lang('translate.training4manager')
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="flex-fill">
                 <a href="javascript:void(0)" class="heading">
-                    Contact
+                    @lang('translate.contact')
                 </a>
             </li>
         </ul>

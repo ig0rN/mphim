@@ -181,7 +181,7 @@
                         <p class="address">
                             <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
                                 Kantonsstrasse n. 81,<br />
-                                CH - 8807 Freienbach
+                                8807 Freienbach
                             </a>
                         </p>
                         <p class="telephone">
@@ -211,7 +211,7 @@
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".serbia" role="button" aria-expanded="false" aria-controls="serbia">
-                                Mije Aleksica 7,<br />
+                                Mije Aleksica br. 7,<br />
                                 34000 Kragujevac
                             </a>
                         </p>

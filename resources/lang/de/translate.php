@@ -14,7 +14,7 @@ return [
     'trade-associations' => 'Fachverbände',
     'public-institutions' => 'Öffentliche Institutionen',
     'schools' => 'Schulen',
-    'universities' => 'Universitäten',
+    'university' => 'Universitäten',
     'versions' => 'Versionen',
     'commercial' => 'Gewerblich',
     'reference' => 'Referenzen',
