@@ -172,13 +172,6 @@
                         </h6>
                         <img src="{{ asset('img/home/customers/companies.png')}}" alt="img/home/customers/companies.png"
                             class="mb-3" />
-                        <p class="m-0">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took
-                            a galley of type and scrambled it to make a type specimen book.
-                        </p>
                     </a>
                 </div>
             </div>
@@ -190,13 +183,6 @@
                         </h6>
                         <img src="{{ asset('img/home/customers/professionals.png')}}" alt="img/home/customers/professionals.png"
                             class="mb-3" />
-                        <p class="m-0">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took
-                            a galley of type and scrambled it to make a type specimen book.
-                        </p>
                     </a>
                 </div>
             </div>
@@ -207,13 +193,6 @@
                             {{ __('translate.trade-associations') }}
                         </h6>
                         <img src="{{ asset('img/home/customers/trade.png')}}" alt="img/home/customers/trade.png" class="mb-3" />
-                        <p class="m-0">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took
-                            a galley of type and scrambled it to make a type specimen book.
-                        </p>
                     </a>
                 </div>
             </div>
@@ -225,13 +204,6 @@
                         </h6>
                         <img src="{{ asset('img/home/customers/public.png')}}" alt="img/home/customers/public.png"
                             class="mb-3" />
-                        <p class="m-0">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took
-                            a galley of type and scrambled it to make a type specimen book.
-                        </p>
                     </a>
                 </div>
             </div>
@@ -243,13 +215,6 @@
                         </h6>
                         <img src="{{ asset('img/home/customers/school.png')}}" alt="img/home/customers/school.png"
                             class="mb-3" />
-                        <p class="m-0">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took
-                            a galley of type and scrambled it to make a type specimen book.
-                        </p>
                     </a>
                 </div>
             </div>
@@ -261,13 +226,6 @@
                         </h6>
                         <img src="{{ asset('img/home/customers/university.png')}}" alt="img/home/customers/university.png"
                             class="mb-3" />
-                        <p class="m-0">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                            took
-                            a galley of type and scrambled it to make a type specimen book.
-                        </p>
                     </a>
                 </div>
             </div>
@@ -289,10 +247,6 @@
                         <h6>
                             {{ __('translate.training4company') }}
                         </h6>
-                        <p>
-                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{
-                            __('translate.training4company') }}"?
-                        </p>
                         <a href="{{ route('academy.company') }}" class="btn btn-training">
                             {{ __('translate.access-the-training') }}
                         </a>
@@ -308,11 +262,6 @@
                         <h6>
                             {{ __('translate.training4agent') }}
                         </h6>
-                        <p>
-                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{
-                            __('translate.training4agent')
-                            }}"?
-                        </p>
                         <a href="{{ route('academy.agent') }}" class="btn btn-training">
                             {{ __('translate.access-the-training') }}
                         </a>
@@ -328,10 +277,6 @@
                         <h6>
                             {{ __('translate.training4advisor') }}
                         </h6>
-                        <p>
-                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{
-                            __('translate.training4advisor') }}"?
-                        </p>
                         <a href="{{ route('academy.advisor') }}" class="btn btn-training">
                             {{ __('translate.access-the-training') }}
                         </a>
@@ -347,10 +292,6 @@
                         <h6>
                             {{ __('translate.training4manager') }}
                         </h6>
-                        <p>
-                            {{ __('translate.do-you-want-to-find-out-more-about') }} "{{
-                            __('translate.training4manager') }}"?
-                        </p>
                         <a href="{{ route('academy.manager') }}" class="btn btn-training">
                             {{ __('translate.access-the-training') }}
                         </a>
