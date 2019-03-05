@@ -114,132 +114,130 @@
             </div>
         </div>
         <div id="nav">
-            <div class="container p-0">
-                <ul>
-                    <li>
-                        <a href="{{ route('home') }}" class="{{ activeClassBasedOnRoute('home') }}">
-                            {{ __('translate.home') }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('mphim') }}" class="mphim {{ activeClassBasedOnRouteSegment('mphim') }}">
-                            Mphim+
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <ul class="nav dropdown">
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('mphim', '#what-is') }}" class="nav-link">
-                                    {{ __('translate.what-is') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('mphim', '#what-does') }}" class="nav-link">
-                                    {{ __('translate.what-does-it-do') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('mphim', '#why-to') }}" class="nav-link">
-                                    {{ __('translate.why-to-have') }}
-                                </a>
-                            </li>
-                            <!-- <li class="nav-item">
+            <ul>
+                <li>
+                    <a href="{{ route('home') }}" class="{{ activeClassBasedOnRoute('home') }}">
+                        {{ __('translate.home') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('mphim') }}" class="mphim {{ activeClassBasedOnRouteSegment('mphim') }}">
+                        Mphim+
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="nav dropdown">
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('mphim', '#what-is') }}" class="nav-link">
+                                {{ __('translate.what-is') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('mphim', '#what-does') }}" class="nav-link">
+                                {{ __('translate.what-does-it-do') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('mphim', '#why-to') }}" class="nav-link">
+                                {{ __('translate.why-to-have') }}
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
                                 <a href="{{ routeOrAnchor('mphim', '#roadmap') }}" class="nav-link">
                                     {{ __('translate.roadmap') }}
                                 </a>
                             </li> -->
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ route('customers') }}" class="{{ activeClassBasedOnRouteSegment('customers') }}">
-                            {{ __('translate.customers') }}
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <ul class="nav dropdown customers">
-                            <h5 class="text-center">
-                                {{ __('translate.who-can-use-it') }}
-                            </h5>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('customers', '#companies') }}" class="nav-link">
-                                    {{ __('translate.companies') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('customers', '#professionals') }}" class="nav-link">
-                                    {{ __('translate.professionals') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('customers', '#trade') }}" class="nav-link">
-                                    {{ __('translate.trade-associations') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('customers', '#public') }}" class="nav-link">
-                                    {{ __('translate.public-institutions') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('customers', '#schools') }}" class="nav-link">
-                                    {{ __('translate.schools') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ routeOrAnchor('customers', '#university') }}" class="nav-link">
-                                    {{ __('translate.university') }}
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ route('versions') }}" class="{{ activeClassBasedOnRoute('versions') }}">
-                            {{ __('translate.versions') }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('commercial') }}" class="{{ activeClassBasedOnRoute('commercial') }}">
-                            {{ __('translate.commercial') }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('reference') }}" class="{{ activeClassBasedOnRoute('reference') }}">
-                            {{ __('translate.reference') }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('academy') }}" class="{{ activeClassBasedOnRouteSegment('academy') }}">
-                            {{ __('translate.academy') }}
-                            <i class="fas fa-angle-down"></i>
-                        </a>
-                        <ul class="dropdown">
-                            <li>
-                                <a href="{{ route('academy.company') }}" class="{{ activeClassBasedOnRoute('academy.company') }}">
-                                    {{ __('translate.training4company') }}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('academy.agent') }}" class="{{ activeClassBasedOnRoute('academy.agent') }}">
-                                    {{ __('translate.training4agent') }}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('academy.advisor') }}" class="{{ activeClassBasedOnRoute('academy.advisor') }}">
-                                    {{ __('translate.training4advisor') }}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('academy.manager') }}" class="{{ activeClassBasedOnRoute('academy.manager') }}">
-                                    {{ __('translate.training4manager') }}
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ route('contact') }}" class="{{ activeClassBasedOnRoute('contact') }}">
-                            {{ __('translate.contact') }}
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ route('customers') }}" class="{{ activeClassBasedOnRouteSegment('customers') }}">
+                        {{ __('translate.customers') }}
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="nav dropdown customers">
+                        <h5 class="text-center">
+                            {{ __('translate.who-can-use-it') }}
+                        </h5>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#companies') }}" class="nav-link">
+                                {{ __('translate.companies') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#professionals') }}" class="nav-link">
+                                {{ __('translate.professionals') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#trade') }}" class="nav-link">
+                                {{ __('translate.trade-associations') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#public') }}" class="nav-link">
+                                {{ __('translate.public-institutions') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#schools') }}" class="nav-link">
+                                {{ __('translate.schools') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#university') }}" class="nav-link">
+                                {{ __('translate.university') }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ route('versions') }}" class="{{ activeClassBasedOnRoute('versions') }}">
+                        {{ __('translate.versions') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('commercial') }}" class="{{ activeClassBasedOnRoute('commercial') }}">
+                        {{ __('translate.commercial') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('reference') }}" class="{{ activeClassBasedOnRoute('reference') }}">
+                        {{ __('translate.reference') }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('academy') }}" class="{{ activeClassBasedOnRouteSegment('academy') }}">
+                        {{ __('translate.academy') }}
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="{{ route('academy.company') }}" class="{{ activeClassBasedOnRoute('academy.company') }}">
+                                {{ __('translate.training4company') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('academy.agent') }}" class="{{ activeClassBasedOnRoute('academy.agent') }}">
+                                {{ __('translate.training4agent') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('academy.advisor') }}" class="{{ activeClassBasedOnRoute('academy.advisor') }}">
+                                {{ __('translate.training4advisor') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('academy.manager') }}" class="{{ activeClassBasedOnRoute('academy.manager') }}">
+                                {{ __('translate.training4manager') }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ route('contact') }}" class="{{ activeClassBasedOnRoute('contact') }}">
+                        {{ __('translate.contact') }}
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>

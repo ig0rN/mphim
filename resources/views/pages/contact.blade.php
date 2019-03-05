@@ -3,20 +3,8 @@
 @section('title', 'Contact')
 
 @section('content')
-<div class="container">
-    <nav id="breadcrumb" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="{{ route('home') }}">
-                    {{ __('translate.home') }}
-                </a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-                {{ __('translate.contact') }}
-            </li>
-        </ol>
-    </nav>
-    <div id="contact">
+<div id="contact" class="py-5">
+    <div class="container">
         <!-- <div class="contact mb-4">
             <div class="row no-gutters align-items-center">
                 <div class="col-md-4 item">
@@ -126,11 +114,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-4 col-lg-3">
                     <p class="m-0">
                         <span>*</span> {{ __('translate.required') }}
                     </p>
+                </div>
+                <div class="col-md-4 col-lg-3 offset-md-4 offset-lg-6 text-right">
                     <button type="submit" class="btn btn-submit">
                         {{ __('translate.submit') }}
                     </button>

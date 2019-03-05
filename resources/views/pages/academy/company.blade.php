@@ -4,23 +4,6 @@
 
 @section('content')
 <div class="container">
-	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb mb-5">
-			<li class="breadcrumb-item">
-				<a href="{{ route('home') }}">
-					{{ __('translate.home') }}
-				</a>
-			</li>
-			<li class="breadcrumb-item" aria-current="page">
-				<a href="{{ route('academy') }}">
-					{{ __('translate.academy') }}
-				</a>
-			</li>
-			<li class="breadcrumb-item active" aria-current="page">
-				{{ __('translate.training4company') }}
-			</li>
-		</ol>
-	</nav>
 	<h3 class="heading">
 		{{ __('translate.training4company') }}
 	</h3>

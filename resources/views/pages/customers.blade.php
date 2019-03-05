@@ -4,20 +4,8 @@
 
 @section('content')
 <div class="container">
-	<nav id="breadcrumb" aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item">
-				<a href="{{ route('home') }}">
-					{{ __('translate.home') }}
-				</a>
-			</li>
-			<li class="breadcrumb-item active" aria-current="page">
-                {{ __('translate.customers') }}
-			</li>
-		</ol>
-	</nav>
 	<div id="companies" class="item-text">
-		<h3 class="heading">
+		<h3 class="heading padding-top">
 			{{ __('translate.companies') }}
 		</h3>
 		<div class="row align-items-start">
@@ -32,7 +20,7 @@
 		</div>
 	</div>
 	<div id="professionals" class="item-text">
-		<h3 class="heading">
+		<h3 class="heading padding-top">
 			{{ __('translate.professionals') }}
 		</h3>
 		<div class="row align-items-start">
@@ -47,7 +35,7 @@
 		</div>
 	</div>
 	<div id="trade" class="item-text">
-		<h3 class="heading">
+		<h3 class="heading padding-top">
 			{{ __('translate.trade-associations') }}
 		</h3>
 		<div class="row align-items-start">
@@ -62,7 +50,7 @@
 		</div>
 	</div>
 	<div id="public" class="item-text">
-		<h3 class="heading">
+		<h3 class="heading padding-top">
 			{{ __('translate.public-institutions') }}
 		</h3>
 		<div class="row align-items-start">
@@ -77,7 +65,7 @@
 		</div>
 	</div>
 	<div id="schools" class="item-text">
-		<h3 class="heading">
+		<h3 class="heading padding-top">
 			{{ __('translate.schools') }}
 		</h3>
 		<div class="row align-items-start">
@@ -92,7 +80,7 @@
 		</div>
 	</div>
 	<div id="university" class="item-text">
-		<h3 class="heading">
+		<h3 class="heading padding-top">
 			{{ __('translate.university') }}
 		</h3>
 		<div class="row align-items-start">

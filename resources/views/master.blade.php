@@ -5,9 +5,9 @@
     @include('section.head')
 </head>
 
-<body data-spy="scroll" data-target=".nav" class="active">
+<body data-spy="scroll" data-target="#nav" class="active" data-offset="100">
 	<!-- Loader start -->
-	<div id="loader"></div>
+	<!-- <div id="loader"></div> -->
 	<!-- Loader end -->
 	<!-- App start -->
 	<div id="app">
@@ -17,7 +17,7 @@
 		<!-- Header end -->
 
 		<!-- Content start -->
-		<div id="content" class="py-5">
+		<div id="content" class="pb-5">
 			@yield('content')
 		</div>
 		<!-- Content end -->
