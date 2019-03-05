@@ -7,7 +7,7 @@
 
 <body data-spy="scroll" data-target=".nav" class="active">
 	<!-- Loader start -->
-	<!-- <div id="loader"></div> -->
+	<div id="loader"></div>
 	<!-- Loader end -->
 	<!-- App start -->
 	<div id="app">
