@@ -12,7 +12,7 @@ return [
     'companies' => 'Aziende',
     'professionals' => 'Professionisti',
     'trade-associations' => 'Associazioni di categoria',
-    'public-institutions' => 'Instituzioni pubbliche',
+    'public-institutions' => 'Istituzioni pubbliche',
     'schools' => 'Scuole',
     'university' => 'Università',
     'versions' => 'Versioni',

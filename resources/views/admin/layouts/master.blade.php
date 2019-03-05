@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	{{-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> --}}
-	<title>Mphim+ | Admin</title>
+	<title>MPHIM+ | Admin</title>
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/flag-icon.min.css') }}" />
 	<!--    <link rel="stylesheet" href="css/lightgallery.min.css" />-->
@@ -43,7 +43,7 @@
 		@yield('main')
 	</div>
 	
-	<script type="text/javascript" src="{{ asset('js/admin.js') }}"></script>
+	{{-- <script type="text/javascript" src="{{ asset('js/admin.js') }}"></script> --}}
 	<script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
 	@yield('scripts')
 </body>

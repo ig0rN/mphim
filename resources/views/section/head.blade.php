@@ -1,7 +1,7 @@
 	<!-- Meta tag start-->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>Mphim+ | @yield('title')</title>
+	<title>MPHIM+ | @yield('title')</title>
 	<meta name="theme-color" content="#ff0000" />
 	<meta name="msapplication-navbutton-color" content="#ff0000" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="#ff0000" />
@@ -20,5 +20,5 @@
 	<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/animated.min.css') }}" />
-	<link rel="stylesheet" href="{{ asset('css/style.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/style.min.css?ver=' . time()) }}" />
 	<!-- CSS and Bootstrap 4 links end -->

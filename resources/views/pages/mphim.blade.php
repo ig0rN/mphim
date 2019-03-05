@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Mphim+')
+@section('title', 'MPHIM+')
 
 @section('content')
 <div id="mphim">

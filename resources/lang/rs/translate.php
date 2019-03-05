@@ -48,7 +48,7 @@ return [
     'enter-company-name' => 'Unesite ime firme',
     'enter-subject' => 'Unesite naslov',
     'enter-message' => 'Unesite poruku',
-    'required' => 'zahtevano',
+    'required' => 'Obavezno',
 
     'enter-email' => 'Unesite e-mail adresu',
     'subscribe' => 'Pretplata',

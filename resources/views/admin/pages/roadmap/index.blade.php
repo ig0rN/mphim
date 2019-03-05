@@ -26,7 +26,7 @@
                     <td>{{ $event->date }}</td>
                     <td>{!! $event->{'body_' . app()->getLocale()} !!}</td>
                     <td>
-                        <button class="btn btn-primary btn-edit"><a href="{{ route('admin.roadmap.edit', ['id' => $event->id]) }}">Edit</a></button>
+                        <a class="btn btn-primary btn-edit" href="{{ route('admin.roadmap.edit', ['id' => $event->id]) }}">Edit</a>
                         <form action="{{ route('admin.roadmap.destroy', ['id' => $event->id]) }}" class="form-delete" method="POST">
                             @csrf
                             @method('DELETE')
