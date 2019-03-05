@@ -5,7 +5,7 @@
     @include('section.head')
 </head>
 
-<body data-spy="scroll" data-target="#nav" class="active" data-offset="100">
+<body data-spy="scroll" data-target=".nav" class="active">
 	<!-- Loader start -->
 	<!-- <div id="loader"></div> -->
 	<!-- Loader end -->

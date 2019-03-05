@@ -3,11 +3,11 @@
 @section('title', __('translate.academy'))
 
 @section('content')
-<div class="container">
-    <h3 class="heading">
-        {{ __('translate.academy') }}
-    </h3>
-    <div id="academy">
+<div id="academy" class="pt-5">
+    <div class="container">
+        <h3 class="heading">
+            {{ __('translate.academy') }}
+        </h3>
 
         {!! $content->{'body_' . $language} !!}
 
@@ -59,17 +59,16 @@
             </li>
             <li class="col-md-3">
                 <div class="training"">
-                    <div class="image">
-                        <img src="{{ asset('img/home/training/manager.jpg') }}" alt="img/home/training/manager.jpg" />
-                    </div>
-                    <div class="overlay bg-info">
-                        <h6>
-                            {{ __('translate.training4manager') }}
-                        </h6>
-                        <a href="{{ route('academy.manager') }}" class="btn btn-training">
-                            {{ __('translate.do-you-want-to-find-out-more-about') }}
-                        </a>
-                    </div>
+                    <div class=" image">
+                    <img src="{{ asset('img/home/training/manager.jpg') }}" alt="img/home/training/manager.jpg" />
+                </div>
+                <div class="overlay bg-info">
+                    <h6>
+                        {{ __('translate.training4manager') }}
+                    </h6>
+                    <a href="{{ route('academy.manager') }}" class="btn btn-training">
+                        {{ __('translate.do-you-want-to-find-out-more-about') }}
+                    </a>
                 </div>
             </li>
         </ul>

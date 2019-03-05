@@ -3,7 +3,7 @@
 @section('title', 'Contact')
 
 @section('content')
-<div id="contact" class="py-5">
+<div id="contact" class="pt-5">
     <div class="container">
         <!-- <div class="contact mb-4">
             <div class="row no-gutters align-items-center">
@@ -162,7 +162,7 @@
                 </div>
                 <div class="col-md-3 item">
                     <div class="image">
-                        <img src="{{ asset('img/locations/freienbach.png') }}" alt="img/locations/freienbach.png" />
+                        <img src="{{ asset('img/locations/freienbach.jpg') }}" alt="img/locations/freienbach.jpg" />
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">

@@ -80,13 +80,19 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $("#nav .nav-link").click(function() {
-        var href = $(this).attr("href");
+    $("#nav ul li a[href^='#']").on("click", function(e) {
+        e.preventDefault();
+
+        var hash = this.hash;
+
         $("html, body").animate(
             {
-                scrollTop: $(href).offset().top
+                scrollTop: $(hash).offset().top
             },
-            1000
+            1000,
+            function() {
+                window.location.hash = hash;
+            }
         );
     });
 });
