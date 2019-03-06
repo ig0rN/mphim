@@ -68,9 +68,14 @@ Route::namespace('Admin')
     ->middleware('auth')
     ->group(function(){
 
-        Route::get('/home', function(){
-            return view('admin.pages.home');
-        })->name('admin.home');
+        // Dashboard
+        Route::get('/dashboard', function(){
+            return view('admin.pages.dashboard');
+        })->name('admin.dashboard');
+
+        // Home
+        Route::get('/home', 'OneRowPageController@showHome')->name('admin.home');
+        Route::post('/home-update/{home}', 'OneRowPageController@updateHome')->name('admin.home.update');
 
         Route::get('/quotes', 'QuoteController@index')->name('admin.quotes');
         Route::get('/quote/create', 'QuoteController@create')->name('admin.quote.create');

@@ -22,15 +22,15 @@
 
 </head>
 <body>
-	@if (Request::segment(2) != 'home')
+	@if (Request::segment(2) != 'dashboard')
 	<div id="vertical-menu">
 		<div class="wrapper">
 			@include('admin.layouts.nav')
 		</div>
 	</div>
 	@endif
-	<div id="admin-content" class="{{ Request::segment(2) == 'home' ? 'home' : '' }}">
-		@if (Request::segment(2) != 'home')
+	<div id="admin-content" class="{{ Request::segment(2) == 'dashboard' ? 'home' : '' }}">
+		@if (Request::segment(2) != 'dashboard')
 			<div id="top-bar" class="d-md-none">
 				<button class="btn btn-vertical-menu">
 					<i class="fas fa-bars"></i>

@@ -49,4 +49,16 @@ class OneRowPageController extends Controller
         $reference->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
     }
+
+    public function showHome()
+    {
+        $content = OneRowPage::where('page', 'home')->first();
+        return view('admin.pages.home', compact('content'));
+    }
+
+    public function updateHome(ReferenceRequest $request, OneRowPage $home)
+    {
+        $home->update($request->all());
+        return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
+    }
 }

@@ -36,5 +36,14 @@ class OneRowPageTableSeeder extends Seeder
             'body_it' => 'Commercial Body IT',
             'body_rs' => 'Commercial Body RS',
         ]);
+
+        OneRowPage::create([
+            'page' => 'home',
+            'body_en' => 'Home Body EN',
+            'body_de' => 'Home Body DE',
+            'body_fr' => 'Home Body FR',
+            'body_it' => 'Home Body IT',
+            'body_rs' => 'Home Body RS',
+        ]);
     }
 }

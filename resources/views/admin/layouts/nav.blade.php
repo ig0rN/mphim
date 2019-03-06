@@ -1,7 +1,9 @@
 <ul id="admin-nav">
-	<h5>Dashboard</h5>
+	<h5>
+		<a href="{{ route('admin.dashboard')  }}">Dashboard</a>
+	</h5>
 	<li>
-		<a href="{{ route('admin.home') }}">Home</a>
+		<a {{ Request::segment(2) == 'home' ? "class=active" : '' }} href="{{ route('admin.home') }}">Home Page</a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'quotes' ? "class=active" : '' }} href="{{ route('admin.quotes') }}">Home<span>page</span><span>Quotes</span></a>
