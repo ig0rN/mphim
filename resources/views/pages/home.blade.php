@@ -15,9 +15,7 @@
                                     {{ __('translate.default-message') }}
                                 </h3>
                                 <div class="text-div">
-                                    <p>
-                                        {{ __('translate.default-message.message') }}
-                                    </p>
+                                    {!! $home->{'body_' . $language} !!}
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="what-is-text" role="tabpanel" aria-labelledby="what-is-tab">

@@ -13,12 +13,14 @@ class SimplePageController extends Controller
 {
     public function showHome()
     {
+        $home = OneRowPage::where('page', 'home')->first();
         $roadmap = Roadmap::orderBy('date', 'desc')->get();
         $whatIs = Mphim::where('name', 'What is')->first();
         $whatDoes = Mphim::where('name', 'What does it do')->first();
         $whyTo = Mphim::where('name', 'Why to have it')->first();
         return view('pages.home')
                 ->with([
+                    'home' => $home,
                     'roadmap' => $roadmap,
                     'whatIs' => $whatIs,
                     'whatDoes' => $whatDoes,
