@@ -66,7 +66,7 @@
                                         <li class="even">
                                             <div class="container">
                                                 <div class="row no-gutters">
-                                                    <div class="col-md-5 text-right">
+                                                    <div class="col-md-4 offset-md-1 text-right">
                                                         <div class="text">
                                                             <div class="year-div">
                                                                 <p class="year m-0">{{ $year }}</p>
@@ -83,7 +83,7 @@
                                         <li class="odd">
                                             <div class="container">
                                                 <div class="row no-gutters">
-                                                    <div class="col-md-5 offset-7">
+                                                    <div class="col-md-4 offset-7">
                                                         <div class="text">
                                                             <div class="year-div">
                                                                 <p class="year">{{ $year }}</p>
