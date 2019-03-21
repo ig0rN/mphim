@@ -170,7 +170,7 @@
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
-                                Kantonsstrasse n. 81,<br />
+                                Weinbergstrasse n. 8,<br />
                                 8807 Freienbach
                             </a>
                         </p>
