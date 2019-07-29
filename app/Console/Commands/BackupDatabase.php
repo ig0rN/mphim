@@ -2,9 +2,11 @@
 
 namespace App\Console\Commands;
 
+use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Symfony\Component\Process\Process;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
 
 class BackupDatabase extends Command
 {
@@ -32,7 +34,7 @@ class BackupDatabase extends Command
         parent::__construct();
 
         $this->process = new Process(sprintf(
-            'mysqldump -u%s -p%s %s > %s',
+            'mysqldump -u %s -p%s %s > %s',
             env('DB_USERNAME'),
             env('DB_PASSWORD'),
             env('DB_DATABASE'),
@@ -49,10 +51,11 @@ class BackupDatabase extends Command
     {
         try {
             $this->process->mustRun();
-
             $this->info('The backup has been proceed successfully.');
+            Log::info('The backup has been proceed successfully.');
         } catch (ProcessFailedException $exception) {
-            $this->error('The backup process has been failed.');
+            $this->error('There was an error while trying to make a backup');
+            Log::info('There was an error while trying to make a backup.');
         }
     }
 }
