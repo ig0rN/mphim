@@ -151,7 +151,7 @@
 </div>
 <div class="copyright">
     <div class="container">
-        © {{ __('translate.copyright') }} 2019 <a href="http://www.webtory.rs/" target="_blank"><b>Webtory</b></a>. {{
+        © {{ __('translate.copyright') }} 2019 <b>MPHIM+</b>. {{
         __('translate.rights-reserved') }}
     </div>
 </div>

@@ -170,7 +170,7 @@
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
-                                Weinbergstrasse n. 8,<br />
+                                Grützenstrasse n. 1,<br />
                                 8807 Freienbach
                             </a>
                         </p>
@@ -208,7 +208,7 @@
                         <p class="telephone">
                             Tel.
                             <a href="callto:+38134207098" title="Call">
-                                +381 34 20 70 98
+                                +381 64 56 11 572
                             </a>
                         </p>
                         <p class="email">
