@@ -9,7 +9,7 @@ Route::get('/admin', function(){
     return redirect()->route('login');
 });
 
-Route::group(['middleware' => 'test.protection'], function () { // remove in production
+// Route::group(['middleware' => 'test.protection'], function () { // remove in production
     Route::namespace('Front')->group(function() {
         Route::get('/', 'SimplePageController@showHome')->name('home');
         Route::get('/mphim', 'SimplePageController@showMphim')->name('mphim');
@@ -25,12 +25,12 @@ Route::group(['middleware' => 'test.protection'], function () { // remove in pro
         Route::get('/academy/training-4-advisor', 'AcademyController@showAdvisor')->name('academy.advisor');
         Route::get('/academy/training-4-manager', 'AcademyController@showManager')->name('academy.manager');
     });
-});
+// });
 
 // remove in production
-Route::get('/', function () {
-    return 'We\'re down for maintenance! Coming back soon!';
-})->name('testprotection');
+// Route::get('/', function () {
+//     return 'We\'re down for maintenance! Coming back soon!';
+// })->name('testprotection');
 
 Route::namespace('Admin\Auth')->prefix('admin')->group(function(){
     Route::get('login', 'LoginController@showLoginForm')->name('login');
