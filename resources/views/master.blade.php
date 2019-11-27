@@ -3,6 +3,7 @@
 
 <head>
     @include('section.head')
+    @yield('styles')
 </head>
 
 <body data-spy="scroll" data-target=".nav" class="active">

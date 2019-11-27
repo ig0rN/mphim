@@ -2,6 +2,9 @@
 
 @section('title', 'Contact')
 
+@section('styles')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.min.css">@stop
+
 @section('content')
 <div id="contact" class="pt-5">
     <div class="container">
@@ -35,97 +38,105 @@
         </div> -->
         <div class="contact-form">
             <h3 class="heading">{{ __('translate.contact-form') }}</h3>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-6">
-                            <div class="form-group">
+            <form action="{{ route('post.contact') }}" id="contactForm" method="post">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-6">
+                                <div class="form-group">
+                                    <label>
+                                        {{ __('translate.name') }}<span>*</span>
+                                    </label>
+                                    <input type="text" class="form-control" name="name" id="name" required="" placeholder="{{ __('translate.enter-name') }}" />
+                                    <span class="has-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6">
+                                <div class="form-group">
+                                    <label>
+                                        {{ __('translate.phone') }}
+                                    </label>
+                                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="{{ __('translate.enter-phone') }}" />
+                                    <span class="has-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6">
+                                <div class="form-group">
+                                    <label>
+                                        {{ __('translate.email') }}<span>*</span>
+                                    </label>
+                                    <input type="email" class="form-control" name="email" id="email" required="" placeholder="{{ __('translate.enter-email') }}" />
+                                    <span class="has-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6">
+                                <div class="form-group">
+                                    <label>
+                                        {{ __('translate.company-name') }}
+                                    </label>
+                                    <input type="text" class="form-control" name="company_name" id="company_name" placeholder="{{ __('translate.enter-company-name') }}" />
+                                    <span class="has-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6">
+                                <div class="form-group">
+                                    <label>
+                                        {{ __('translate.subject') }}
+                                    </label>
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="{{ __('translate.enter-subject') }}" />
+                                    <span class="has-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6">
                                 <label>
-                                    {{ __('translate.name') }}<span>*</span>
+                                    {{ __('translate.choose-mail') }}
                                 </label>
-                                <input type="text" class="form-control" placeholder="{{ __('translate.enter-name') }}" />
+                                <div class="select-div text-right">
+                                    <select class="form-control" name="email_to" id="email_to">
+                                        <option value="italia@mphimplus.com">
+                                            italia@mphimplus.com
+                                        </option>
+                                        <option value="schweiz@mphimplus.com">
+                                            schweiz@mphimplus.com
+                                        </option>
+                                        <option value="srbija@mphimplus.com">
+                                            srbija@mphimplus.com
+                                        </option>
+                                        <option value="maroc@mphimplus.com">
+                                            maroc@mphimplus.com
+                                        </option>
+                                    </select>
+                                    <span class="has-error"></span>
+                                    <img src="{{ asset('img/arrow.png') }}" />
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-6">
-                            <div class="form-group">
-                                <label>
-                                    {{ __('translate.phone') }}
-                                </label>
-                                <input type="tel" class="form-control" placeholder="{{ __('translate.enter-phone') }}" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6">
-                            <div class="form-group">
-                                <label>
-                                    {{ __('translate.email') }}<span>*</span>
-                                </label>
-                                <input type="email" class="form-control" placeholder="{{ __('translate.enter-email') }}" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6">
-                            <div class="form-group">
-                                <label>
-                                    {{ __('translate.company-name') }}
-                                </label>
-                                <input type="text" class="form-control" placeholder="{{ __('translate.enter-company-name') }}" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6">
-                            <div class="form-group">
-                                <label>
-                                    {{ __('translate.subject') }}
-                                </label>
-                                <input type="text" class="form-control" placeholder="{{ __('translate.enter-subject') }}" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6">
+                    </div>
+                    <div class="col-md-8 col-lg-6">
+                        <div class="form-group">
                             <label>
-                                {{ __('translate.to-email') }}
+                                {{ __('translate.message') }}<span>*</span>
                             </label>
-                            <div class="select-div text-right">
-                                <select class="form-control">
-                                    <option selected disabled>
-                                        {{ __('translate.choose-mail') }}
-                                    </option>
-                                    <option value="italia@mphimplus.com">
-                                        italia@mphimplus.com
-                                    </option>
-                                    <option value="schweiz@mphimplus.com">
-                                        schweiz@mphimplus.com
-                                    </option>
-                                    <option value="srbija@mphimplus.com">
-                                        srbija@mphimplus.com
-                                    </option>
-                                    <option value="maroc@mphimplus.com">
-                                        maroc@mphimplus.com
-                                    </option>
-                                </select>
-                                <img src="{{ asset('img/arrow.png') }}" />
-                            </div>
+                            <textarea class="form-control" name="message" id="message" required="" rows="5" placeholder="{{ __('translate.enter-message') }}..."></textarea>
+                            <span class="has-error"></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-lg-6">
-                    <div class="form-group">
-                        <label>
-                            {{ __('translate.message') }}<span>*</span>
-                        </label>
-                        <textarea class="form-control" rows="5" placeholder="{{ __('translate.enter-message') }}..."></textarea>
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-lg-3">
+                        <p class="m-0">
+                            <span>*</span> {{ __('translate.required') }}
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 offset-md-4 offset-lg-6 text-right">
+                        @csrf
+                        <input type="hidden" name="website">
+                        <button type="submit" class="btn btn-submit">
+                            {{ __('translate.submit') }}
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-4 col-lg-3">
-                    <p class="m-0">
-                        <span>*</span> {{ __('translate.required') }}
-                    </p>
-                </div>
-                <div class="col-md-4 col-lg-3 offset-md-4 offset-lg-6 text-right">
-                    <button type="submit" class="btn btn-submit">
-                        {{ __('translate.submit') }}
-                    </button>
-                </div>
-            </div>
+            </form>
         </div>
         <div class="locations">
             <div class="row">
@@ -150,7 +161,7 @@
                             </a>
                         </p>
                         <p class="email">
-                            <a href="mailto:info@mphimplus.com" title="Email">
+                            <a href="mailto:italia@mphimplus.com" title="Email">
                                 italia@mphimplus.com
                             </a>
                         </p>
@@ -181,7 +192,7 @@
                             </a>
                         </p>
                         <p class="email">
-                            <a href="callto:mailto:info@mphimplus.com" title="Email">
+                            <a href="mailto:schweiz@mphimplus.com" title="Email">
                                 schweiz@mphimplus.com
                             </a>
                         </p>
@@ -212,7 +223,7 @@
                             </a>
                         </p>
                         <p class="email">
-                            <a href="mailto:info@mphimplus.com" title="Email">
+                            <a href="mailto:srbija@mphimplus.com" title="Email">
                                 srbija@mphimplus.com
                             </a>
                         </p>
@@ -243,7 +254,7 @@
                             </a>
                         </p>
                         <p class="email">
-                            <a href="mailto:info@mphimplus.com" title="Email">
+                            <a href="mailto:maroc@mphimplus.com" title="Email">
                                 maroc@mphimplus.com
                             </a>
                         </p>
@@ -258,3 +269,57 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.all.min.js"></script>
+    
+    <script>
+        $(function () {
+            $('#contactForm').submit(function (e) {
+                e.preventDefault();
+                var form = $(this);
+                var formData = form.serialize();
+                var submitButton = form.find('button[type="submit"]');
+                submitButton.attr('disabled', true);
+
+                $.ajax({
+                    url: form.attr('action'),
+                    data: formData,
+                    method: 'post',
+                    success: function (response) {
+                        // empty all previous errors 
+                        $('.has-error').removeClass('.has-error').text('');
+                        var errors = response.errors;
+                        if ($.isEmptyObject(errors)) {
+                            location.reload();
+                        } else {
+                            submitButton.attr('disabled', false);
+                            // print the errors
+                            $.each(errors, function (key, val) {
+                                var input = form.find('[name="'+ key +'"]');
+                                input.next().addClass('has-error').text(val[0]);
+                            });
+                        }
+                    },
+                    errors: function() {
+                        location.reload();
+                    }
+                });
+            });
+
+            @if(Session::has('success'))
+                swal(
+                    '{{ __('translate.all_done') }}',
+                    '{{ Session::get('success') }}',
+                    'success'
+                );
+            @elseif(Session::has('error'))
+                swal(
+                    '{{ __('translate.error') }}',
+                    '{{ Session::get('error') }}',
+                    'error'
+                );
+            @endif
+        });
+    </script>
+@stop

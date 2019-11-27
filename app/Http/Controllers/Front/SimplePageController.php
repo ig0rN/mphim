@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers\Front;
 
+use Mail;
+use Session;
+use Validator;
 use App\Database\Customer;
 use App\Database\Mphim;
 use App\Database\OneRowPage;
 use App\Database\Roadmap;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Mail\Contact\ContactMail;
+use Illuminate\Validation\Rule;
 
 class SimplePageController extends Controller
 {
@@ -96,5 +101,54 @@ class SimplePageController extends Controller
     public function showContact()
     {
         return view('pages.contact');
+    }
+
+    public function postContact(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:190',
+            'email' => 'required|email|max:190',
+            'phone' => 'nullable|max:191',
+            'message' => 'required|max:5000',
+            'company_name' => 'nullable|max:190',
+            'subject' => 'nullable|max:190',
+            'email_to' => [
+                'required',
+                Rule::in([
+                    'maroc@mphimplus.com',
+                    'srbija@mphimplus.com',
+                    'schweiz@mphimplus.com',
+                    'italia@mphimplus.com',
+                ]),
+            ],
+        ]);
+
+        if ($request->website) {
+            return response()->json([
+                'status' => false
+            ]);
+        }
+
+        if ($validator->passes()) {
+            try {
+                Mail::to($request->email_to)->send(new ContactMail);
+
+                Session::flash('success', __('translate.contact_success_message'));
+            } catch (Exception $e) {
+                Session::flash('error', __('translate.something_went_wrong'));
+
+                return response()->json([
+                    'status' => false
+                ]);
+            }
+
+            return response()->json([
+                'status' => true
+            ]);
+        } else {
+            return response()->json([
+                'errors' => $validator->getMessageBag()->toArray()
+            ]);
+        }
     }
 }

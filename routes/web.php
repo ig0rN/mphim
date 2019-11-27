@@ -18,6 +18,7 @@ Route::get('/admin', function(){
         Route::get('/commercial', 'SimplePageController@showCommercial')->name('commercial');
         Route::get('/reference', 'SimplePageController@showReference')->name('reference');
         Route::get('/contact', 'SimplePageController@showContact')->name('contact');
+        Route::post('/contact', 'SimplePageController@postContact')->name('post.contact');
 
         Route::get('/academy', 'AcademyController@showIndex')->name('academy');
         Route::get('/academy/training-4-company', 'AcademyController@showCompany')->name('academy.company');

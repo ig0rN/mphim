@@ -59,4 +59,6 @@ return [
     'rights-reserved' => 'Tutti i diritti riservati',
     'copyright' => 'Copyright',
 
+    'all_done' => 'Fatto', 
+    'error' => 'Errore', 
 ];

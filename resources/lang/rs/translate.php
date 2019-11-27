@@ -59,4 +59,6 @@ return [
     'rights-reserved' => 'Sva prava su rezervisana',
     'copyright' => 'Autorsko pravo',
 	
+    'all_done' => 'Gotovo', 
+    'error' => 'Greska', 
 ];
