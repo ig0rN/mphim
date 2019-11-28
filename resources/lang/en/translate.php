@@ -61,4 +61,7 @@ return [
 
     'all_done' => 'All Done!', 
     'error' => 'Error',
+
+    'contact_success_message' => 'Thank you for your message. We will contact you within 48 hours.',
+    'something_went_wrong' => 'Something went wrong. Please try again.',
 ];

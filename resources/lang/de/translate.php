@@ -61,4 +61,7 @@ return [
 
     'all_done' => 'Erledigt!', 
     'error' => 'Fehlermeldung',
+
+    'contact_success_message' => 'Vielen Dank. Ihre Nachricht wurde verschickt. Wir melden uns innert 48 Stunden.',
+    'something_went_wrong' => 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.',
 ];

@@ -59,6 +59,9 @@ return [
     'rights-reserved' => 'Tous droits réservés',
     'copyright' => 'Copyright',
 
-    'all_done' => 'Fait', 
+    'all_done' => 'Fait!', 
     'error' => 'Erreur',
+
+    'contact_success_message' => 'Merci pour votre message! Nous nous mettrons en contact avec vous dans les 48 heures.',
+    'something_went_wrong' => 'A cause de problèmes techniques, nous vous prions de nous envoyer à nouveau votre message.',
 ];

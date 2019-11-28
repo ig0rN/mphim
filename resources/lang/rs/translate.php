@@ -59,6 +59,9 @@ return [
     'rights-reserved' => 'Sva prava su rezervisana',
     'copyright' => 'Autorsko pravo',
 	
-    'all_done' => 'Gotovo', 
+    'all_done' => 'Gotovo!', 
     'error' => 'Greska', 
+
+    'contact_success_message' => 'Hvala Vam što ste nas kontaktirali. Javićemo Vam se u narednih 48 časova.',
+    'something_went_wrong' => 'Nešto nije u redu. Pokušajte ponovo.',
 ];
