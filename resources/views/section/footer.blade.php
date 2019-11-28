@@ -113,7 +113,7 @@
                 </ul>
             </li>
             <li class="flex-fill">
-                <a href="javascript:void(0)" class="heading">
+                <a href="{{ route('contact') }}" class="heading">
                     @lang('translate.contact')
                 </a>
             </li>
