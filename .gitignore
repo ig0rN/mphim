@@ -19,11 +19,6 @@ composer.lock
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
-public/.DS_Store
-.DS_Store
-.DS_Store
-.DS_Store
 *.lock
 composer.lock
-public/.DS_Store
 .DS_Store
