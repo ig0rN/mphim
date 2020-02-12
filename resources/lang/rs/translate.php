@@ -13,11 +13,14 @@ return [
     'professionals' => 'Profesionalci',
     'trade-associations' => 'Strukovna udruženja',
     'public-institutions' => 'Javne institucije',
+    'banks' => 'Banke',
     'schools' => 'Škole',
     'university' => 'Univerziteti',
     'versions' => 'Verzije',
     'commercial' => 'Komercijala',
     'reference' => 'Reference',
+    'press' => 'Štampa',
+    'privacy-policy' => 'Politika Privatnosti',
     'academy' => 'Akademija',
     'training4company' => 'Trening za kompanije',
     'training4agent' => 'Trening za agente',
@@ -64,4 +67,16 @@ return [
 
     'contact_success_message' => 'Hvala Vam što ste nas kontaktirali. Javićemo Vam se u narednih 48 časova.',
     'something_went_wrong' => 'Nešto nije u redu. Pokušajte ponovo.',
+
+    // footer links
+    // footer links
+    'business' => 'Business',
+    'axess' => 'Axess',
+
+    'partners' => 'Partneri',
+    'institutions' => 'Institucije',
+    'universities' => 'Univeriteti',
+    'high_schools' => 'Srednje škole',
+    'companies' => 'Kompanije',
+    'professional_officies' => 'Profesionalne kancelarije',
 ];

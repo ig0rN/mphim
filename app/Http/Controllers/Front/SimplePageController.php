@@ -54,6 +54,7 @@ class SimplePageController extends Controller
         $proffesionals = Customer::where('name', 'Professionals')->first();
         $tradeAssoc = Customer::where('name', 'Trade associations')->first();
         $publicIns = Customer::where('name', 'Public institutions')->first();
+        $banks = Customer::where('name', 'Banks')->first();
         $schools = Customer::where('name', 'Schools')->first();
         $university = Customer::where('name', 'University')->first();
         return view('pages.customers')
@@ -62,6 +63,7 @@ class SimplePageController extends Controller
                     'proffesionals' => $proffesionals,
                     'tradeAssoc' => $tradeAssoc,
                     'publicIns' => $publicIns,
+                    'banks' => $banks,
                     'schools' => $schools,
                     'university' => $university,
                     'language' => app()->getLocale()
@@ -98,6 +100,26 @@ class SimplePageController extends Controller
                 ]);
     }
 
+    public function showPress()
+    {
+        $content = OneRowPage::where('page', 'press')->first();
+        return view('pages.press')
+                ->with([
+                    'content' => $content,
+                    'language' => app()->getLocale()
+                ]);
+    }
+
+    public function showPrivacyPolicy()
+    {
+        $content = OneRowPage::where('page', 'privacy-policy')->first();
+        return view('pages.privacy-policy')
+                ->with([
+                    'content' => $content,
+                    'language' => app()->getLocale()
+                ]);
+    }
+
     public function showContact()
     {
         return view('pages.contact');
@@ -115,10 +137,10 @@ class SimplePageController extends Controller
             'email_to' => [
                 'required',
                 Rule::in([
-                    'maroc@mphimplus.com',
-                    'srbija@mphimplus.com',
-                    'schweiz@mphimplus.com',
-                    'italia@mphimplus.com',
+                    'info@mphimplus.com',
+                    'commerciale@mphimplus.com',
+                    'sicilia@mphimplus.com',
+                    'veneto@mphimplus.com',
                 ]),
             ],
         ]);

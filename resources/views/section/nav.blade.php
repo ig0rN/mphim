@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-md-4 offset-4 text-right">
                     <div class="row no-gutters align-items-center">
-                        <div class="col-md-10">
+                        <div class="col-md-12">
                             <div class="login">
                                 <img src="{{ asset('img/logo.png') }}" alt="img/logo.png" />
                                 <a href="https://app.mphimplus.com/signin" class="btn btn-login" target="_blank">
@@ -45,7 +45,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        {{-- <div class="col-md-2">
                             <div class="language">
                                 <ul>
                                     <li>
@@ -82,7 +82,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -150,13 +150,10 @@
                 </li>
                 <li>
                     <a href="{{ route('customers') }}" class="{{ activeClassBasedOnRouteSegment('customers') }}">
-                        {{ __('translate.customers') }}
+                        {{ __('translate.who-can-use-it') }}
                         <i class="fas fa-angle-down"></i>
                     </a>
                     <ul class="nav dropdown customers">
-                        <h5 class="text-center">
-                            {{ __('translate.who-can-use-it') }}
-                        </h5>
                         <li class="nav-item">
                             <a href="{{ routeOrAnchor('customers', '#companies') }}" class="nav-link">
                                 {{ __('translate.companies') }}
@@ -175,6 +172,11 @@
                         <li class="nav-item">
                             <a href="{{ routeOrAnchor('customers', '#public') }}" class="nav-link">
                                 {{ __('translate.public-institutions') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ routeOrAnchor('customers', '#banks') }}" class="nav-link">
+                                {{ __('translate.banks') }}
                             </a>
                         </li>
                         <li class="nav-item">
@@ -231,6 +233,11 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="{{ route('press') }}" class="{{ activeClassBasedOnRoute('press') }}">
+                        {{ __('translate.press') }}
+                    </a>
                 </li>
                 <li>
                     <a href="{{ route('contact') }}" class="{{ activeClassBasedOnRoute('contact') }}">

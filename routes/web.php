@@ -17,6 +17,8 @@ Route::get('/admin', function(){
         Route::get('/versions', 'SimplePageController@showVersions')->name('versions');
         Route::get('/commercial', 'SimplePageController@showCommercial')->name('commercial');
         Route::get('/reference', 'SimplePageController@showReference')->name('reference');
+        Route::get('/press', 'SimplePageController@showPress')->name('press');
+        Route::get('/privacy-policy', 'SimplePageController@showPrivacyPolicy')->name('privacy-policy');
         Route::get('/contact', 'SimplePageController@showContact')->name('contact');
         Route::post('/contact', 'SimplePageController@postContact')->name('post.contact');
 
@@ -93,6 +95,14 @@ Route::namespace('Admin')->prefix('admin')->middleware('auth')->group(function()
         // Reference
         Route::get('/reference', 'OneRowPageController@showReference')->name('admin.reference');
         Route::post('/reference-update/{reference}', 'OneRowPageController@updateReference')->name('admin.reference.update');
+
+        // Press
+        Route::get('/press', 'OneRowPageController@showPress')->name('admin.press');
+        Route::post('/press-update/{press}', 'OneRowPageController@updatePress')->name('admin.press.update');
+
+        // Privacy Policy
+        Route::get('/privacy-policy', 'OneRowPageController@showPrivacyPolicy')->name('admin.privacy-policy');
+        Route::post('/privacy-policy-update', 'OneRowPageController@updatePrivacyPolicy')->name('admin.privacy-policy.update');
 
         // Academy
         Route::get('/academy', 'AcademyController@index')->name('admin.academy');

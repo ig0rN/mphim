@@ -19,7 +19,6 @@ $(function () {
 
         toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | forecolor backcolor emoticons",
 
-
         relative_urls: false,
         file_browser_callback : function(field_name, url, type, win) {
           var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
@@ -42,6 +41,9 @@ $(function () {
           });
         },
 
+        force_br_newlines : true,
+        force_p_newlines : false,
+        forced_root_block : '',
 
         style_formats: [
             {

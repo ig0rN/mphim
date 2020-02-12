@@ -13,16 +13,19 @@ return [
     'professionals' => 'Professionals',
     'trade-associations' => 'Trade Associations',
     'public-institutions' => 'Public Institutions',
+    'banks' => 'Banks',
     'schools' => 'Schools',
     'university' => 'Universities',
     'versions' => 'Versions',
     'commercial' => 'Commercial',
     'reference' => 'References',
+    'press' => 'Press',
+    'privacy-policy' => 'Privacy Policy',
     'academy' => 'Academy',
-    'training4company' => 'Training4Company',
-    'training4agent' => 'Training4Agent',
-    'training4advisor' => 'Training4Advisor',
-    'training4manager' => 'Training4Manager',
+    'training4company' => 'Learning4Company',
+    'training4agent' => 'Learning4Agent',
+    'training4advisor' => 'Learning4Advisor',
+    'training4manager' => 'Learning4Manager',
     'contact' => 'Contact',
     'contact-form' => 'Contact form',
 
@@ -64,4 +67,16 @@ return [
 
     'contact_success_message' => 'Thank you for your message. We will contact you within 48 hours.',
     'something_went_wrong' => 'Something went wrong. Please try again.',
+
+    // footer links
+    // footer links
+    'business' => 'Business',
+    'axess' => 'Axess',
+
+    'partners' => 'Partners',
+    'institutions' => 'Institutions',
+    'universities' => 'Universities',
+    'high_schools' => 'High Schools',
+    'companies' => 'Companies',
+    'professional_officies' => 'Professional Officies',
 ];

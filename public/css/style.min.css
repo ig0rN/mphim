@@ -6,3 +6,13 @@
 	width: auto;
 	height: auto;
 }
+
+#press img {
+	width: auto;
+	height: auto;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}

@@ -6,4 +6,4 @@
 <script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
 <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
-<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/main.js?ver='.time()) }}"></script>

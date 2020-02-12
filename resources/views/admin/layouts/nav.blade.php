@@ -27,7 +27,13 @@
 		<a {{ Request::segment(2) == 'reference' ? "class=active" : '' }} href="{{ route('admin.reference') }}">Reference</a>
 	</li>
 	<li>
+		<a {{ Request::segment(2) == 'press' ? "class=active" : '' }} href="{{ route('admin.press') }}">Press</a>
+	</li>
+	<li>
 		<a {{ Request::segment(2) == 'academy' ? "class=active" : '' }} href="{{ route('admin.academy') }}">Academy</a>
+	</li>
+	<li>
+		<a {{ Request::segment(2) == 'privacy-policy' ? "class=active" : '' }} href="{{ route('admin.privacy-policy') }}">Privacy Policy</a>
 	</li>
 	<div class="divider"></div>
 	{{-- <li>

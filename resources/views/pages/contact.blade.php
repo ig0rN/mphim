@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Contact')
+@section('title', __('translate.contact'))
 
 @section('styles')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.min.css">@stop
@@ -93,17 +93,17 @@
                                 </label>
                                 <div class="select-div text-right">
                                     <select class="form-control" name="email_to" id="email_to">
-                                        <option value="italia@mphimplus.com">
-                                            italia@mphimplus.com
+                                        <option value="info@mphimplus.com">
+                                            info@mphimplus.com
                                         </option>
-                                        <option value="schweiz@mphimplus.com">
-                                            schweiz@mphimplus.com
+                                        <option value="commerciale@mphimplus.com">
+                                            commerciale@mphimplus.com
                                         </option>
-                                        <option value="srbija@mphimplus.com">
-                                            srbija@mphimplus.com
+                                        <option value="sicilia@mphimplus.com">
+                                            sicilia@mphimplus.com
                                         </option>
-                                        <option value="maroc@mphimplus.com">
-                                            maroc@mphimplus.com
+                                        <option value="veneto@mphimplus.com">
+                                            veneto@mphimplus.com
                                         </option>
                                     </select>
                                     <span class="has-error"></span>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 offset-md-4 offset-lg-6 text-right">
                         @csrf
-                        <input type="hidden" name="website">
+                        <input type="text" name="website" class="hidden">
                         <button type="submit" class="btn btn-submit">
                             {{ __('translate.submit') }}
                         </button>
@@ -139,129 +139,92 @@
             </form>
         </div>
         <div class="locations">
+            <h3 class="heading">MPHIM+ ITALIA</h3>
+
             <div class="row">
-                <div class="col-md-3 item">
+                <div class="col-md-4 item">
                     <div class="image">
-                        <img src="{{ asset('img/locations/palermo.png') }}" alt="img/locations/palermo.jpg" />
+                        <img src="{{ asset('img/locations/palermo.png') }}" alt="Palermo" />
                     </div>
                     <div class="info text-center">
-                        <p class="state text-uppercase">
-                            Italia
+                        <p class="state text-uppercase">MPHIM+ SICILIA</p>
+                        <p>
+                            <a href="http://www.progettiefinanza.it" target="_blank">Progetti e Finanza</a>
                         </p>
                         <p class="address">
-                            <a data-toggle="collapse" href=".italia" role="button" aria-expanded="false" aria-controls="italia">
+                            <a data-toggle="collapse" href=".sicilia" role="button" aria-expanded="false" aria-controls="sicilia">
                                 Via Libertà n. 103,<br />
                                 90143 Palermo
                             </a>
                         </p>
                         <p class="telephone">
                             Tel.
-                            <a href="callto:+39091588140" title="Call">
-                                +39 091 588 140
-                            </a>
+                            <a href="callto:+39091588140" title="Call">+39 091 588 140</a>
                         </p>
                         <p class="email">
-                            <a href="mailto:italia@mphimplus.com" title="Email">
-                                italia@mphimplus.com
-                            </a>
+                            <a href="mailto:italia@mphimplus.com" title="Email">italia@mphimplus.com</a>
                         </p>
                     </div>
-                    <div class="map italia collapse">
+                    <div class="map sicilia collapse">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.192932594309!2d13.347019215728604!3d38.13570657969532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1319ef5247079749%3A0xfb2e794086334925!2sVia+della+Libert%C3%A0%2C+103%2C+90143+Palermo+PA%2C+Italy!5e0!3m2!1sen!2srs!4v1549928688125"
                             frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="col-md-3 item">
+
+                <div class="col-md-8 item">
                     <div class="image">
-                        <img src="{{ asset('img/locations/freienbach.jpg') }}" alt="img/locations/freienbach.jpg" />
+                        <img src="{{ asset('img/locations/veneto.jpg') }}" alt="Veneto" />
                     </div>
+
                     <div class="info text-center">
-                        <p class="state text-uppercase">
-                            Schweiz
-                        </p>
-                        <p class="address">
-                            <a data-toggle="collapse" href=".swiss" role="button" aria-expanded="false" aria-controls="swiss">
-                                Grützenstrasse n. 1,<br />
-                                8807 Freienbach
-                            </a>
-                        </p>
-                        <p class="telephone">
-                            Tel.
-                            <a href="callto:+41786006023" title="Call">
-                                +41 786 006 023
-                            </a>
-                        </p>
-                        <p class="email">
-                            <a href="mailto:schweiz@mphimplus.com" title="Email">
-                                schweiz@mphimplus.com
-                            </a>
-                        </p>
-                    </div>
-                    <div class="map swiss collapse">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.493475289701!2d8.752812715962666!3d47.20692587916026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ab16968d3999f%3A0x8a3a6307efc95c75!2sKantonsstrasse+81%2C+8807+Freienbach%2C+Switzerland!5e0!3m2!1sen!2srs!4v1549928781427"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-3 item">
-                    <div class="image">
-                        <img src="{{ asset('img/locations/kragujevac.jpg') }}" alt="img/locations/kragujevac.jpg" />
-                    </div>
-                    <div class="info text-center">
-                        <p class="state text-uppercase">
-                            Srbija
-                        </p>
-                        <p class="address">
-                            <a data-toggle="collapse" href=".serbia" role="button" aria-expanded="false" aria-controls="serbia">
-                                Mije Aleksica br. 7,<br />
-                                34000 Kragujevac
-                            </a>
-                        </p>
-                        <p class="telephone">
-                            Tel.
-                            <a href="callto:+38134207098" title="Call">
-                                +381 64 56 11 572
-                            </a>
-                        </p>
-                        <p class="email">
-                            <a href="mailto:srbija@mphimplus.com" title="Email">
-                                srbija@mphimplus.com
-                            </a>
-                        </p>
-                    </div>
-                    <div class="map serbia collapse">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.0423515235902!2d20.92122961587534!3d43.99985037911101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475720ef828fad59%3A0x57cbe633ad7d23fd!2sMije+Aleksic%CC%81a%2C+Kragujevac!5e0!3m2!1sen!2srs!4v1549928821207"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-3 item">
-                    <div class="image">
-                        <img src="{{ asset('img/locations/rabat.jpg') }}" alt="img/locations/rabat.jpg" />
-                    </div>
-                    <div class="info text-center">
-                        <p class="state text-uppercase">
-                            Maroc
-                        </p>
-                        <p class="address">
-                            <a data-toggle="collapse" href=".morocco" role="button" aria-expanded="false" aria-controls="morocco">
-                                15. Avenue Al Abtal, N° 4<br />
-                                Agdal - Rabat
-                            </a>
-                        </p>
-                        <p class="telephone">
-                            Tel.
-                            <a href="callto:+212645263784" title="Call">
-                                +212 645263784
-                            </a>
-                        </p>
-                        <p class="email">
-                            <a href="mailto:maroc@mphimplus.com" title="Email">
-                                maroc@mphimplus.com
-                            </a>
-                        </p>
-                    </div>
-                    <div class="map morocco collapse">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.635209516674!2d-6.848038234364067!3d34.00190253061961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33d601556713a1ed!2sXersys+Services+(Xese)!5e0!3m2!1sen!2srs!4v1549928875175"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="state text-uppercase text-center">MPHIM+ VENETO</p>
+                                <p class="text-center">
+                                    <a href="https://www.studiomegali.it" target="_blank">Megali & Partner</a>
+                                </p>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <p class="address">
+                                    <a data-toggle="collapse" href=".mestre" role="button" aria-expanded="false" aria-controls="mestre">
+                                        Via Poerio n. 19,<br />
+                                        30171 Mestre
+                                    </a>
+                                </p>
+                                <p class="telephone">
+                                    Tel.
+                                    <a href="callto:+39041983842" title="Call">+39 041 983 842</a>
+                                </p>
+                                <p class="email">
+                                    <a href="mailto:veneto@mphimplus.com" title="Email">veneto@mphimplus.com</a>
+                                </p>
+                                <div class="map mestre collapse">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.8671080650556!2d12.23964171531907!3d45.49262077910129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb43f7823aa5f%3A0xe773b03fbf80a3d2!2sVia%20Alessandro%20Poerio%2C%2019%2C%2030171%20Venezia%20VE%2C%20Italy!5e0!3m2!1sen!2srs!4v1581529797736!5m2!1sen!2srs"
+                                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6">
+                                <p class="address">
+                                    <a data-toggle="collapse" href=".belluno" role="button" aria-expanded="false" aria-controls="belluno">
+                                        Piazza Castello n. 4,<br />
+                                        32100 Belluno
+                                    </a>
+                                </p>
+                                <p class="telephone">
+                                    Tel.
+                                    <a href="callto:+390437380003" title="Call">+39 043 738 000 3</a>
+                                </p>
+                                <p class="email">
+                                    <a href="mailto:veneto@mphimplus.com" title="Email">veneto@mphimplus.com</a>
+                                </p>
+                                <div class="map belluno collapse">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.617231381039!2d12.213119715343598!3d46.138453979114786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477907b100588501%3A0x9fd820ff5593e9c4!2sPiazza%20Castello%2C%204%2C%2032100%20Belluno%20BL%2C%20Italy!5e0!3m2!1sen!2srs!4v1581529874148!5m2!1sen!2srs"
+                                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

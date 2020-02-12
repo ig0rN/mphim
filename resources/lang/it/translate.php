@@ -11,18 +11,21 @@ return [
     'who-can-use-it' => 'Chi può usarlo',
     'companies' => 'Aziende',
     'professionals' => 'Professionisti',
-    'trade-associations' => 'Associazioni di categoria',
+    'trade-associations' => 'Associazioni di imprese',
     'public-institutions' => 'Istituzioni pubbliche',
+    'banks' => 'Banche',
     'schools' => 'Scuole',
     'university' => 'Università',
     'versions' => 'Versioni',
     'commercial' => 'Commerciale',
     'reference' => 'Referenze',
-    'academy' => 'Accademia',
-    'training4company' => 'Training4Company',
-    'training4agent' => 'Training4Agent',
-    'training4advisor' => 'Training4Advisor',
-    'training4manager' => 'Training4Manager',
+    'press' => 'Press',
+    'privacy-policy' => 'Privacy Policy',
+    'academy' => 'Academy',
+    'training4company' => 'Learning4Company',
+    'training4agent' => 'Learning4Agent',
+    'training4advisor' => 'Learning4Advisor',
+    'training4manager' => 'Learning4Manager',
     'contact' => 'Contatti',
     'contact-form' => 'Modulo di contatto',
 
@@ -64,4 +67,15 @@ return [
 
     'contact_success_message' => 'Grazie per il vostro messaggio! Ci faremo sentire entro 48 ore.',
     'something_went_wrong' => 'A causa di problemi tecnici, la preghiamo di inviarci nuovamente il messaggio.',
+
+    // footer links
+    'business' => 'Business',
+    'axess' => 'Axess',
+
+    'partners' => 'Partner',
+    'institutions' => 'Istituzioni',
+    'universities' => 'Università',
+    'high_schools' => 'Scuole superiori',
+    'companies' => 'Imprese',
+    'professional_officies' => 'Studi professionali',
 ];

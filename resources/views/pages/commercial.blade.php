@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Commercial')
+@section('title', __('translate.commercial'))
 
 @section('content')
 <div id="commercial" class="pt-5">

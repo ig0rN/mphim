@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', __('translate.customers'))
+@section('title', __('translate.who-can-use-it'))
 
 @section('content')
 <div class="container">
@@ -61,6 +61,21 @@
 			</div>
 			<div class="col-md-8">
 				{!! $publicIns->{'body_' . $language} !!}
+			</div>
+		</div>
+	</div>
+	<div id="banks" class="item-text">
+		<h3 class="heading padding-top">
+			{{ __('translate.banks') }}
+		</h3>
+		<div class="row align-items-start">
+			<div class="col-md-4">
+				<div class="image">
+					<img src="{{ asset('img/customers/banks.jpg')}}" alt="img/customers/banks.jpg" />
+				</div>
+			</div>
+			<div class="col-md-8">
+				{!! $banks->{'body_' . $language} !!}
 			</div>
 		</div>
 	</div>

@@ -6,8 +6,9 @@ use App\Database\OneRowPage;
 use App\Http\Requests\VersionsRequest;
 use App\Http\Requests\CommercialRequest;
 use App\Http\Requests\ReferenceRequest;
-// use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PressRequest;
+use App\Http\Requests\PrivacyPolicyRequest;
 
 class OneRowPageController extends Controller
 {
@@ -47,6 +48,35 @@ class OneRowPageController extends Controller
     public function updateReference(ReferenceRequest $request, OneRowPage $reference)
     {
         $reference->update($request->all());
+        return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
+    }
+
+    // Press
+    public function showPress()
+    {
+        $content = OneRowPage::where('page', 'press')->first();
+        return view('admin.pages.press', compact('content'));
+    }
+
+    public function updatePress(PressRequest $request, OneRowPage $press)
+    {
+        $press->update($request->all());
+        return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
+    }
+
+    // Privacy Policy
+    public function showPrivacyPolicy()
+    {
+        $content = OneRowPage::where('page', 'privacy-policy')->first();
+        return view('admin.pages.privacy-policy', compact('content'));
+    }
+
+    public function updatePrivacyPolicy(PrivacyPolicyRequest $request)
+    {
+        $privacyPolicy = OneRowPage::where('page', 'privacy-policy')->first();
+
+        $privacyPolicy->update($request->all());
+        
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
     }
 

@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Home')
+@section('title', __('translate.home'))
 
 @section('content')
 <div id="home" class="pt-5">
@@ -158,7 +158,7 @@
         </div>
         <div id="customers" class="pt-5">
             <p class="home-heading text-center">
-                {{ __('translate.customers') }}
+                {{ __('translate.who-can-use-it') }}
             </p>
             <div class="row">
                 <div class="col-md-4 text-center pb-4">

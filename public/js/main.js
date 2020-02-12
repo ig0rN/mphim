@@ -71,7 +71,8 @@ owl.owlCarousel({
     dots: false,
     autoplay: true,
     autoplayTimeout: 5000,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    smartSpeed: 1000
 });
 
 $(document).ready(function() {

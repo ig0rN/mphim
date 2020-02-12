@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', 'Reference')
+@section('title', __('translate.reference'))
 
 @section('content')
 <div id="reference" class="pt-5">
