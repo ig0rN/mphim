@@ -149,7 +149,7 @@
                     <div class="info text-center">
                         <p class="state text-uppercase">MPHIM+ SICILIA</p>
                         <p>
-                            <a href="http://www.progettiefinanza.it" target="_blank">Progetti e Finanza</a>
+                            <a href="http://www.progettiefinanza.com" target="_blank">Progetti e Finanza</a>
                         </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".sicilia" role="button" aria-expanded="false" aria-controls="sicilia">
