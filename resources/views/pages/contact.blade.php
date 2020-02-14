@@ -148,9 +148,6 @@
                     </div>
                     <div class="info text-center">
                         <p class="state text-uppercase">MPHIM+ SICILIA</p>
-                        <p>
-                            <a href="http://www.progettiefinanza.com" target="_blank">Progetti e Finanza</a>
-                        </p>
                         <p class="address">
                             <a data-toggle="collapse" href=".sicilia" role="button" aria-expanded="false" aria-controls="sicilia">
                                 Via Libertà n. 103,<br />
@@ -180,9 +177,6 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="state text-uppercase text-center">MPHIM+ VENETO</p>
-                                <p class="text-center">
-                                    <a href="https://www.studiomegali.it" target="_blank">Megali & Partner</a>
-                                </p>
                             </div>
                             
                             <div class="col-md-6">
