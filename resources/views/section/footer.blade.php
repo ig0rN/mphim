@@ -88,11 +88,6 @@
                 </ul>
             </li>
             <li class="flex-fill">
-                <a href="{{ route('commercial') }}" class="heading">
-                    @lang('translate.commercial')
-                </a>
-            </li>
-            <li class="flex-fill">
                 <a href="{{ route('reference') }}" class="heading">
                     @lang('translate.reference')
                 </a>
@@ -161,6 +156,18 @@
                 <a href="{{ route('press') }}" class="heading">
                     @lang('translate.press')
                 </a>
+            </li>
+            <li class="flex-fill">
+                <a href="{{ route('management') }}" class="heading">
+                    {{ __('translate.management') }}
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="{{ route('commercial') }}">
+                            @lang('translate.commercial')
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="flex-fill">
                 <a href="{{ route('contact') }}" class="heading">

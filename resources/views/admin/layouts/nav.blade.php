@@ -24,6 +24,9 @@
 		<a {{ Request::segment(2) == 'commercial' ? "class=active" : '' }} href="{{ route('admin.commercial') }}">Commercial</a>
 	</li>
 	<li>
+		<a {{ Request::segment(2) == 'management' ? "class=active" : '' }} href="{{ route('admin.management') }}">Management</a>
+	</li>
+	<li>
 		<a {{ Request::segment(2) == 'reference' ? "class=active" : '' }} href="{{ route('admin.reference') }}">Reference</a>
 	</li>
 	<li>

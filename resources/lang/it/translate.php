@@ -19,6 +19,7 @@ return [
     'versions' => 'Versioni',
     'commercial' => 'Commerciale',
     'reference' => 'Referenze',
+    'management' => 'Management',
     'press' => 'Press',
     'privacy-policy' => 'Privacy Policy',
     'academy' => 'Academy',

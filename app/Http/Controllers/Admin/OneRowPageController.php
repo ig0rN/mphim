@@ -7,6 +7,7 @@ use App\Http\Requests\VersionsRequest;
 use App\Http\Requests\CommercialRequest;
 use App\Http\Requests\ReferenceRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ManagementRequest;
 use App\Http\Requests\PressRequest;
 use App\Http\Requests\PrivacyPolicyRequest;
 
@@ -35,6 +36,19 @@ class OneRowPageController extends Controller
     public function updateCommercial(CommercialRequest $request, OneRowPage $commercial)
     {
         $commercial->update($request->all());
+        return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
+    }
+
+    // Management
+    public function showManagement()
+    {
+        $content = OneRowPage::where('page', 'management')->first();
+        return view('admin.pages.management', compact('content'));
+    }
+
+    public function updateManagement(ManagementRequest $request, OneRowPage $management)
+    {
+        $management->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);
     }
 

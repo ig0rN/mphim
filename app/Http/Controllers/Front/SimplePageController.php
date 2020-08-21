@@ -110,6 +110,16 @@ class SimplePageController extends Controller
                 ]);
     }
 
+    public function showManagement()
+    {
+        $content = OneRowPage::where('page', 'management')->first();
+        return view('pages.management')
+                ->with([
+                    'content' => $content,
+                    'language' => app()->getLocale()
+                ]);
+    }
+
     public function showPrivacyPolicy()
     {
         $content = OneRowPage::where('page', 'privacy-policy')->first();
