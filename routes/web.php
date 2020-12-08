@@ -18,6 +18,7 @@ Route::get('/admin', function(){
         Route::get('/commercial', 'SimplePageController@showCommercial')->name('commercial');
         Route::get('/reference', 'SimplePageController@showReference')->name('reference');
         Route::get('/press', 'SimplePageController@showPress')->name('press');
+        Route::get('/management', 'SimplePageController@showManagement')->name('management');
         Route::get('/privacy-policy', 'SimplePageController@showPrivacyPolicy')->name('privacy-policy');
         Route::get('/contact', 'SimplePageController@showContact')->name('contact');
         Route::post('/contact', 'SimplePageController@postContact')->name('post.contact');
@@ -91,6 +92,10 @@ Route::namespace('Admin')->prefix('admin')->middleware('auth')->group(function()
         // Commercial
         Route::get('/commercial', 'OneRowPageController@showCommercial')->name('admin.commercial');
         Route::post('/commercial-update/{commercial}', 'OneRowPageController@updateCommercial')->name('admin.commercial.update');
+
+        // Management
+        Route::get('/management', 'OneRowPageController@showManagement')->name('admin.management');
+        Route::post('/management-update/{management}', 'OneRowPageController@updateManagement')->name('admin.management.update');
 
         // Reference
         Route::get('/reference', 'OneRowPageController@showReference')->name('admin.reference');

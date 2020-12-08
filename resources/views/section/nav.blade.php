@@ -197,11 +197,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('commercial') }}" class="{{ activeClassBasedOnRoute('commercial') }}">
-                        {{ __('translate.commercial') }}
-                    </a>
-                </li>
-                <li>
                     <a href="{{ route('reference') }}" class="{{ activeClassBasedOnRoute('reference') }}">
                         {{ __('translate.reference') }}
                     </a>
@@ -238,6 +233,19 @@
                     <a href="{{ route('press') }}" class="{{ activeClassBasedOnRoute('press') }}">
                         {{ __('translate.press') }}
                     </a>
+                </li>
+                <li>
+                    <a href="{{ route('management') }}" class="{{ activeClassBasedOnRoute('management') }}">
+                        {{ __('translate.management') }}
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="{{ route('commercial') }}" class="{{ activeClassBasedOnRoute('commercial') }}">
+                                {{ __('translate.commercial') }}
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="{{ route('contact') }}" class="{{ activeClassBasedOnRoute('contact') }}">

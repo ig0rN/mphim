@@ -28,6 +28,16 @@ class OneRowPageTableSeeder extends Seeder
             'body_it' => 'Commercial Body IT',
             'body_rs' => 'Commercial Body RS',
         ]);
+
+        OneRowPage::create([
+            'page' => 'management',
+            'body_en' => 'Commercial Body EN',
+            'body_de' => 'Commercial Body DE',
+            'body_fr' => 'Commercial Body FR',
+            'body_it' => 'Commercial Body IT',
+            'body_rs' => 'Commercial Body RS',
+        ]);
+
         OneRowPage::create([
             'page' => 'reference',
             'body_en' => 'Commercial Body EN',

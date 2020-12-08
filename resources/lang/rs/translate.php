@@ -19,6 +19,7 @@ return [
     'versions' => 'Verzije',
     'commercial' => 'Komercijala',
     'reference' => 'Reference',
+    'management' => 'Upravljanje',
     'press' => 'Štampa',
     'privacy-policy' => 'Politika Privatnosti',
     'academy' => 'Akademija',
