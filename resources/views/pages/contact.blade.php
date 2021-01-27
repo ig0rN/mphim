@@ -141,7 +141,7 @@
                         <p class="state text-uppercase">MPHIM+ SICILIA</p>
                         <p class="address">
                             <a data-toggle="collapse" href=".sicilia" role="button" aria-expanded="false" aria-controls="sicilia">
-                                Via Libertà n. 103,<br />
+                                via Marchese di Villabianca n. 163,<br />
                                 90143 Palermo
                             </a>
                         </p>
