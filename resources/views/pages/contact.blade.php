@@ -96,15 +96,6 @@
                                         <option value="info@mphimplus.com">
                                             info@mphimplus.com
                                         </option>
-                                        <option value="commerciale@mphimplus.com">
-                                            commerciale@mphimplus.com
-                                        </option>
-                                        <option value="sicilia@mphimplus.com">
-                                            sicilia@mphimplus.com
-                                        </option>
-                                        <option value="veneto@mphimplus.com">
-                                            veneto@mphimplus.com
-                                        </option>
                                     </select>
                                     <span class="has-error"></span>
                                     <img src="{{ asset('img/arrow.png') }}" />
@@ -159,7 +150,7 @@
                             <a href="callto:+39091588140" title="Call">+39 091 588 140</a>
                         </p>
                         <p class="email">
-                            <a href="mailto:italia@mphimplus.com" title="Email">italia@mphimplus.com</a>
+                            <a href="mailto:italia@mphimplus.com" title="Email">info@mphimplus.com</a>
                         </p>
                     </div>
                     <div class="map sicilia collapse">
@@ -191,7 +182,7 @@
                                     <a href="callto:+39041983842" title="Call">+39 041 983 842</a>
                                 </p>
                                 <p class="email">
-                                    <a href="mailto:veneto@mphimplus.com" title="Email">veneto@mphimplus.com</a>
+                                    <a href="mailto:veneto@mphimplus.com" title="Email">info@mphimplus.com</a>
                                 </p>
                                 <div class="map mestre collapse">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.8671080650556!2d12.23964171531907!3d45.49262077910129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb43f7823aa5f%3A0xe773b03fbf80a3d2!2sVia%20Alessandro%20Poerio%2C%2019%2C%2030171%20Venezia%20VE%2C%20Italy!5e0!3m2!1sen!2srs!4v1581529797736!5m2!1sen!2srs"
@@ -211,7 +202,7 @@
                                     <a href="callto:+390437380003" title="Call">+39 043 738 000 3</a>
                                 </p>
                                 <p class="email">
-                                    <a href="mailto:veneto@mphimplus.com" title="Email">veneto@mphimplus.com</a>
+                                    <a href="mailto:veneto@mphimplus.com" title="Email">info@mphimplus.com</a>
                                 </p>
                                 <div class="map belluno collapse">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.617231381039!2d12.213119715343598!3d46.138453979114786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477907b100588501%3A0x9fd820ff5593e9c4!2sPiazza%20Castello%2C%204%2C%2032100%20Belluno%20BL%2C%20Italy!5e0!3m2!1sen!2srs!4v1581529874148!5m2!1sen!2srs"
