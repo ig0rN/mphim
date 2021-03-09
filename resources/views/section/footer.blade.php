@@ -194,7 +194,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" title="LinkedIn" target="_blank">
+                <a href="https://it.linkedin.com/company/mphimplus" title="LinkedIn" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>

@@ -6,7 +6,7 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/mphimplus/" title="Facebook" target="_blank">
+                                <a href="https://www.facebook.com/mphimplus/" title="Mphim Facebook" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
@@ -16,13 +16,13 @@
                                 </a>
                             </li> -->
                             <li>
-                                <a href="https://www.youtube.com/channel/UCZEDo7CM-Ad_VVDRiWGqnLw" title="YouTube"
+                                <a href="https://www.youtube.com/channel/UCZEDo7CM-Ad_VVDRiWGqnLw" title="Mphim YouTube"
                                     target="_blank">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" title="LinkedIn" target="_blank">
+                                <a href="https://it.linkedin.com/company/mphimplus" title="Mphim LinkedIn" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </li>
